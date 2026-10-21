@@ -1,0 +1,19 @@
+{
+  "changed_at": "2026-10-22",
+  "change_type": "동명 작품 혼동 정정",
+  "old_metadata": {
+    "id": "9029803",
+    "title": "바다2",
+    "author": "정지용",
+    "publication_year": "1935",
+    "metadata_source_url": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=9029803&menuNo=200019",
+    "text_source_url": "https://www.sihanjan.com/classics/9029803"
+  },
+  "old_text": {
+    "id": "9029803",
+    "text": "한 백년 진흙 속에\n숨었다 나온 듯이,\n\n게처럼 옆으로\n기여가 보노니,\n\n머언 푸른 하늘 알로\n가이 없는 모래 밭."
+  },
+  "new_id": "WS_JEONG_SEA2_1935",
+  "new_title": "바다2",
+  "reason": "기존 2장 「한 백년 진흙 속에」 본문에 1935년 「바다는 뿔뿔이」의 해설이 연결되어 있었다. 구체적 해설을 확인한 1935년 작품으로 통일하며 내부 식별자도 변경한다."
+}

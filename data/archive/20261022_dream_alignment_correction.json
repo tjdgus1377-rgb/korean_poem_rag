@@ -1,0 +1,17 @@
+{
+  "changed_at": "2026-10-22",
+  "old_metadata": {
+    "id": "9000227",
+    "title": "꿈",
+    "author": "김소월",
+    "publication_year": "1921",
+    "metadata_source_url": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=9000227&menuNo=200019",
+    "text_source_url": "https://www.sihanjan.com/classics/9000227"
+  },
+  "old_text": {
+    "id": "9000227",
+    "text": "닭 개 짐승조차도 꿈이 있다고\n이르는 말이야 있지 않은가,\n그러하다, 봄날은 꿈꿀 때.\n내 몸에야 꿈이나 있으랴,\n아아 내 세상의 끝이여,\n나는 꿈이 그리워, 꿈이 그리워.\n\n꿈? 영(靈)의 헤적임. 설움의 고향(故鄕).\n울자, 내 사랑, 꽃 지고 저무는 봄."
+  },
+  "new_id": "WS_SOWOL_DREAM_2",
+  "reason": "기존 수록문이 6행 「꿈1」과 2행 「꿈2」를 이어 붙인 상태여서 두 작품을 분리했다. 실제 구절 해설이 충분한 ‘꿈? 영의 헤적임’의 2행 작품을 선택해 메타데이터·본문·해설을 일치시켰다. 국립국어원 원게시처 PDF도 확인했다."
+}

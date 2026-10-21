@@ -1,0 +1,125 @@
+{
+  "updated_at": "2026-10-22T06:16:12+09:00",
+  "counts": {
+    "poems": 100,
+    "full_text_records": 100,
+    "sources": 259,
+    "evidence_notes": 262,
+    "author_contexts": 12,
+    "representative_question_reviews": 100,
+    "authored_answer_examples": 101,
+    "poems_with_answer_examples": 100,
+    "poems_with_topic_review": 100
+  },
+  "text_source_review_results": {
+    "exact_match": 75,
+    "manual_source_match": 6,
+    "spacing_punctuation_only": 18,
+    "manual_scholarly_correction": 1
+  },
+  "text_source_review_pending_ids": [],
+  "note_roles": {
+    "interpretation": 217,
+    "context_only": 39,
+    "access_lead": 6
+  },
+  "interpretation_note_distribution": {
+    "2": 62,
+    "3": 23,
+    "1": 12,
+    "4": 3
+  },
+  "single_interpretation_works": [
+    {
+      "id": "9000275",
+      "title": "삭주구성",
+      "author": "김소월",
+      "representative_note_id": "EBS_SOWOL_SAKJUGUSEONG_9000275"
+    },
+    {
+      "id": "9001758",
+      "title": "복종(服從)",
+      "author": "한용운",
+      "representative_note_id": "KAE_HAN_OBEDIENCE_9001758"
+    },
+    {
+      "id": "9001776",
+      "title": "찬송(讚頌)",
+      "author": "한용운",
+      "representative_note_id": "EDU_HAN_PRAISE_9001776"
+    },
+    {
+      "id": "9001805",
+      "title": "사랑하는 까닭",
+      "author": "한용운",
+      "representative_note_id": "EDU_HAN_REASON_TO_LOVE_9001805"
+    },
+    {
+      "id": "9001807",
+      "title": "거짓 이별",
+      "author": "한용운",
+      "representative_note_id": "EDU_HAN_FALSE_PARTING_9001807"
+    },
+    {
+      "id": "9001792",
+      "title": "나의 꿈",
+      "author": "한용운",
+      "representative_note_id": "MODU_HAN_NAUI_KKUM_9001792"
+    },
+    {
+      "id": "9029186",
+      "title": "바라건대는 우리에게 우리의 보습 대일 땅이 있었더면",
+      "author": "김소월",
+      "representative_note_id": "EDU_SOWOL_LAND_9029186"
+    },
+    {
+      "id": "9029792",
+      "title": "호수(湖水)1",
+      "author": "정지용",
+      "representative_note_id": "EDU_JEONG_LAKE1_9029792"
+    },
+    {
+      "id": "9029848",
+      "title": "인동차(忍冬茶)",
+      "author": "정지용",
+      "representative_note_id": "EDU_JEONG_HONEYSUCKLE_9029848"
+    },
+    {
+      "id": "9029836",
+      "title": "그의 반",
+      "author": "정지용",
+      "representative_note_id": "EDU_JEONG_HALF_9029836"
+    },
+    {
+      "id": "9000347",
+      "title": "돌담에 속삭이는 햇발",
+      "author": "김영랑",
+      "representative_note_id": "POET_YEONGRANG_SUNLIGHT_9000347"
+    },
+    {
+      "id": "9000986",
+      "title": "말세의 희탄",
+      "author": "이상화",
+      "representative_note_id": "KAE_SANGHWA_MALSEHEE_9000986"
+    }
+  ],
+  "poem_ids_without_answer_example": [],
+  "completion": "자료 수집·정합성·주요 구절 문헌 검토 완료; 실제 RAG 실행 평가는 미실시",
+  "remaining_requirements": [],
+  "limits": [
+    "자료·노트 수는 사용자 질문 대응률 또는 진행률이 아님",
+    "작성한 답변 예시는 새로운 외부 근거가 아님",
+    "참조 무결성 검사는 해석의 충분성이나 실제 RAG 응답 품질을 증명하지 않음"
+  ],
+  "curation_assessment": {
+    "current": true,
+    "judgement": "주요 구절의 감상·해석 대화용 자료로 조건부 적합",
+    "scope": "활성 100편의 주요 이미지·상징·시상 전개를 시인 배경과 연결하는 설명 가능성. 모든 구절의 실제 창작 의도나 질문 대응률의 검증은 아님",
+    "report": "interpretation_assessment.md"
+  },
+  "follow_up_work": [
+    "앱 구현 후 구절·상징·배경 질문 묶음으로 검색·인용·답변 실행 평가",
+    "새로운 자료나 작품을 추가할 때 대상 파일이 바뀌면 문헌 검토 판정 갱신",
+    "희귀 어휘·판본·특정 창작 사건을 묻는 추가 질문에는 직접 근거를 별도로 확인"
+  ]
+}

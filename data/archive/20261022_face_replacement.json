@@ -1,0 +1,102 @@
+{
+  "reason": "님의 얼굴의 공개 해설은 짧고 비유 방향을 흐리는 편집 요약이며, 학술 자료는 얼굴 표상의 제한적 비평에 머물렀다. 주요 구절을 두루 설명하는 동시대 작품으로 교체한다.",
+  "research_attempts": [
+    "님의 얼굴 해설·역비유 검색",
+    "BOOKCOSMOS 본문 직접 열람: 역비유 방향을 바꾸어 요약한 한 문장",
+    "KCI 신용목 논문의 관련 대목은 시 구조에서 얼굴 표상의 기능에 관한 한정된 평가",
+    "대체 작품의 위키문헌 전문 및 국어문학창고 구절별 해설, KCI 작품군 초록 확인"
+  ],
+  "metadata": [
+    {
+      "id": "9001771",
+      "title": "님의 얼굴",
+      "author": "한용운",
+      "publication_year": "1926",
+      "metadata_source_url": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=9001771&menuNo=200019",
+      "text_source_url": "https://www.sihanjan.com/classics/9001771"
+    }
+  ],
+  "text": [
+    {
+      "id": "9001771",
+      "text": "님의 얼굴을 「어여쁘다」고 하는 말은 적당한 말이 아닙니다\n어여쁘다는 말은 인간 사람의 얼굴에 대한 말이요 님은 인간의 것이라고 할 수가 없을 만치 어여쁜 까닭입니다\n\n자연은 어찌하여 그렇게 어여쁜 님을 인간으로 보냈는지 아무리 생각하여도 알 수가 없습니다\n알겠습니다 자연의 가운데에는 님의 짝이 될 만한 무엇이 없는 까닭입니다\n\n님의 입술 같은 연꽃이 어디 있어요 님의 살빛 같은 백옥이 어디 있어요\n봄 호수에서 님의 눈결 같은 잔물결을 보았습니까 아침볕에서 님의 미소 같은 방향(芳香)을 들었습니까\n천국의 음악은 님의 노래의 반향(反響)입니다 아름다운 별들은 님의 눈빛의 화현(化現)입니다\n\n아아 나는 님의 그림자여요\n님은 님의 그림자밖에는 비길만한 것이 없습니다\n님의 얼굴을 어여쁘다고 하는 말은 적당한 말이 아닙니다"
+    }
+  ],
+  "notes": [
+    {
+      "note_id": "KCI_HAN_FACE_REPRESENTATION_9001771",
+      "poem_id": "9001771",
+      "title": "님의 얼굴",
+      "author": "한용운",
+      "source_id": "KCI_HAN_FACE_REPRESENTATION",
+      "source_title": "식민지시대 시에 나타난 ‘얼굴’ 표상 연구",
+      "source_url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002496220",
+      "locator": "논문 본문, 각주 46",
+      "evidence_type": "표상 비평",
+      "evidence_summary": "신용목은 한용운의 「님의 얼굴」에서 얼굴이 ‘님’을 대리하는 표상으로 기능하지만, 표상적 실재성을 지니고 시 구조에 관여한다고 보기 어렵다고 논한다. 이 자료는 작품의 얼굴 이미지에 관한 제한된 비평적 관점을 제공하며 시 전체의 유일한 해석으로 일반화하지 않는다.",
+      "quotation": "",
+      "access_status": "KCI 서지 및 공개 논문 본문 확인"
+    },
+    {
+      "note_id": "BOOKCOSMOS_HAN_NIM_FACE_EXPLANATION_9001771",
+      "poem_id": "9001771",
+      "title": "님의 얼굴",
+      "author": "한용운",
+      "source_id": "BOOKCOSMOS_HAN_NIM_FACE_EXPLANATION",
+      "source_title": "님의 얼굴 - 한용운",
+      "source_url": "https://pastor.bookcosmos.com/poem/1475",
+      "locator": "심상·해설",
+      "evidence_type": "작품 직접 심상·정서 해설",
+      "evidence_summary": "해설은 연꽃 같은 입술, 백옥 같은 살빛, 봄 호수의 잔물결 같은 눈결과 별의 비유를 따라 님의 아름다움이 형상화된다고 읽는다. 인간의 말로 님을 충분히 표현할 수 없어 화자가 자신을 님의 그림자라 낮추는 흠모의 정서로 설명한다. KCI의 얼굴 표상 비평과 관점이 다르므로 함께 제시할 수 있다.",
+      "quotation": "",
+      "access_status": "공개 페이지 본문 확인; 원문 인용은 하지 않음"
+    }
+  ],
+  "map": [
+    {
+      "id": "9001771",
+      "title": "님의 얼굴",
+      "author": "한용운",
+      "coverage_level": "작품별 해석 근거 노트 연결",
+      "source_ids": "KCI_HAN_FACE_REPRESENTATION;BOOKCOSMOS_HAN_NIM_FACE_EXPLANATION;KAE_HAN_YONGUN",
+      "evidence_note": "작품별 해석 노트 2건; 맥락 0건; 접근 경로 0건; 대표 근거: 해설은 연꽃 같은 입술, 백옥 같은 살빛, 봄 호수의 잔물결 같은 눈결과 별의 비유를 따라 님의 아름다움이 형상화된다고 읽는다. 인간의 말로 님을 충분히 표현할 수 없어 화자가 자신을 님의 그림자라 낮추는 흠모의 정서로 설명한다. KCI의 얼굴 표상 비평과 관점이 다르므로 함께 제시할 수 있다. 답변 경계: 근거에 없는 구절의 뜻이나 시인의 실제 창작 의도는 단정할 수 없음"
+    }
+  ],
+  "review": [
+    {
+      "id": "9001771",
+      "title": "님의 얼굴",
+      "author": "한용운",
+      "sample_user_question": "“나는 님의 그림자”라는 말은 앞의 연꽃·백옥·별 비유와 어떻게 이어지나요?",
+      "basis_source_ids": "BOOKCOSMOS_HAN_NIM_FACE_EXPLANATION;KCI_HAN_FACE_REPRESENTATION;KAE_HAN_YONGUN",
+      "review_status": "핵심 질문 설명 가능·비평 관점 병치",
+      "assessment_and_limit": "작품 해설은 자연의 비유로 님을 표현하다 언어의 한계를 느껴 자신을 그림자라 낮추는 흠모를 설명한다. 표상 비평은 얼굴 이미지의 기능을 달리 평가하므로 상반된 초점을 나란히 밝힌다."
+    }
+  ],
+  "retired_sources": [
+    {
+      "source_id": "KCI_HAN_FACE_REPRESENTATION",
+      "source_type": "학술논문",
+      "scope": "한용운 「님의 얼굴」 직접 언급·얼굴 표상 해석",
+      "author": "한용운",
+      "work_title": "식민지시대 시에 나타난 얼굴 표상 연구",
+      "source_title": "식민지시대 시에 나타난 ‘얼굴’ 표상 연구",
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002496220",
+      "coverage_note": "논문은 한용운의 「님의 얼굴」을 명시하고, ‘님=얼굴’의 등식으로 표현될 뿐 표상적 실재성이 시 구조에 관여한다고 보기는 어렵다고 논한다.",
+      "rag_role": "작품 직접 표상·비평적 해석",
+      "access_note": "KCI 서지 및 학회 공개 PDF 확인"
+    },
+    {
+      "source_id": "BOOKCOSMOS_HAN_NIM_FACE_EXPLANATION",
+      "source_type": "교육용 작품 해설",
+      "scope": "한용운 「님의 얼굴」 직접 심상·비유 해설",
+      "author": "한용운",
+      "work_title": "님의 얼굴",
+      "source_title": "님의 얼굴 - 한용운",
+      "url": "https://pastor.bookcosmos.com/poem/1475",
+      "coverage_note": "작품 내 연꽃·백옥·봄 호수·별의 비유와 화자의 자기 낮춤을 풀이하며, 인간의 말로 님의 아름다움을 담을 수 없다는 흠모의 정서로 정리한다.",
+      "rag_role": "작품 직접 심상·정서 해설",
+      "access_note": "공개 웹 해설; 교육용 해석임을 답변에서 귀속"
+    }
+  ]
+}

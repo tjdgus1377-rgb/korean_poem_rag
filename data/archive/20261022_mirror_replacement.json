@@ -1,0 +1,97 @@
+{
+  "reason": "명경의 짧은 편집 해설 외에 구절 해석을 보강하려 재검색했으나, 확인 가능한 논문은 시공간 일반론 또는 목차에 한정됨. 9행 전체의 정서·반어·율격 해설을 읽은 김소월 못 잊어로 교체.",
+  "searched_sources": [
+    "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART001396323",
+    "https://www.dbpia.co.kr/journal/detail?nodeId=T15334097"
+  ],
+  "metadata": {
+    "id": "9029155",
+    "title": "못 잊어",
+    "author": "김소월",
+    "publication_year": "1925",
+    "metadata_source_url": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?menuNo=200019&wrtSn=9029155",
+    "text_source_url": "https://ko.wikisource.org/wiki/진달래꽃_(시집)/못_잊어"
+  },
+  "text": {
+    "id": "9029155",
+    "text": "못잊어 생각이 나겠지요,\n그런대로 한세상 지내시구려,\n사노라면 잊힐 날 있으리다.\n\n못잊어 생각이 나겠지요,\n그런대로 세월만 가라시구려,\n못 잊어도 더러는 잊히오리다.\n\n그러나 또한긋 이렇지요,\n`그립어 살뜰히 못 잊는데,\n어쩌면 생각이 떠지나요?'",
+    "title": "못 잊어",
+    "author": "김소월",
+    "text_source_url": "https://ko.wikisource.org/wiki/진달래꽃_(시집)/못_잊어"
+  },
+  "notes": [
+    {
+      "note_id": "KCI_YI_SPACETIME_MIRROR_9000920",
+      "poem_id": "9000920",
+      "title": "명경",
+      "author": "이상",
+      "source_id": "KCI_YI_SPACETIME_MIRROR",
+      "source_title": "이상 시의 시공간 의식과 현대디자인적 가상공간",
+      "source_url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART001396323",
+      "locator": "초록",
+      "evidence_type": "시공간 의식 분석",
+      "evidence_summary": "김민수는 이상의 주요시 50편에서 시공간 의식의 전개를 살피며 「명경」(1936)을 그 의식이 사라지는 지점으로 본다. 이는 논문의 분석틀에 따른 평가이므로 저자의 관점으로 소개한다.",
+      "quotation": "",
+      "access_status": "KCI 서지·초록 공개; 원문 전문 복제 없음",
+      "evidence_role": "context_only"
+    },
+    {
+      "note_id": "BOOK_YI_CLEAR_MIRROR_9000920",
+      "poem_id": "9000920",
+      "title": "명경",
+      "author": "이상",
+      "source_id": "BOOK_YI_CLEAR_MIRROR",
+      "source_title": "명경 - 한국 근현대시",
+      "source_url": "https://happynonghyup.bookcosmos.com/poem/1045",
+      "locator": "작품 해설",
+      "evidence_type": "작품 해설",
+      "evidence_summary": "거울의 반전 때문에 오른편으로 옮긴 심장, 고동을 짚으려는 촉진, 닿지 못하게 하는 지문을 풀이한다. 거울을 넘길 수 없는 책의 한 쪽으로 비유하여 잊은 계절과 거울 속 자아에 접근할 수 없는 단절을 읽는다.",
+      "quotation": "",
+      "access_status": "공개 본문 확인"
+    }
+  ],
+  "map": {
+    "id": "9029155",
+    "title": "못 잊어",
+    "author": "김소월",
+    "coverage_level": "작품별 해석 근거 노트 연결",
+    "source_ids": "KAE_KIM_SOWOL",
+    "evidence_note": ""
+  },
+  "review": {
+    "id": "9029155",
+    "title": "못 잊어",
+    "author": "김소월",
+    "sample_user_question": "잊힐 날이 온다고 하다가 왜 마지막에는 잊을 수 없다고 묻나요?",
+    "basis_source_ids": "KAE_KIM_SOWOL",
+    "review_status": "구절 전개·반어·율격 설명 가능",
+    "assessment_and_limit": "1~2연의 잊을 수 있다는 말과 마지막의 못 잊는 마음을 대비해 반어와 그리움을 설명한다. 남상학의 첫 두 연 변화 설명을 보조로 쓰되 마지막 떠지나요를 평정심 회복으로 읽는 결론은 현재 원문·교육 해설과 충돌하므로 채택하지 않는다. 1925년은 수록 시집 연도이며 최초 발표 연도라고 단정하지 않는다."
+  },
+  "replacement_id": "9029155",
+  "retired_sources": [
+    {
+      "source_id": "KCI_YI_SPACETIME_MIRROR",
+      "source_type": "학술논문",
+      "scope": "작품 직접 연구·시공간 표상",
+      "author": "이상",
+      "work_title": "명경",
+      "source_title": "이상 시의 시공간 의식과 현대디자인적 가상공간",
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART001396323",
+      "coverage_note": "김민수는 이상의 주요시 50편을 시공간 의식의 흐름에 따라 검토하며, 「명경」에서 시공간 의식이 사라지는 것으로 해석한다.",
+      "rag_role": "작품 직접 분석·시공간 관점",
+      "access_note": "KCI 서지·초록 공개; 원문 이용 조건은 제공처 확인"
+    },
+    {
+      "source_id": "BOOK_YI_CLEAR_MIRROR",
+      "source_type": "편집 해설",
+      "scope": "작품",
+      "author": "이상",
+      "work_title": "명경",
+      "source_title": "명경 - 한국 근현대시",
+      "url": "https://happynonghyup.bookcosmos.com/poem/1045",
+      "coverage_note": "거울의 반전 때문에 오른편으로 옮긴 심장, 고동을 짚으려는 촉진, 닿지 못하게 하는 지문을 풀이한다. 거울을 넘길 수 없는 책의 한 쪽으로 비유하여 잊은 계절과 거울 속 자아에 접근할 수 없는 단절을 읽는다.",
+      "rag_role": "직접 작품 해설",
+      "access_note": "공개 본문 확인"
+    }
+  ]
+}

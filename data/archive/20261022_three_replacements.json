@@ -1,0 +1,265 @@
+{
+  "changes": [
+    {
+      "changed_at": "2026-10-22",
+      "change_type": "해설 충분성에 따른 작품 교체",
+      "old_metadata": {
+        "id": "9000987",
+        "title": "단조",
+        "author": "이상화",
+        "publication_year": "1922",
+        "metadata_source_url": "https://ko.wikisource.org/wiki/%EC%A0%80%EC%9E%90%3A%EC%9D%B4%EC%83%81%ED%99%94",
+        "text_source_url": "https://ko.wikisource.org/wiki/%EB%8B%A8%EC%A1%B0"
+      },
+      "old_text": {
+        "id": "9000987",
+        "text": "비 오는 밤\nᄭᅡ러안즌 하늘이\nᄭᅮᆷᄭᅮ듯 어두어라.\n\n나무엽 마다에서\n저즌 속살그림이\nᄭᅳ니지 안흘 ᄯᅢᅟᅵᆯ너라.\n\n마음의 막다른\n날근 ᄯᅱ집에선\n뉜지 모르나 ᄭᅡ닭도 업서라.\n\n눈물 흘리는 적(笛) 소래만\n갓업는 마음으로\n고요히 방울 지우다.\n\n저-편에 느러 섯는\n백양(白楊)나무 숩의 살ᄶᅵᆫ 거름애는\n이저버린 기억(記憶)이 ᄯᅥ돔과 갓치\n침울(沈鬱)-몽롱(曚朧)한\n「칸ᅄᅡ스」 우헤셔 흐늑이다.\n\n아! 야릇도 하여라.\n야밤의 고요함은\n내 가슴에도 깃드리다.\n\n벙어리 입로\nᄯᅥ도는 침묵(沈默)은\n추억(追憶)의 녹 긴 창(窓)을\n죽일 숨쉬며 엿보아라.\n\n아! 자추도 업시\n나를 ᄭᅧ안는\n이 밤의 홋짐이 설어워라.\n\n비 오는 밤\nᄭᅡ러안즌 영혼(靈魂)이\n죽은 듯 고요도 하여라.\n\n내 생각의\n거믜줄 ᄭᅳᆺ마다에셔도\n저근 속살거림은\n줄곳 쉬지 안허라."
+      },
+      "old_notes": [
+        {
+          "note_id": "SANGHWA_BUMWOO_COMMENTARY_COLLECTION_9000987",
+          "poem_id": "9000987",
+          "title": "단조",
+          "author": "이상화",
+          "source_id": "SANGHWA_BUMWOO_COMMENTARY_COLLECTION",
+          "source_title": "이상화 시집 (범우문고 325)",
+          "source_url": "https://www.yes24.com/product/goods/97808048",
+          "locator": "도서 소개·목차 (작품별 수록 쪽 명시)",
+          "evidence_type": "해설 수록 서지 확인",
+          "evidence_summary": "출판사 서지에서 이상화 시집의 작품해설 수록을 확인했고 목차에 이 작품을 확인했다. 개별 해설 본문은 미열람이므로 실제 작품 해석을 RAG에 넣기 전에 책 원문을 열람해 근거를 보강해야 한다.",
+          "quotation": "",
+          "access_status": "도서/도서관 접근 필요; 본문 해설 미열람"
+        },
+        {
+          "note_id": "BOOKCOSMOS_SANGHWA_DANJO_9000987",
+          "poem_id": "9000987",
+          "title": "단조",
+          "author": "이상화",
+          "source_id": "BOOKCOSMOS_SANGHWA_DANJO",
+          "source_title": "단조 - 이상화",
+          "source_url": "https://univ.bookcosmos.com/poem/1085",
+          "locator": "주석·심상·해설",
+          "evidence_type": "작품 직접 이미지·정조 해설",
+          "evidence_summary": "해설은 가라앉은 하늘 아래 빗소리를 눈물 흘리는 피리 소리에 빗댄 표현으로 읽고, 백양나무 숲 그림자를 침울한 화폭에 비유한다. 이를 통해 비 오는 밤의 적막과 기억, 서러운 호젓함이 형상화된다고 풀이한다. 교육용 해설의 관점으로 귀속한다.",
+          "quotation": "",
+          "access_status": "공개 페이지 본문 확인"
+        },
+        {
+          "note_id": "WS_SANGHWA_DANJO_TEXT_9000987",
+          "poem_id": "9000987",
+          "title": "단조",
+          "author": "이상화",
+          "source_id": "WS_SANGHWA_DANJO_TEXT",
+          "source_title": "단조 - 위키문헌",
+          "source_url": "https://ko.wikisource.org/wiki/%EB%8B%A8%EC%A1%B0",
+          "locator": "시 본문 전체",
+          "evidence_type": "원문 완결성·판본 대조",
+          "evidence_role": "context_only",
+          "evidence_summary": "위키문헌 공개 전문은 빗소리·피리뿐 아니라 백양나무 그림자, 추억의 창, 밤의 호젓함, 가라앉은 영혼과 생각의 거미줄까지 이어진다. 이전 시한잔 텍스트는 앞 12행에서 끝나므로 전문 출처를 변경했다. ‘밤을 지우다’와 ‘방울 지우다’ 등의 표기·어구 차이는 판본 차이로 기록한다.",
+          "quotation": "",
+          "access_status": "공개 전문 대조 확인; 해석 근거로 세지 않음"
+        }
+      ],
+      "old_map": {
+        "id": "9000987",
+        "title": "단조",
+        "author": "이상화",
+        "coverage_level": "작품별 해석 근거 노트 연결",
+        "source_ids": "SANGHWA_BUMWOO_COMMENTARY_COLLECTION;BOOKCOSMOS_SANGHWA_DANJO;KAE_YI_SANGHWA;WS_SANGHWA_DANJO_TEXT",
+        "evidence_note": "작품별 해석 노트 1건; 대표 근거: 해설은 가라앉은 하늘 아래 빗소리를 눈물 흘리는 피리 소리에 빗댄 표현으로 읽고, 백양나무 숲 그림자를 침울한 화폭에 비유한다. 이를 통해 비 오는 밤의 적막과 기억, 서러운 호젓함이 형상화된다고 풀이한다. 교육용 해설의 관점으로 귀속한다. 답변 경계: 근거에 없는 구절의 뜻이나 시인의 실제 창작 의도는 단정할 수 없음 위키문헌 전문과 대조하여 기존 수록문의 뒷부분 누락을 보완함."
+      },
+      "old_review": {
+        "id": "9000987",
+        "title": "단조",
+        "author": "이상화",
+        "sample_user_question": "가라앉은 하늘과 눈물 흘리는 피리 소리는 비 오는 밤의 정서를 어떻게 만드나요?",
+        "basis_source_ids": "BOOKCOSMOS_SANGHWA_DANJO;KAE_YI_SANGHWA",
+        "review_status": "핵심 질문 설명 가능·단일 편집 해설 의존",
+        "assessment_and_limit": "작품 해설은 빗소리를 우는 피리로, 백양나무 그림자를 침울한 화폭으로 비유해 적막·기억·서러운 고요를 설명한다. 해설서 목차 기록은 본문을 열람하지 않았으므로 실제 근거로 세지 않는다."
+      },
+      "new_id": "WS_PARK_SHIP_1930",
+      "new_title": "떠나가는 배",
+      "reason": "원문을 보완한 「단조」도 긴 후반부의 추억·침묵·생각 이미지에 관한 신뢰도 높은 직접 해설이 부족하다. 4연 전체를 다룬 백과와 구절별 교육 해설을 확인한 작품으로 교체한다."
+    },
+    {
+      "changed_at": "2026-10-22",
+      "change_type": "해설 충분성에 따른 작품 교체",
+      "old_metadata": {
+        "id": "9000988",
+        "title": "가을의 풍경",
+        "author": "이상화",
+        "publication_year": "1922",
+        "metadata_source_url": "https://ko.wikisource.org/wiki/%EC%A0%80%EC%9E%90%3A%EC%9D%B4%EC%83%81%ED%99%94",
+        "text_source_url": "https://www.sihanjan.com/classics/9000988"
+      },
+      "old_text": {
+        "id": "9000988",
+        "text": "맥 풀린 햇살에 번쩍이는 나무는 선명하기 동양화일러라.\n흙은, 아낙네를 감은 천아융(天鵝絨) 허리띠 같이도 따습어라.\n\n무거워 가는 나비 나래는 드물고도 쇠(衰)하여라,\n아, 멀리서 부는 피리 소린가! 하늘 바다에서 헤엄질하다.\n\n병(病)들어 힘없이도 섰는 잔디풀—나뭇가지로\n미풍(微風)의 한숨은, 가는(세(細)) 목을 메고 껄덕이어라.\n\n참새 소리는, 제 소리의 몸짓과 함께, 가볍게 놀고\n온실(溫室) 같은 마루 끝에 누운 검은 괴의 등은,\n부드럽게도 기름져라.\n\n청춘(靑春)을 잃어버린 낙엽(落葉)은, 미친 듯, 나부끼어라,\n서럽게도, 길겁게 조으름 오는 적멸(寂滅)이 더부렁거리다.\n\n사람은, 부질없이, 가슴에다, 까닭도 모르는, 그리움을 안고,\n마음과 눈으로, 지나간 푸름의 인상(印象)을 허공(虛空)에다 그리어라."
+      },
+      "old_notes": [
+        {
+          "note_id": "SANGHWA_BUMWOO_COMMENTARY_COLLECTION_9000988",
+          "poem_id": "9000988",
+          "title": "가을의 풍경",
+          "author": "이상화",
+          "source_id": "SANGHWA_BUMWOO_COMMENTARY_COLLECTION",
+          "source_title": "이상화 시집 (범우문고 325)",
+          "source_url": "https://www.yes24.com/product/goods/97808048",
+          "locator": "도서 소개·목차 (작품별 수록 쪽 명시)",
+          "evidence_type": "해설 수록 서지 확인",
+          "evidence_summary": "출판사 서지에서 이상화 시집의 작품해설 수록을 확인했고 목차에 이 작품을 확인했다. 개별 해설 본문은 미열람이므로 실제 작품 해석을 RAG에 넣기 전에 책 원문을 열람해 근거를 보강해야 한다.",
+          "quotation": "",
+          "access_status": "도서/도서관 접근 필요; 본문 해설 미열람"
+        },
+        {
+          "note_id": "BOOKCOSMOS_SANGHWA_AUTUMN_9000988",
+          "poem_id": "9000988",
+          "title": "가을의 풍경",
+          "author": "이상화",
+          "source_id": "BOOKCOSMOS_SANGHWA_AUTUMN",
+          "source_title": "가을의 풍경 - 이상화",
+          "source_url": "https://univ.bookcosmos.com/poem/1071",
+          "locator": "주석·심상·해설",
+          "evidence_type": "작품 직접 이미지·정서 해설",
+          "evidence_summary": "해설은 동양화처럼 선명한 나무, 따뜻한 흙, 검은 고양이, 청춘을 잃은 낙엽의 이미지를 따라 적막한 가을의 풍경을 읽는다. 마지막의 지나간 푸름을 허공에 그린다는 표현은 까닭을 알기 어려운 그리움과 상실감으로 풀이한다. 교육용 해설의 관점으로 귀속한다.",
+          "quotation": "",
+          "access_status": "공개 페이지 본문 확인"
+        }
+      ],
+      "old_map": {
+        "id": "9000988",
+        "title": "가을의 풍경",
+        "author": "이상화",
+        "coverage_level": "작품별 해석 근거 노트 연결",
+        "source_ids": "SANGHWA_BUMWOO_COMMENTARY_COLLECTION;BOOKCOSMOS_SANGHWA_AUTUMN;KAE_YI_SANGHWA",
+        "evidence_note": "작품별 해석 노트 1건; 대표 근거: 해설은 동양화처럼 선명한 나무, 따뜻한 흙, 검은 고양이, 청춘을 잃은 낙엽의 이미지를 따라 적막한 가을의 풍경을 읽는다. 마지막의 지나간 푸름을 허공에 그린다는 표현은 까닭을 알기 어려운 그리움과 상실감으로 풀이한다. 교육용 해설의 관점으로 귀속한다. 답변 경계: 근거에 없는 구절의 뜻이나 시인의 실제 창작 의도는 단정할 수 없음"
+      },
+      "old_review": {
+        "id": "9000988",
+        "title": "가을의 풍경",
+        "author": "이상화",
+        "sample_user_question": "검은 고양이와 푸름을 잃은 낙엽이 놓인 가을 풍경은 왜 적막하게 느껴지나요?",
+        "basis_source_ids": "BOOKCOSMOS_SANGHWA_AUTUMN;KAE_YI_SANGHWA",
+        "review_status": "핵심 질문 설명 가능·교육 해설 의존",
+        "assessment_and_limit": "작품 해설은 선명한 나무·따뜻한 흙·검은 고양이·청춘을 잃은 낙엽에서 정적과 상실을 읽고, 마지막의 푸름을 허공에 그리는 표현을 그리움으로 풀이한다. 출판사 목차만 있는 해설은 근거로 사용하지 않는다."
+      },
+      "new_id": "9029755",
+      "new_title": "비로봉1",
+      "reason": "「가을의 풍경」은 짧은 편집 해설 외에 실제 열람한 작품별 전문 연구가 부족하다. 감각적 풍경·탈속·종교적 독법의 차이를 구절별로 설명할 자료가 있는 1933년 「비로봉1」으로 교체한다."
+    },
+    {
+      "changed_at": "2026-10-22",
+      "change_type": "해설 충분성에 따른 작품 교체",
+      "old_metadata": {
+        "id": "9033365",
+        "title": "뉘 눈결에 쏘이었소",
+        "author": "김영랑",
+        "publication_year": "",
+        "metadata_source_url": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=9033365&menuNo=200019",
+        "text_source_url": "https://www.sihanjan.com/classics/9033365"
+      },
+      "old_text": {
+        "id": "9033365",
+        "text": "뉘 눈결에 쏘이었소\n왼통 수줍어진 저 하늘빛\n담 안에 복숭아 꽃이 붉고\n밖에 봄은 벌써 재앙스럽소\n\n꾀꼬리 단두리 단두리로다\n빈 골짝도 부끄러워\n혼란스런 노래로 흰구름 피어올리나\n그 속에 든 꿈이 더 재앙스럽소"
+      },
+      "old_notes": [
+        {
+          "note_id": "BOOKCOSMOS_YEONGNGLASS_EXPLANATION_9033365",
+          "poem_id": "9033365",
+          "title": "뉘 눈결에 쏘이었소",
+          "author": "김영랑",
+          "source_id": "BOOKCOSMOS_YEONGNGLASS_EXPLANATION",
+          "source_title": "뉘 눈결에 쏘이었소 · 김영랑 - 한국 근현대시",
+          "source_url": "https://univ.bookcosmos.com/poem/463",
+          "locator": "주석·심상·해설",
+          "evidence_type": "작품 직접 어휘·심상 해설",
+          "evidence_summary": "페이지는 옛 표기 ‘눈결’, ‘재앙스럽오’, ‘단두리’, ‘홀란스란’을 현대어로 풀이하고, 수줍은 하늘빛과 담 안의 복숭아꽃, 꾀꼬리의 노래와 흰 구름이 함께 만드는 설레고 야단스러운 봄날의 정경을 설명한다.",
+          "quotation": "",
+          "access_status": "공개 작품 해설 본문 확인"
+        }
+      ],
+      "old_map": {
+        "id": "9033365",
+        "title": "뉘 눈결에 쏘이었소",
+        "author": "김영랑",
+        "coverage_level": "작품별 해석 근거 노트 연결",
+        "source_ids": "BOOKCOSMOS_YEONGNGLASS_EXPLANATION;KAE_KIM_YEONGRANG",
+        "evidence_note": "작품별 해석 노트 1건; 대표 근거: 페이지는 옛 표기 ‘눈결’, ‘재앙스럽오’, ‘단두리’, ‘홀란스란’을 현대어로 풀이하고, 수줍은 하늘빛과 담 안의 복숭아꽃, 꾀꼬리의 노래와 흰 구름이 함께 만드는 설레고 야단스러운 봄날의 정경을 설명한다. 답변 경계: 근거에 없는 구절의 뜻이나 시인의 실제 창작 의도는 단정할 수 없음"
+      },
+      "old_review": {
+        "id": "9033365",
+        "title": "뉘 눈결에 쏘이었소",
+        "author": "김영랑",
+        "sample_user_question": "“눈결에 쏘이었소”와 여러 옛말은 봄날의 설렘을 어떻게 만들까요?",
+        "basis_source_ids": "BOOKCOSMOS_YEONGNGLASS_EXPLANATION;KAE_KIM_YEONGRANG",
+        "review_status": "핵심 질문 설명 가능·어휘 출처 표시",
+        "assessment_and_limit": "작품 페이지는 눈결·재앙스럽오·단두리·홀란스란을 풀고, 담 안 복숭아꽃·꾀꼬리·흰 구름이 만드는 수줍고 들뜬 봄 정경을 직접 설명한다. 어휘 풀이와 감상은 교육 해설의 관점으로 표시한다."
+      },
+      "new_id": "9000277",
+      "new_title": "삼수갑산(三水甲山)-차안서선생삼수갑산운",
+      "reason": "「뉘 눈결에 쏘이었소」는 어휘와 봄날 감각을 풀이한 짧은 편집 해설 의존도가 높다. 공간·반복·탄식·새·고향을 직접 설명하는 공식 평가 해설과 교육 해설이 있는 동시대 같은 시인의 작품으로 교체한다."
+    }
+  ],
+  "retired_sources": [
+    {
+      "source_id": "SANGHWA_BUMWOO_COMMENTARY_COLLECTION",
+      "source_type": "시집·작품해설",
+      "scope": "이상화 시 58편 및 작품해설",
+      "author": "이상화",
+      "work_title": "가을의 풍경·단조·이별을 하느니",
+      "source_title": "이상화 시집 (범우문고 325)",
+      "url": "https://www.yes24.com/product/goods/97808048",
+      "coverage_note": "출판사 서지는 58편의 시와 작품해설을 수록했다고 밝히며 목차에 세 작품과 각 수록 페이지를 제시한다. 시별 해설 여부와 내용은 책 본문을 열람해 확인해야 한다. 「이별을 하느니」는 별도 해설 자료도 확인됨.",
+      "rag_role": "시집 해설 위치·작가 시세계 보조근거",
+      "access_note": "도서/도서관 열람 필요; 본문 해설 미열람"
+    },
+    {
+      "source_id": "BOOKCOSMOS_SANGHWA_DANJO",
+      "source_type": "교육용 작품 해설",
+      "scope": "이상화 「단조」 직접 시어·정조 해설",
+      "author": "이상화",
+      "work_title": "단조",
+      "source_title": "단조 - 이상화",
+      "url": "https://univ.bookcosmos.com/poem/1085",
+      "coverage_note": "해설은 비 오는 밤, 피리 소리에 비유된 빗소리, 백양나무 숲의 그림자와 화폭 이미지를 따라 침울하고 적막한 분위기 및 밤의 호젓함과 서러움을 풀이한다.",
+      "rag_role": "작품 직접 이미지·정조 해설",
+      "access_note": "공개 웹 해설; 교육용 해석임을 답변에서 귀속"
+    },
+    {
+      "source_id": "BOOKCOSMOS_SANGHWA_AUTUMN",
+      "source_type": "교육용 작품 해설",
+      "scope": "이상화 「가을의 풍경」 직접 이미지·정서 해설",
+      "author": "이상화",
+      "work_title": "가을의 풍경",
+      "source_title": "가을의 풍경 - 이상화",
+      "url": "https://univ.bookcosmos.com/poem/1071",
+      "coverage_note": "해설은 동양화 같은 나무, 검은 고양이, 낙엽과 가을의 적막을 묶어 지나간 청춘과 푸름을 그리워하는 정서를 풀이한다.",
+      "rag_role": "작품 직접 이미지·정서 해설",
+      "access_note": "공개 웹 해설; 교육용 해석임을 답변에서 귀속"
+    },
+    {
+      "source_id": "BOOKCOSMOS_YEONGNGLASS_EXPLANATION",
+      "source_type": "교육용 작품 해설·주석",
+      "scope": "김영랑 「뉘 눈결에 쏘이었소」의 어휘·심상 해설",
+      "author": "김영랑",
+      "work_title": "뉘 눈결에 쏘이었소",
+      "source_title": "뉘 눈결에 쏘이었소 · 김영랑 - 한국 근현대시",
+      "url": "https://univ.bookcosmos.com/poem/463",
+      "coverage_note": "페이지는 ‘눈결’, ‘재앙스럽소’, ‘단두리’, ‘홀란스란’의 옛 표기를 풀이하고 하늘빛·복숭아꽃·꾀꼬리·흰 구름의 이미지를 따라 설레는 봄날의 정경을 설명한다. 교육용 보조 해설로 활용한다.",
+      "rag_role": "작품 직접 어휘·심상 해설",
+      "access_note": "공개 페이지 본문 확인"
+    },
+    {
+      "source_id": "WS_SANGHWA_DANJO_TEXT",
+      "source_type": "공개 원문·판본",
+      "scope": "작품",
+      "author": "이상화",
+      "work_title": "단조",
+      "source_title": "단조 - 위키문헌",
+      "url": "https://ko.wikisource.org/wiki/%EB%8B%A8%EC%A1%B0",
+      "coverage_note": "위키문헌 공개 전문은 빗소리·피리뿐 아니라 백양나무 그림자, 추억의 창, 밤의 호젓함, 가라앉은 영혼과 생각의 거미줄까지 이어진다. 이전 시한잔 텍스트는 앞 12행에서 끝나므로 전문 출처를 변경했다. ‘밤을 지우다’와 ‘방울 지우다’ 등의 표기·어구 차이는 판본 차이로 기록한다.",
+      "rag_role": "원문 완결성·판본 확인",
+      "access_note": "공개 본문 확인; 옛 표기 보존; 작품 해설이 아님"
+    }
+  ]
+}

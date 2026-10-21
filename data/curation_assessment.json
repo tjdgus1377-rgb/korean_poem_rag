@@ -1,0 +1,35 @@
+{
+  "reviewed_at": "2026-10-22T06:16:12+09:00",
+  "review_method": "자료 수집 에이전트의 원문·작품별 해설·시인 맥락 문헌 검토. 자동 점수나 실제 RAG 실행 결과가 아님",
+  "judgement": "주요 구절의 감상·해석 대화용 자료로 조건부 적합",
+  "scope": "활성 100편의 주요 이미지·상징·시상 전개를 시인 배경과 연결하는 설명 가능성. 모든 구절의 실제 창작 의도나 질문 대응률의 검증은 아님",
+  "report": "interpretation_assessment.md",
+  "basis": [
+    "표시한 전문 출처의 전체 본문 및 경계 대조 100편",
+    "작품별 주요 해석 영역의 문헌 검토 100편",
+    "출처에 근거한 설명과 작가 맥락의 종합을 구분한 예시 101건·100편",
+    "단일 해석 노트 12편의 실제 설명 범위 재검토",
+    "핵심 근거가 좁은 작품 교체와 원문·메타데이터·근거 연결 갱신"
+  ],
+  "conditions": [
+    "원문·작품별 해석·시인 맥락을 함께 검색",
+    "자료의 설명과 가능한 종합 추론을 구분",
+    "미열람 접근 경로와 작성 예시를 외부 근거에서 제외",
+    "해석 이견과 판본 차이를 출처별로 유지"
+  ],
+  "follow_up_work": [
+    "앱 구현 후 구절·상징·배경 질문 묶음으로 검색·인용·답변 실행 평가",
+    "새로운 자료나 작품을 추가할 때 대상 파일이 바뀌면 문헌 검토 판정 갱신",
+    "희귀 어휘·판본·특정 창작 사건을 묻는 추가 질문에는 직접 근거를 별도로 확인"
+  ],
+  "source_files_sha256": {
+    "poems_metadata.csv": "a026effa5ccfbedb18594dbc785a7f957c0871dc0b62dd6acc3d40410168f04d",
+    "poems_text.jsonl": "464dbdfadc1572ada7643342205636c5aba10c0ff8cd035744c9a318ce621343",
+    "commentary_sources.csv": "dadd41b3752f11bfd0f73486677d78894cd3151f798765ee62be9114938ce9a4",
+    "evidence_notes.jsonl": "1bdadbdedba886273c03568ed3e64a798a00a2cb018fc345a083b600737d3617",
+    "author_context_notes.jsonl": "725c565f41e232c3c2ba27b2cfa3881c872a88c1f209be6ef1c5a0959b6b0f7f",
+    "question_coverage_review.csv": "ec92dc5b528f4fac3614aaa5a30280070f49a3f408d96311b8131bb01aabb3f6",
+    "interpretation_examples.jsonl": "7fc37bcfdaafc1b77cce676ef0ef8f44f1e1797b15d6225f8134de4707896610",
+    "text_source_review.jsonl": "7bb641fd0870eb9dfe348211d7c05e0636a1ed17edb7548ec5421ef21039d49a"
+  }
+}

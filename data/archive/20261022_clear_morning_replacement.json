@@ -1,0 +1,83 @@
+{
+  "reason": "비 갠 아침의 공개 근거는 짧은 편집 해설과 작품군 초록에 치우쳐 구절 질문 범위를 넓히기 어려움. 동시대 창작·전문·구절별 해설을 확인한 눈 오는 지도로 교체.",
+  "metadata": {
+    "id": "WS_YUN_SNOWMAP_1941",
+    "title": "눈 오는 지도",
+    "author": "윤동주",
+    "publication_year": "1948",
+    "metadata_source_url": "https://ko.wikisource.org/wiki/하늘과_바람과_별과_시_(1948년)/눈_오는_지도",
+    "text_source_url": "https://ko.wikisource.org/wiki/하늘과_바람과_별과_시_(1948년)/눈_오는_지도"
+  },
+  "text": {
+    "id": "WS_YUN_SNOWMAP_1941",
+    "text": "順伊가 떠난다는 아츰에 말못할 마음으로 함박눈이 나려, 슬픈것 처럼 窓밖에 아득히 깔린 地圖우에 덮인다.\n房안을 돌아다 보아야 아무도 없다. 壁과 天井이 하얗다. 房안에까지 눈이 나리는 것일까, 정말 너는 잃어버린 歷史처럼 홀홀이 가는것이냐. 떠나기前에 일러둘말이 있든것을 편지를 써서도 네가 가는 곳을 몰라 어느 거리, 어느 마을, 어느 지붕밑, 너는 내 마음속에만 남어 있는 것이냐. 네 쪼고만 발자욱을 눈이 작고 나려 덮어 따라갈수도 없다. 눈이 녹으면 남은 발자욱 자리마다 꽃이 피리니 꽃사이로 발자욱을 찾어 나서면 一年열두달 하냥 내 마음에는 눈이 나리리라.\n\n(1941. 3. 12)"
+  },
+  "notes": [
+    {
+      "note_id": "KCI_SANGHWA_RESILIENCE_9001015",
+      "poem_id": "9001015",
+      "title": "비 갠 아침",
+      "author": "이상화",
+      "source_id": "KCI_SANGHWA_RESILIENCE",
+      "source_title": "이상화 시의 리질리언스 시학",
+      "source_url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003357836",
+      "locator": "KCI 초록",
+      "evidence_type": "리질리언스 시학·작품군 분석",
+      "evidence_summary": "박준형은 「비 갠 아침」을 포함한 네 작품을 리질리언스 시학과 키아즘의 관점에서 분석한다. 초록은 작품군에서 상실·죽음 충동·불안·공동체 파열이 삭제되는 대신 이미지와 서사, 관계적 공간 속에 재배치되어 위기를 견디는 시적 생존 형식으로 나타난다는 결론을 제시한다. 개별 구절의 의미로 확대 적용하지 않는다.",
+      "quotation": "",
+      "access_status": "KCI 초록 공개; 논문 전문 복제 없음",
+      "evidence_role": "context_only"
+    },
+    {
+      "note_id": "BOOK_SANGHWA_CLEAR_MORNING_9001015",
+      "poem_id": "9001015",
+      "title": "비 갠 아침",
+      "author": "이상화",
+      "source_id": "BOOK_SANGHWA_CLEAR_MORNING",
+      "source_title": "비 갠 아침 - 한국 근현대시",
+      "source_url": "https://univ.bookcosmos.com/poem/1102",
+      "locator": "작품 해설 또는 내용",
+      "evidence_type": "작품 해설",
+      "evidence_summary": "시어 주석은 해의 빛을 만물에 젖을 주는 어머니에 비유한 표현으로 읽고, 비 갠 땅의 고요함과 솟는 해를 새로운 생기의 이미지로 풀이한다. 작품군에 대한 학술 해석과 구분한다.",
+      "quotation": "",
+      "access_status": "공개 본문 확인"
+    }
+  ],
+  "map": {
+    "id": "WS_YUN_SNOWMAP_1941",
+    "title": "눈 오는 지도",
+    "author": "윤동주",
+    "coverage_level": "작품별 해석 근거 노트 연결",
+    "source_ids": "KAE_YUN_DONGJU",
+    "evidence_note": ""
+  },
+  "review": {
+    "id": "WS_YUN_SNOWMAP_1941",
+    "title": "눈 오는 지도",
+    "author": "윤동주",
+    "sample_user_question": "밖의 눈이 방 안과 마음에도 내린다는 것은 무엇이며 꽃으로 바뀌었다가 다시 눈으로 돌아오는 이유는 뭔가요?",
+    "basis_source_ids": "KAE_YUN_DONGJU",
+    "review_status": "핵심 이미지·전개 설명 가능·역사적 독법 귀속",
+    "assessment_and_limit": "눈이 흔적과 길을 덮어 이별을 심화하고 방의 흰빛이 내면의 슬픔과 이어지는 장면, 발자국 자리에 피는 꽃의 재회 소망과 마음에 남는 눈을 연결한다. 순이=민족은 교육 해설의 역사적 독법으로 구별한다. 1941년 창작과 1948년 유고 시집 수록을 구분한다."
+  },
+  "replacement_id": "WS_YUN_SNOWMAP_1941",
+  "attempts": [
+    "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003357836",
+    "https://library.ltikorea.or.kr/originalworks/407762"
+  ],
+  "access_limit": "KCI 공개 초록은 확인했으나 작품별 논증 전문은 확보하지 못함. 번역원은 발표 정보만 제공.",
+  "retired_sources": [
+    {
+      "source_id": "BOOK_SANGHWA_CLEAR_MORNING",
+      "source_type": "교육·편집 해설",
+      "scope": "작품",
+      "author": "이상화",
+      "work_title": "비 갠 아침",
+      "source_title": "비 갠 아침 - 한국 근현대시",
+      "url": "https://univ.bookcosmos.com/poem/1102",
+      "coverage_note": "시어 주석은 해의 빛을 만물에 젖을 주는 어머니에 비유한 표현으로 읽고, 비 갠 땅의 고요함과 솟는 해를 새로운 생기의 이미지로 풀이한다. 작품군에 대한 학술 해석과 구분한다.",
+      "rag_role": "직접 작품 해설",
+      "access_note": "공개 본문 확인"
+    }
+  ]
+}
