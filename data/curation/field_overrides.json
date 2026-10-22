@@ -1,0 +1,6 @@
+{
+  "9000320": {"first_publication_year": 1922, "collection_publication_year": 1925, "reported_year_kind": "first_publication", "year_evidence_ids": ["KAE_AZALEA_9000320"], "source_url": "https://encykorea.aks.ac.kr/Article/E0054623", "note": "1922년 7월 개벽 초출과 1925년 시집 수록 구분"},
+  "9000294": {"first_publication_year": 1922, "reported_year_kind": "first_publication", "year_evidence_ids": ["KAE_MOTHER_SISTER_9000294"], "source_url": "https://encykorea.aks.ac.kr/Article/E0036210", "note": "백과 항목의 1922년 개벽 발표 기록"},
+  "13313827": {"written_year": 1930, "collection_publication_year": 1949, "reported_year_kind": "collection_publication", "year_evidence_ids": ["KAE_SIMHUN_DAY_13313827"], "source_url": "https://encykorea.aks.ac.kr/Article/E0007317", "note": "1930년 창작과 1949년 유고 시집 간행을 구분. 초출 연도는 별도 미확인"},
+  "9029155": {"collection_publication_year": 1925, "reported_year_kind": "collection_publication", "year_evidence_ids": ["TEXT_SOURCE_REVIEW_9029155"], "source_url": "https://ko.wikisource.org/wiki/진달래꽃_(시집)/못_잊어", "note": "확인한 1925년 시집 수록 판본. 최초 발표 연도로 단정하지 않음"}
+}

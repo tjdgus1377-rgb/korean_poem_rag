@@ -3,8 +3,15 @@ import csv
 import hashlib
 import json
 import math
+import tempfile
+from pathlib import Path
 
 import pytest
+
+# Streamlit도 sandbox 밖의 Windows 임시 폴더를 쓰지 않게 한다.
+_runtime_tmp = Path(__file__).resolve().parents[1] / "tmp/runtime"
+_runtime_tmp.mkdir(parents=True, exist_ok=True)
+tempfile.tempdir = str(_runtime_tmp)
 
 
 class FakeEmbeddings:

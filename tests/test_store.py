@@ -16,6 +16,7 @@ def test_index_is_idempotent_and_filters_poems(tmp_path, corpus_dir, embeddings)
     hits = store.retrieve("a", "이별", quote="첫 구절")
     assert hits[0]["document_type"] == "metadata"
     assert all(x["poem_id"] == "a" for x in hits)
+    assert all(x.get("content_hash") for x in hits)
     assert any("첫 구절" in x["text"] for x in hits[1:])
 
 
@@ -48,3 +49,19 @@ def test_unverified_doc_never_indexed(tmp_path, embeddings):
     store = VectorStore(tmp_path / "db", embeddings)
     with pytest.raises(ValueError, match="이용"):
         store.sync_source({"poem_id": "a", "source_id": "x", "text": "금지", "rights_status": "pending"})
+
+
+def test_bulk_index_embeds_together_and_skips_unchanged(tmp_path, embeddings):
+    from sidam.store import VectorStore
+    calls = []
+    original = embeddings.embed_documents
+    def counting(texts):
+        calls.append(len(texts))
+        return original(texts)
+    embeddings.embed_documents = counting
+    store = VectorStore(tmp_path / "bulk", embeddings)
+    docs = [{"poem_id": "a", "source_id": str(i), "text": f"해설 {i}", "rights_status": "verified"} for i in range(4)]
+    store.sync_sources(docs)
+    assert calls == [4]
+    store.sync_sources(docs)
+    assert calls == [4]

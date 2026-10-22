@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-22",
+  "scope": "한국어 시 원작과 허용된 텍스트만. 웹 이미지·녹음·현대어 번역의 권리를 포함하지 않음.",
+  "allowed_domains": {
+    "encykorea.aks.ac.kr": {"usage_terms": "한국학중앙연구원 이용 안내의 항목 본문 범위. 항목명과 한국민족문화대백과사전 및 URL 표시. 미디어 제외.", "policy_url": "https://encykorea.aks.ac.kr/Guide/ContentUse"},
+    "ko.wikipedia.org": {"usage_terms": "CC BY-SA 4.0. 문서 URL과 편집 이력을 통해 기여자 표시, 동일조건변경허락 및 변경 여부 표시.", "policy_url": "https://ko.wikipedia.org/wiki/위키백과:저작권"}
+  },
+  "poem_authors": {
+    "김소월": {"death_year": 1934, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0009535"},
+    "김영랑": {"death_year": 1950, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0009839"},
+    "박용철": {"death_year": 1938, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0020977"},
+    "심훈": {"death_year": 1936, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0033979"},
+    "윤동주": {"death_year": 1945, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0042294"},
+    "이상": {"death_year": 1937, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0044568"},
+    "이상화": {"death_year": 1943, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0044635"},
+    "이육사": {"death_year": 1944, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0045444"},
+    "이장희": {"death_year": 1929, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0045714"},
+    "정지용": {"death_year": 1950, "death_year_note": "백과사전은 1950년 추정으로 표시. 기존 공유마당 작품별 만료 확인 기록과 함께 검토.", "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0050954"},
+    "한용운": {"death_year": 1944, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0061853"},
+    "홍사용": {"death_year": 1947, "usage_terms": "대한민국 기준 보호기간이 지난 한국어 시 원작. 해설·별도 번역·미디어 제외.", "evidence_url": "https://encykorea.aks.ac.kr/Article/E0064122"}
+  },
+  "original_work_policy_url": "https://gongu.copyright.or.kr/gongu/main/contents.do?menuNo=200091",
+  "pending_policy": "목록에 없는 외부 해설 원문·요약은 이용 범위 확인 전 근거 색인에서 제외하고 목록을 보고한다."
+}

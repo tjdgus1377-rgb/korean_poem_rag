@@ -42,6 +42,7 @@ def test_documents_exclude_unread_and_unlicensed_and_group_notes(corpus_dir):
     assert not any(d["source_id"] in {"lead", "restricted"} for d in docs)
     assert len([d for d in docs if d["document_type"] == "poem_text"]) == 3
     assert excluded
+    assert load_corpus(corpus_dir)["c"]["theme_summary"] == ""
 
 
 def test_actual_corpus_is_100_without_guessing_year():
