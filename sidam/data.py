@@ -7,6 +7,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
+PUBLIC_DOCUMENT_FIELDS = {'poem_id', 'poem_title', 'author', 'source_id', 'source_title', 'source_url', 'text',
+                          'source_type', 'document_type', 'evidence_role', 'content_origin', 'access_scope', 'locator',
+                          'rights_status', 'usage_terms', 'collected_at', 'rights_evidence_url', 'transformation'}
+
 
 def normalize(value):
     return re.sub(r"[^\w가-힣]", "", unicodedata.normalize("NFKC", value or "").casefold())
@@ -112,6 +116,28 @@ def load_documents(data_dir, poems):
                      "content_origin": "curated_summary", "access_scope": "; ".join(dict.fromkeys(g["access_status"] for g in group)),
                      "usage_terms": terms["usage_terms"], "rights_status": "verified", "rights_evidence_url": terms.get("policy_url", ""),
                      "note_ids": json.dumps([g["note_id"] for g in group], ensure_ascii=False), "ingested_at": now})
+    known = {(d['poem_id'], d['source_id']) for d in docs}
+    snapshot_keys = set()
+    for d in read_jsonl(root / 'repro/public_documents.jsonl'):
+        pid = d.get('poem_id')
+        if set(d) - PUBLIC_DOCUMENT_FIELDS or not PUBLIC_DOCUMENT_FIELDS.difference({'rights_evidence_url', 'transformation'}) <= set(d):
+            raise ValueError('공개 스냅샷의 누락·허용되지 않은 필드를 확인하세요.')
+        if pid not in poems or d['author'] != poems[pid]['author'] or d['poem_title'] != poems[pid]['title']:
+            raise ValueError('공개 스냅샷의 작품 연결을 확인하세요.')
+        url = urlparse(d['source_url'])
+        if url.scheme != 'https' or url.username or url.password or not d['text'].strip() or d['document_type'] != 'commentary' or d['evidence_role'] != 'context_only' or d['content_origin'] != 'original_text':
+            raise ValueError('공개 스냅샷의 본문·출처·역할을 확인하세요.')
+        key = (pid, d['source_id'])
+        if key in snapshot_keys:
+            raise ValueError('공개 스냅샷 출처가 중복됩니다.')
+        snapshot_keys.add(key)
+        terms = policy.get('allowed_domains', {}).get(url.hostname)
+        if d['rights_status'] != 'verified' or not terms:
+            excluded.append({'poem_id': pid, 'source_id': d['source_id'], 'reason': '스냅샷의 현재 이용 정책 미확인'})
+            continue
+        if key not in known:
+            docs.append({**d, 'usage_terms': terms['usage_terms'], 'rights_evidence_url': terms.get('policy_url', ''), 'ingested_at': now})
+            known.add(key)
     return docs, excluded
 
 

@@ -5,7 +5,7 @@ from pathlib import Path
 
 import chromadb
 from chromadb.config import Settings
-from langchain_text_splitters import RecursiveCharacterTextSplitter
+from .chunking import evidence_rows
 
 from .data import search_text
 
@@ -69,19 +69,13 @@ class VectorStore:
         self.sync_sources([doc])
 
     def sync_sources(self, docs, replace_all=False):
-        splitter = RecursiveCharacterTextSplitter(chunk_size=self.chunk_size, chunk_overlap=self.overlap, separators=["\n\n", "\n", ". ", " ", ""])
-        rows, old_ids = [], set(self.evidence.get()['ids']) if replace_all else set()
+        rows = evidence_rows(docs, self.chunk_size, self.overlap)
+        old_ids = set(self.evidence.get()['ids']) if replace_all else set()
         for doc in docs:
             if doc.get("rights_status") != "verified":
                 raise ValueError("이용 조건이 확인된 자료만 색인할 수 있습니다.")
             where = {"$and": [{"poem_id": doc["poem_id"]}, {"source_id": doc["source_id"]}]}
             old_ids.update(self.evidence.get(where=where)["ids"])
-            if not doc.get("text", "").strip():
-                continue
-            chunks = splitter.split_text(doc["text"])
-            rows.extend({"id": f"{doc['poem_id']}:{doc['source_id']}:{i:04d}", "text": text,
-                         "metadata": {**doc, "chunk_index": i, "chunk_size": self.chunk_size, "chunk_overlap": self.overlap, "schema_version": 1}}
-                        for i, text in enumerate(chunks, 1))
         self._upsert(self.evidence, rows)
         stale = old_ids - {r["id"] for r in rows}
         if stale:

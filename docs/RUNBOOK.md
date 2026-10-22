@@ -1,12 +1,16 @@
 # 시담 실행·검증 안내
 
+다른 PC의 동일 기준 설치는 [재현 안내](REPRODUCE.md)를 먼저 따른다. 공개 위키 보조 자료·문서 스냅샷과 잠금 의존성을 포함하며, 개인 키는 별도로 설정한다.
+
 ## 설치
 
 Python 3.12 환경을 권장한다. PRD 고정 버전은 `requirements-app.txt`에 있다. 기존 `requirements.txt`의 사용자 편집은 별도로 보존한다.
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements-app.txt -r requirements-dev.txt
+.\.venv\Scripts\python.exe -m pip install --require-hashes -r requirements.lock
+.\.venv\Scripts\python.exe -m pip check
+.\.venv\Scripts\python.exe -X utf8 scripts/verify_repro.py
 ```
 
 기존 Python 환경을 공유해야 하는 경우 `--system-site-packages`를 사용할 수 있으나, 버전 충돌 여부를 확인한다. 설치된 것만으로 인수 테스트가 통과한 것은 아니다.
@@ -20,7 +24,7 @@ python -m venv .venv
 ## 데이터·색인 준비
 
 ```powershell
-.\.venv\Scripts\python.exe -X utf8 scripts/index_sidam.py
+.\.venv\Scripts\python.exe -X utf8 scripts/index_sidam.py --baseline
 ```
 
 데이터는 활성 `poems_metadata.csv`와 별도 전문에서 읽는다. 이전 8필드 자료와 자동 혼합하지 않는다. `data/curation/field_overrides.json`은 검증한 연도 종류와 근거만 보완한다. 근거 미확인 연도를 최초 발표로 추정하지 않는다.
