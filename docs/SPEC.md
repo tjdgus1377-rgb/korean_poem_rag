@@ -296,7 +296,7 @@ generate는 번호가 고정된 근거 목록을 P3에 전달한다. 같은 답�
 
 ## 11. 설정·모듈·성능
 
-초기 설정 계약(아직 설정 파일 구현 아님):
+초기 설정 계약(구현 설정은 `sidam.toml`, 모델·연결은 환경변수):
 
 | 키 | 초기값·규칙 |
 | --- | --- |
@@ -346,7 +346,7 @@ F2015 선택 시 최소 5개의 대표 근거 질문을 고정하고, 사실 정
 
 ISSUE와 SPEC 작성 → `codex/` 작업 브랜치 생성 → SPEC 커밋 → 실패 TEST → 구현 → PR → CI → 통과 후 리뷰 에이전트 리뷰 → 지적 사항 수정·필요 재검증 → 리뷰와 필수 검사 통과 후 머지 → ISSUE 종료.
 
-최초 GitHub ISSUE 생성은 연결 앱의 403(Resource not accessible by integration)으로 실패했다. 2026-10-22 사용자가 GitHub 앱 설치를 완료한 뒤 중복 여부를 확인하고 [ISSUE #1](https://github.com/tjdgus1377-rgb/korean_poem_rag/issues/1)을 등록했다. `docs/issues/SPEC-001.md`에 연결 기록을 남긴다. 이 설계 단계에서는 PR·CI·리뷰·머지·ISSUE 종료를 수행한 것으로 표시하지 않는다.
+최초 GitHub ISSUE 생성의 연결 권한 문제는 사용자의 GitHub 앱 설치 후 해결했다. [설계 ISSUE #1](https://github.com/tjdgus1377-rgb/korean_poem_rag/issues/1)과 [구현 ISSUE #2](https://github.com/tjdgus1377-rgb/korean_poem_rag/issues/2)를 [PR #3](https://github.com/tjdgus1377-rgb/korean_poem_rag/pull/3)에서 진행한다. 실제 CI·리뷰·브라우저 확인 범위는 `docs/validation/MVP-002.md`에 기록하며, 원격 상태를 확인하기 전에 머지·종료를 완료로 표시하지 않는다.
 
 후속 제출 산출물은 요구사항 정의서, RAG 파이프라인 설계서, 소스, 실행 README, 요구사항 대조표·테스트 결과·셀프/상호 체크리스트·스크린샷이다(PDF 21~23쪽). 실행 결과가 생기기 전에는 설정 선택의 효과나 성능 개선을 확인한 것처럼 쓰지 않는다.
 
