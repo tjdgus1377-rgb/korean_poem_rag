@@ -41,3 +41,10 @@ def test_wiki_refuses_unbounded_wait_and_wrong_work():
     http = HTTP([Response(200, {"query": {"pages": [{"pageid": 1, "title": "황혼", "extract": "다른 작가의 작품"}]}})])
     adapter = WikiAdapter("test@example.org", session=http, sleep=lambda _: None)
     assert adapter.fetch({"candidate_id": "1", "is_work": True}, {"poem_id": "a", "title": "황혼", "author": "이육사"}) is None
+
+
+def test_p2_selected_homonym_still_requires_author():
+    from sidam.collectors import WikiAdapter
+    http = HTTP([Response(200, {'query': {'pages': [{'pageid': 1, 'title': '향수', 'extract': '다른 작가의 작품이다.'}]}})])
+    adapter = WikiAdapter('test@example.org', session=http, sleep=lambda _: None)
+    assert adapter.fetch({'candidate_id': '1', 'is_work': False}, {'poem_id': 'a', 'title': '향수', 'author': '정지용'}) is None

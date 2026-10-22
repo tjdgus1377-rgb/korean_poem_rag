@@ -32,3 +32,10 @@ def test_graph_rejects_bad_citations_after_one_retry():
     assert result["citation_error"]
     assert gen.calls == 2
     assert "99" not in result["answer"]
+
+
+def test_partial_abstention_cannot_admit_uncited_claims():
+    from sidam.pipeline import build_graph
+    gen = Generator('시인은 이 시를 특정 인물에게 바쳤습니다. 자세한 배경은 확인되지 않습니다.')
+    result = build_graph(Store([{'text': '자료'}]), gen).invoke({'poem': {'poem_id': 'a'}, 'question': '헌정 대상은?'})
+    assert result['answer'] == '제공된 자료에서는 확인되지 않습니다.'

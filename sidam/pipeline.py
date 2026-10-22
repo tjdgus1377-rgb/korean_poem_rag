@@ -26,8 +26,11 @@ def build_graph(store, generator):
         for attempt in range(2):
             answer = generator.answer(state["poem"], state["question"], evidence, mode=state.get("mode", "chat"), quote=state.get("quote", ""), messages=state.get("messages"), repair=bool(attempt))
             unknown = "확인되지" in answer or "확인할 수 없" in answer
-            if not invalid_citations(answer, evidence) and (citation_numbers(answer) or unknown):
-                return {"answer": answer, "citation_error": False}
+            if not invalid_citations(answer, evidence):
+                if citation_numbers(answer):
+                    return {"answer": answer, "citation_error": False}
+                if unknown:
+                    return {"answer": "제공된 자료에서는 확인되지 않습니다.", "citation_error": False}
         return {"answer": "근거 번호를 확인하지 못했습니다. 다시 질문해 주세요.", "citation_error": True}
 
     graph = StateGraph(State)

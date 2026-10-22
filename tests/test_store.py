@@ -65,3 +65,15 @@ def test_bulk_index_embeds_together_and_skips_unchanged(tmp_path, embeddings):
     assert calls == [4]
     store.sync_sources(docs)
     assert calls == [4]
+
+
+def test_full_sync_removes_revoked_sources_and_empty_update(tmp_path, embeddings):
+    from sidam.store import VectorStore
+    store = VectorStore(tmp_path / 'reconcile', embeddings)
+    a = {'poem_id': 'a', 'source_id': 'allowed', 'text': '허용 해설', 'rights_status': 'verified'}
+    b = {**a, 'source_id': 'revoked', 'text': '이용 중단 해설'}
+    store.sync_sources([a, b])
+    store.sync_sources([a], replace_all=True)
+    assert set(store.evidence.get()['ids']) == {'a:allowed:0001'}
+    store.sync_source({**a, 'text': ''})
+    assert store.evidence.count() == 0

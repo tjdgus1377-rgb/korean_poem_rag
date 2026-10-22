@@ -1,8 +1,9 @@
 """UI와 파이프라인 사이의 응용 서비스."""
 import time
+from urllib.parse import urlparse
 
 from .collectors import CollectionService, WikiAdapter
-from .data import load_corpus, load_documents, normalize, write_report
+from .data import load_corpus, load_documents, normalize, read_json, write_report
 from .models import Models, ModelError
 from .pipeline import build_graph
 from .prompts import Prompts
@@ -36,10 +37,15 @@ class Service:
     def index(self, status=lambda text: None):
         self.require_models()
         start = time.monotonic()
+        self.poems = load_corpus(self.config.data_dir)
+        self.docs, self.excluded = load_documents(self.config.data_dir, self.poems)
         status("작품 100편의 검색 텍스트를 색인합니다.")
         self.store.sync_poems(self.poems)
         status(f"근거 자료 {len(self.docs)}건을 배치 색인합니다.")
-        self.store.sync_sources(self.docs)
+        cached = CollectionService(self.config.root / '.sidam/collection.sqlite3', None, None).cached_documents()
+        domains = read_json(self.config.data_dir / 'curation/source_policy.json', {}).get('allowed_domains', {})
+        allowed = [d for d in cached if d.get('poem_id') in self.poems and d.get('rights_status') == 'verified' and urlparse(d.get('source_url', '')).hostname in domains]
+        self.store.sync_sources(self.docs + allowed, replace_all=True)
         root = self.config.data_dir / "derived"
         write_report(root / "poem_search_records.jsonl", list(self.poems.values()))
         write_report(root / "source_manifest.jsonl", [{k: v for k, v in d.items() if k != "text"} for d in self.docs])

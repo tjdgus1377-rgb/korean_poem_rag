@@ -11,6 +11,7 @@ from pathlib import Path
 import requests
 
 from .data import normalize
+from .models import ModelError
 
 
 def core_title(title):
@@ -35,10 +36,23 @@ class CollectionService:
         with sqlite3.connect(self.path) as db:
             return [json.loads(row[0]) for row in db.execute("SELECT payload FROM audits ORDER BY key")]
 
+    def cached_documents(self):
+        documents = {}
+        with sqlite3.connect(self.path) as db:
+            for row in db.execute("SELECT docs FROM queries WHERE status='success'"):
+                for doc in json.loads(row[0]):
+                    documents[(doc['poem_id'], doc['source_id'])] = doc
+        return list(documents.values())
+
     def collect(self, poem, question):
         self.warnings = []
         documents = {}
-        for query in self.prompts.queries(poem, question):
+        try:
+            queries = self.prompts.queries(poem, question)
+        except ModelError:
+            self.warnings.append("외부 검색어 생성에 실패했습니다. 확보한 근거 범위에서 답변합니다.")
+            return []
+        for query in queries:
             candidates, selected = [], set()
             key = hashlib.sha256(json.dumps(["wiki-v1", poem["poem_id"], normalize(query)], ensure_ascii=False).encode()).hexdigest()
             with sqlite3.connect(self.path) as db:
@@ -62,7 +76,7 @@ class CollectionService:
                             doc["search_query"] = query
                             docs.append(doc)
                 status = "success" if docs else "empty"
-            except (requests.RequestException, TimeoutError, ValueError, KeyError):
+            except (requests.RequestException, TimeoutError, ValueError, KeyError, ModelError):
                 status, docs = "failed", []
                 self.warnings.append("일부 외부 자료를 가져오지 못했습니다. 확보한 근거 범위에서 답변합니다.")
             with sqlite3.connect(self.path) as db:
@@ -123,7 +137,8 @@ class WikiAdapter:
         if page.get("missing") or not text:
             return None
         # 강제 보존 후보가 실제로 다른 저자의 동명 문서라면 색인하지 않는다.
-        if candidate.get("is_work") and (normalize(poem["author"]) not in normalize(text[:4000]) or core_title(page.get("title", "")) != core_title(poem["title"])):
+        same_title = core_title(page.get("title", "")) == core_title(poem["title"])
+        if (candidate.get("is_work") or same_title) and (normalize(poem["author"]) not in normalize(text[:4000]) or not same_title):
             return None
         now = datetime.now(timezone.utc).isoformat()
         return {"poem_id": poem["poem_id"], "poem_title": poem["title"], "author": poem["author"],

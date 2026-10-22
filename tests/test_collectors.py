@@ -60,3 +60,23 @@ def test_wiki_contact_required_before_network():
     from sidam.collectors import WikiAdapter
     with pytest.raises(ValueError, match="연락처"):
         WikiAdapter("")
+
+
+def test_collection_model_failures_warn_and_can_retry(tmp_path):
+    from sidam.collectors import CollectionService
+    from sidam.models import ModelError
+    class FailingP(P):
+        def queries(self, poem, question):
+            raise ModelError('모델 장애')
+    service = CollectionService(tmp_path / 'model.sqlite3', Adapter(), FailingP())
+    assert service.collect({'poem_id': 'a'}, '질문') == []
+    assert service.warnings
+    class SelectFailure(P):
+        def select_documents(self, poem, question, candidates):
+            raise ModelError('모델 장애')
+    class Candidates(Adapter):
+        def search(self, query):
+            return [{'candidate_id': 'x', 'title': '다른 문서', 'snippet': ''}]
+    service = CollectionService(tmp_path / 'select.sqlite3', Candidates(), SelectFailure())
+    assert service.collect({'poem_id': 'a', 'title': '향수', 'author': '정지용'}, '질문') == []
+    assert service.warnings
