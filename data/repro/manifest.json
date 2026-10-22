@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "data/poems_metadata.csv": "fa2b804fad3a7211bc56b2745857a4809c20141b85086ad52a195e4fda2d2410",
+    "data/poems_text.jsonl": "464dbdfadc1572ada7643342205636c5aba10c0ff8cd035744c9a318ce621343",
+    "data/commentary_sources.csv": "0798717f31bb36bb2af0e782f74e62a01b9cc6fdc204495a50660553efdc69ed",
+    "data/poem_commentary_map.csv": "4dae1ab2de95f6372c2ef8d5b0619df6f7cfddd3ceb3675b594f7f0e2c065ff3",
+    "data/evidence_notes.jsonl": "1bdadbdedba886273c03568ed3e64a798a00a2cb018fc345a083b600737d3617",
+    "data/author_context_notes.jsonl": "725c565f41e232c3c2ba27b2cfa3881c872a88c1f209be6ef1c5a0959b6b0f7f",
+    "data/wiki_evidence_notes.jsonl": "23cc74c6d951a8635591ca7f2d271c50f140d4d7e8b077b3dca3e155b9749118",
+    "data/wiki_commentary_sources.csv": "3b7fe7e282ddc8de45cf1e3790d04d68f61159f38ca69ff52a34a2ae5494b310",
+    "data/wiki_collection_status.csv": "3c767380702116cd767af178efe5ad789c43591f845436fa3364dd4fcd9a10c2",
+    "data/wiki_uncollected_works.csv": "983805aed928fb68eedfe29eba41b8c3e4270197ec0ca4f878fd3aa6da8361bf",
+    "data/curation/field_overrides.json": "d538645b2f9fabe6759e3ffbd17cae0d872c7737640ce150ca2a7252eba487ab",
+    "data/curation/source_policy.json": "c2998a1117f53d9e9580be914c5735b1da80597990b729882401f520bc902888",
+    "data/repro/public_documents.jsonl": "78ad8916bbc83f79f28e03d6478ad3101076b3bb4044ad650ed4e5aec76917d8",
+    "sidam.toml": "2542be4706b4a9f820305f82c752235409ae9b8f897e741d66b0381456cb412c",
+    ".python-version": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",
+    ".env.example": "5b1f9d60a1fac6125331283542e34af7822c1c512f037e849304efc1c9090025",
+    "requirements-app.txt": "293b1951095122418795cfc7e8d8ac642b60a00529b9f9bb05157eb52227c2ed",
+    "requirements-dev.txt": "93c4ab5f175d24229e46ec70a8ecaeb6db8b36e3f54d8005808044c060acbc92",
+    "requirements.lock": "4c303d50f28a0d9358c62ab87880e882a2d4c6b16475c256b895da7e4a7b1f74"
+  },
+  "settings": {
+    "base_url": "https://gms.ssafy.io/gmsapi/api.openai.com/v1/",
+    "chat_model": "gpt-5.4-nano",
+    "embedding_model": "text-embedding-3-small",
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "top_k": 5
+  },
+  "counts": {
+    "poems": 100,
+    "documents": 343,
+    "poem_evidence": 474,
+    "excluded_sources": 228
+  },
+  "poems_fingerprint": "1a6f6095ea02b94445700bd4daf9476b90714e8ca8a9e80dfe2472a99cc89c60",
+  "evidence_fingerprint": "96343af3aa28cc833be9edf05b706d0fe2cef4193762f99cadd45f38274f29a1"
+}

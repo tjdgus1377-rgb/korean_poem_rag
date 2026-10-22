@@ -7,20 +7,31 @@ permissions:
   contents: read
 jobs:
   acceptance:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: pip
-      - name: 고정 버전 설치
-        run: python -m pip install -r requirements-app.txt -r requirements-dev.txt
+          cache-dependency-path: requirements.lock
+      - name: 해시 잠금 의존성 설치
+        run: python -m pip install --require-hashes -r requirements.lock
+      - name: 설치 호환성 검사
+        run: python -m pip check
+      - name: 개인 설정·금지 배포 파일 검사
+        run: python -X utf8 scripts/check_release.py
+      - name: 오프라인 자료·청크 재현 검사
+        run: python -X utf8 scripts/verify_repro.py
       - name: 유료 API 없는 인수 테스트
         run: python -m pytest -q --junitxml=tmp/results.xml
       - name: 검증 결과 보관
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: acceptance-results
+          name: acceptance-results-${{ matrix.os }}
           path: tmp/results.xml

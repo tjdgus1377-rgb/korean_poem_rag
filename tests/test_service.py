@@ -20,6 +20,8 @@ def test_reindex_reloads_policy_and_preserves_only_allowed_cache(tmp_path, corpu
     assert service.store.evidence.get(where={'source_id': 'cached'})['ids']
     summaries = service.store.evidence.get(where={'source_id': 's1'}, include=['documents'])['documents']
     assert summaries and all('수집한 해설' not in text for text in summaries)
+    service.index(include_cache=False)
+    assert not service.store.evidence.get(where={'source_id': 'cached'})['ids']
     path = corpus_dir / 'curation/source_policy.json'
     policy = json.loads(path.read_text())
     policy['allowed_domains'] = {}

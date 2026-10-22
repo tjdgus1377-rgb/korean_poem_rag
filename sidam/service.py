@@ -38,7 +38,7 @@ class Service:
         domains = read_json(self.config.data_dir / 'curation/source_policy.json', {}).get('allowed_domains', {})
         return [d for d in docs if d.get('poem_id') in self.poems and d.get('rights_status') == 'verified' and urlparse(d.get('source_url', '')).hostname in domains]
 
-    def index(self, status=lambda text: None):
+    def index(self, status=lambda text: None, include_cache=True):
         self.require_models()
         start = time.monotonic()
         self.poems = load_corpus(self.config.data_dir)
@@ -46,7 +46,7 @@ class Service:
         status("작품 100편의 검색 텍스트를 색인합니다.")
         self.store.sync_poems(self.poems)
         status(f"근거 자료 {len(self.docs)}건을 배치 색인합니다.")
-        cached = CollectionService(self.config.root / '.sidam/collection.sqlite3', None, None).cached_documents()
+        cached = CollectionService(self.config.root / '.sidam/collection.sqlite3', None, None).cached_documents() if include_cache else []
         allowed = self.allowed_external(cached)
         combined = {(d['poem_id'], d['source_id']): d for d in allowed + self.docs}
         self.store.sync_sources(list(combined.values()), replace_all=True)
