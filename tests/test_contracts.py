@@ -52,3 +52,13 @@ def test_quote_validation_and_history_isolation():
     assert len(history(state, "a")) == 1
     assert validate_quote("첫 구절\n둘째 구절", "첫  구절")
     assert not validate_quote("첫 구절", "다른 작품")
+
+
+def test_theme_expression_does_not_become_duplicate_title_filter(corpus_dir):
+    from sidam.data import load_corpus
+    from sidam.prompts import Prompts
+    raw = '{"title_query":"이별","author":"김소월","theme_query":"이별을 다룬 시"}'
+    p = Prompts(Responses(raw, raw))
+    poems = load_corpus(corpus_dir)
+    assert p.conditions('김소월의 이별을 다룬 시', poems)['title_query'] is None
+    assert p.conditions('제목에 이별이 들어가고 이별을 다룬 시', poems)['title_query'] == '이별'
