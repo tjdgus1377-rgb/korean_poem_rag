@@ -26,6 +26,7 @@ def test_normal_empty_cache_prevents_recollection(tmp_path):
     assert service.collect(poem, "질문") == []
     assert service.collect(poem, "같은 검색어") == []
     assert adapter.calls == 1
+    assert set(service.timings) == {'p1_seconds', 'search_seconds', 'p2_seconds', 'fetch_seconds'}
     service.collect({"poem_id": "b"}, "다른 작품")
     assert adapter.calls == 2
 

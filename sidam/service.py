@@ -84,14 +84,19 @@ class Service:
         if not self.store.poems.get(ids=[f"poem:{poem_id}"])["ids"]:
             raise ValueError("작품 색인이 없습니다. 먼저 검색 색인을 준비하세요.")
         started, timings, warnings = time.monotonic(), {}, []
+        timings = {k: 0.0 for k in ('p1_seconds', 'search_seconds', 'p2_seconds', 'fetch_seconds', 'index_seconds')}
         status("기존 자료와 수집 캐시를 확인합니다.")
         if self.needs_collection(poem_id, question, quote):
             if self.config.wiki_contact:
                 status("검색어를 추출하고 외부 문서를 선별·수집합니다.")
                 before = time.monotonic()
                 collector = CollectionService(self.config.root / ".sidam/collection.sqlite3", WikiAdapter(self.config.wiki_contact), self.prompts)
-                for doc in collector.collect(poem, question):
+                collected = collector.collect(poem, question)
+                timings.update(collector.timings)
+                indexing = time.monotonic()
+                for doc in collected:
                     self.store.sync_source(doc)
+                timings['index_seconds'] = time.monotonic() - indexing
                 write_report(self.config.data_dir / "derived/collection_manifest.jsonl", collector.manifest())
                 warnings.extend(collector.warnings)
                 timings["collection_seconds"] = round(time.monotonic() - before, 2)
@@ -101,5 +106,6 @@ class Service:
         before = time.monotonic()
         result = build_graph(self.store, self.prompts).invoke({"poem": poem, "question": question, "mode": mode, "quote": quote, "messages": messages or []})
         timings["rag_seconds"] = round(time.monotonic() - before, 2)
+        timings.update(result['timings'])
         timings["total_seconds"] = round(time.monotonic() - started, 2)
         return {"answer": result["answer"], "sources": result["evidence"], "citation_error": result["citation_error"], "warnings": warnings, "timings": timings}

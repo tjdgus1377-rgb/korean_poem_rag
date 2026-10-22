@@ -22,6 +22,8 @@ def test_graph_has_only_retrieve_generate_and_handles_no_evidence():
     result = graph.invoke({"poem": {"poem_id": "a"}, "question": "미확인 의도"})
     assert "확인되지" in result["answer"]
     assert gen.calls == 0
+    assert result['timings']['retrieve_seconds'] >= 0
+    assert result['timings']['generate_seconds'] == 0
 
 
 def test_graph_rejects_bad_citations_after_one_retry():

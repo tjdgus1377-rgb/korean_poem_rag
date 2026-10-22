@@ -27,6 +27,7 @@ class CollectionService:
     def __init__(self, cache_path, adapter, prompts):
         self.path, self.adapter, self.prompts = str(cache_path), adapter, prompts
         self.warnings = []
+        self.timings = {}
         Path(cache_path).parent.mkdir(parents=True, exist_ok=True)
         with sqlite3.connect(self.path) as db:
             db.execute("CREATE TABLE IF NOT EXISTS queries (key TEXT PRIMARY KEY, status TEXT NOT NULL, docs TEXT NOT NULL)")
@@ -46,9 +47,16 @@ class CollectionService:
 
     def collect(self, poem, question):
         self.warnings = []
+        self.timings = {k: 0.0 for k in ('p1_seconds', 'search_seconds', 'p2_seconds', 'fetch_seconds')}
+        def timed(key, operation, *args):
+            start = time.monotonic()
+            try:
+                return operation(*args)
+            finally:
+                self.timings[key] += time.monotonic() - start
         documents = {}
         try:
-            queries = self.prompts.queries(poem, question)
+            queries = timed('p1_seconds', self.prompts.queries, poem, question)
         except ModelError:
             self.warnings.append("외부 검색어 생성에 실패했습니다. 확보한 근거 범위에서 답변합니다.")
             return []
@@ -62,16 +70,16 @@ class CollectionService:
                     documents[d["source_id"]] = d
                 continue
             try:
-                candidates = self.adapter.search(query)
+                candidates = timed('search_seconds', self.adapter.search, query)
                 for c in candidates:
                     c["is_work"] = own_work(c, poem)
-                selected = self.prompts.select_documents(poem, question, candidates) if candidates else []
+                selected = timed('p2_seconds', self.prompts.select_documents, poem, question, candidates) if candidates else []
                 # 모델이 제외하더라도 확인된 작품 문서는 유지한다.
                 selected = set(selected) | {c["candidate_id"] for c in candidates if c["is_work"]}
                 docs = []
                 for c in candidates:
                     if c["candidate_id"] in selected:
-                        doc = self.adapter.fetch(c, poem)
+                        doc = timed('fetch_seconds', self.adapter.fetch, c, poem)
                         if doc:
                             doc["search_query"] = query
                             docs.append(doc)
