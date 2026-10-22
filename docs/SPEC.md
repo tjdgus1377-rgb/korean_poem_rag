@@ -6,7 +6,7 @@
 - 상태: 초기 설계 작성 완료, 앱 구현·실행 검증 전
 - 기준: `rag_pjt.pdf` 23쪽. 아래 쪽 번호는 PDF의 실제 페이지 번호이다.
 - 원본 PDF SHA-256: `5353d9b988741457c5b244db53c840b01abf150af72ca9e9da00cbe2dc539d48`
-- 연결 작업: `docs/issues/SPEC-001.md` (로컬 ISSUE 초안, GitHub 번호 아님)
+- 연결 작업: [GitHub ISSUE #1](https://github.com/tjdgus1377-rgb/korean_poem_rag/issues/1), `docs/issues/SPEC-001.md` (작업 기록)
 
 ## 1. 목적과 범위
 
@@ -346,7 +346,7 @@ F2015 선택 시 최소 5개의 대표 근거 질문을 고정하고, 사실 정
 
 ISSUE와 SPEC 작성 → `codex/` 작업 브랜치 생성 → SPEC 커밋 → 실패 TEST → 구현 → PR → CI → 통과 후 리뷰 에이전트 리뷰 → 지적 사항 수정·필요 재검증 → 리뷰와 필수 검사 통과 후 머지 → ISSUE 종료.
 
-현재 GitHub ISSUE 생성은 연결 앱의 403(Resource not accessible by integration)으로 실패했다. `docs/issues/SPEC-001.md`는 게시할 본문을 가진 로컬 초안이며 원격 ISSUE로 가장하지 않는다. 접근 복구 후 기존 ISSUE 여부를 확인하고 게시·연결한다. 이 설계 단계에서는 PR·CI·리뷰·머지·ISSUE 종료를 수행한 것으로 표시하지 않는다.
+최초 GitHub ISSUE 생성은 연결 앱의 403(Resource not accessible by integration)으로 실패했다. 2026-10-22 사용자가 GitHub 앱 설치를 완료한 뒤 중복 여부를 확인하고 [ISSUE #1](https://github.com/tjdgus1377-rgb/korean_poem_rag/issues/1)을 등록했다. `docs/issues/SPEC-001.md`에 연결 기록을 남긴다. 이 설계 단계에서는 PR·CI·리뷰·머지·ISSUE 종료를 수행한 것으로 표시하지 않는다.
 
 후속 제출 산출물은 요구사항 정의서, RAG 파이프라인 설계서, 소스, 실행 README, 요구사항 대조표·테스트 결과·셀프/상호 체크리스트·스크린샷이다(PDF 21~23쪽). 실행 결과가 생기기 전에는 설정 선택의 효과나 성능 개선을 확인한 것처럼 쓰지 않는다.
 
