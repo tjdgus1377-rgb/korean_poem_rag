@@ -73,7 +73,11 @@ class CollectionService:
                 candidates = timed('search_seconds', self.adapter.search, query)
                 for c in candidates:
                     c["is_work"] = own_work(c, poem)
-                selected = timed('p2_seconds', self.prompts.select_documents, poem, question, candidates) if candidates else []
+                try:
+                    selected = timed('p2_seconds', self.prompts.select_documents, poem, question, candidates) if candidates else []
+                except ModelError:
+                    selected = [c['candidate_id'] for c in candidates if c['is_work']]
+                    self.warnings.append('후보 선별 모델에 연결하지 못해 확인된 작품 문서만 수집합니다.')
                 # 모델이 제외하더라도 확인된 작품 문서는 유지한다.
                 selected = set(selected) | {c["candidate_id"] for c in candidates if c["is_work"]}
                 docs = []
@@ -146,8 +150,12 @@ class WikiAdapter:
             return None
         # 강제 보존 후보가 실제로 다른 저자의 동명 문서라면 색인하지 않는다.
         same_title = core_title(page.get("title", "")) == core_title(poem["title"])
-        if (candidate.get("is_work") or same_title) and (normalize(poem["author"]) not in normalize(text[:4000]) or not same_title):
-            return None
+        if candidate.get('is_work') or same_title:
+            definition = re.split(r'[.!?。\n]', text, maxsplit=1)[0]
+            definition = normalize(re.sub(r'[（(][^）)]*[）)]', '', definition))
+            relation = rf"^{re.escape(normalize(poem['title']))}(?:은|는)(?:대한민국의|한국의)?(?:시인)?{re.escape(normalize(poem['author']))}(?:의|이|가)"
+            if not same_title or not re.search(relation, definition):
+                return None
         now = datetime.now(timezone.utc).isoformat()
         return {"poem_id": poem["poem_id"], "poem_title": poem["title"], "author": poem["author"],
                 "source_id": f"WIKI_{page['pageid']}", "source_title": page["title"], "source_url": f"https://ko.wikipedia.org/?curid={page['pageid']}",

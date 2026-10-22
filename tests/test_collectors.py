@@ -72,6 +72,23 @@ def test_collection_model_failures_warn_and_can_retry(tmp_path):
     service = CollectionService(tmp_path / 'model.sqlite3', Adapter(), FailingP())
     assert service.collect({'poem_id': 'a'}, '질문') == []
     assert service.warnings
+
+
+def test_p2_model_failure_preserves_verified_work(tmp_path):
+    from sidam.collectors import CollectionService
+    from sidam.models import ModelError
+    class FailingSelection(P):
+        def select_documents(self, *args):
+            raise ModelError('장애')
+    class OwnAdapter(Adapter):
+        def search(self, query):
+            return [{'candidate_id': 'own', 'title': '향수', 'snippet': '정지용의 시'}]
+        def fetch(self, candidate, poem):
+            return {'poem_id': 'a', 'source_id': 'own', 'text': '향수는 정지용의 시이다.'}
+    service = CollectionService(tmp_path / 'own.sqlite3', OwnAdapter(), FailingSelection())
+    result = service.collect({'poem_id': 'a', 'title': '향수', 'author': '정지용'}, '질문')
+    assert [d['source_id'] for d in result] == ['own']
+    assert service.warnings
     class SelectFailure(P):
         def select_documents(self, poem, question, candidates):
             raise ModelError('모델 장애')

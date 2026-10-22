@@ -34,6 +34,10 @@ class Service:
         if self.models is None:
             raise ModelError("GMS_KEY가 없습니다. 환경변수를 설정하세요.")
 
+    def allowed_external(self, docs):
+        domains = read_json(self.config.data_dir / 'curation/source_policy.json', {}).get('allowed_domains', {})
+        return [d for d in docs if d.get('poem_id') in self.poems and d.get('rights_status') == 'verified' and urlparse(d.get('source_url', '')).hostname in domains]
+
     def index(self, status=lambda text: None):
         self.require_models()
         start = time.monotonic()
@@ -43,9 +47,9 @@ class Service:
         self.store.sync_poems(self.poems)
         status(f"근거 자료 {len(self.docs)}건을 배치 색인합니다.")
         cached = CollectionService(self.config.root / '.sidam/collection.sqlite3', None, None).cached_documents()
-        domains = read_json(self.config.data_dir / 'curation/source_policy.json', {}).get('allowed_domains', {})
-        allowed = [d for d in cached if d.get('poem_id') in self.poems and d.get('rights_status') == 'verified' and urlparse(d.get('source_url', '')).hostname in domains]
-        self.store.sync_sources(self.docs + allowed, replace_all=True)
+        allowed = self.allowed_external(cached)
+        combined = {(d['poem_id'], d['source_id']): d for d in allowed + self.docs}
+        self.store.sync_sources(list(combined.values()), replace_all=True)
         root = self.config.data_dir / "derived"
         write_report(root / "poem_search_records.jsonl", list(self.poems.values()))
         write_report(root / "source_manifest.jsonl", [{k: v for k, v in d.items() if k != "text"} for d in self.docs])
@@ -92,9 +96,12 @@ class Service:
                 before = time.monotonic()
                 collector = CollectionService(self.config.root / ".sidam/collection.sqlite3", WikiAdapter(self.config.wiki_contact), self.prompts)
                 collected = collector.collect(poem, question)
+                allowed = self.allowed_external(collected)
+                if len(allowed) < len(collected):
+                    warnings.append('현행 이용 정책에서 허용되지 않는 수집 자료는 색인하지 않았습니다.')
                 timings.update(collector.timings)
                 indexing = time.monotonic()
-                for doc in collected:
+                for doc in allowed:
                     self.store.sync_source(doc)
                 timings['index_seconds'] = time.monotonic() - indexing
                 write_report(self.config.data_dir / "derived/collection_manifest.jsonl", collector.manifest())

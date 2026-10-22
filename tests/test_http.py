@@ -48,3 +48,12 @@ def test_p2_selected_homonym_still_requires_author():
     http = HTTP([Response(200, {'query': {'pages': [{'pageid': 1, 'title': '향수', 'extract': '다른 작가의 작품이다.'}]}})])
     adapter = WikiAdapter('test@example.org', session=http, sleep=lambda _: None)
     assert adapter.fetch({'candidate_id': '1', 'is_work': False}, {'poem_id': 'a', 'title': '향수', 'author': '정지용'}) is None
+
+
+@pytest.mark.parametrize('text, accepted', [('향수는 김철수가 쓴 시이다. 정지용의 작품과는 별개의 작품이다.', False), ('《향수》는 정지용이 지은 시이다.', True)])
+def test_homonym_requires_author_relationship_in_definition(text, accepted):
+    from sidam.collectors import WikiAdapter
+    http = HTTP([Response(200, {'query': {'pages': [{'pageid': 1, 'title': '향수', 'extract': text}]}})])
+    adapter = WikiAdapter('test@example.org', session=http, sleep=lambda _: None)
+    doc = adapter.fetch({'candidate_id': '1', 'is_work': False}, {'poem_id': 'a', 'title': '향수', 'author': '정지용'})
+    assert bool(doc) == accepted
