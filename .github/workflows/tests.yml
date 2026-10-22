@@ -1,0 +1,26 @@
+name: 시담 인수 테스트
+on:
+  pull_request:
+  push:
+    branches: [main, 'codex/**']
+permissions:
+  contents: read
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: 고정 버전 설치
+        run: python -m pip install -r requirements-app.txt -r requirements-dev.txt
+      - name: 유료 API 없는 인수 테스트
+        run: python -m pytest -q --junitxml=tmp/results.xml
+      - name: 검증 결과 보관
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: acceptance-results
+          path: tmp/results.xml

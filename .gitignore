@@ -221,3 +221,9 @@ __marimo__/
 
 .env
 .env.example
+
+# 시담 로컬 실행·검증 결과
+.sidam/
+tmp/
+data/derived/
+!.env.example
