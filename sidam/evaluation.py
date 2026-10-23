@@ -22,6 +22,11 @@ def validate_benchmark(search_cases, answer_cases, poems, documents):
         raise ValueError('평가 ID 누락·중복')
     allowed = {(d['poem_id'], d['source_id']) for d in documents if d.get('rights_status') == 'verified'}
     for c in search_cases:
+        named = next((a for a in sorted({p['author'] for p in poems.values()}, key=len, reverse=True) if a in c.get('query', '')), None)
+        if named and c.get('conditions', {}).get('author') != named:
+            raise ValueError('명시 시인 조건 누락')
+        if c.get('category') == 'author_alias' and not c.get('conditions', {}).get('author'):
+            raise ValueError('본명의 정규 시인 조건 누락')
         if not c.get('query') or not c.get('provenance') or not isinstance(c.get('gold_poem_ids'), list) or not set(c['gold_poem_ids']) <= poems.keys():
             raise ValueError('작품 검색 정답·출처 오류')
         if any(not matches_conditions(poems[pid], c.get('conditions', {})) for pid in c['gold_poem_ids']):

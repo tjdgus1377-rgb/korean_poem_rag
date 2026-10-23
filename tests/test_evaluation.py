@@ -42,6 +42,19 @@ def test_unknown_first_year_cannot_pass_filter(corpus_dir):
     assert filter_accuracy([], {'author': '김소월'}) is None
 
 
+def test_homonym_gold_carries_explicit_author_filter():
+    root = Path(__file__).resolve().parents[1]
+    cases = read_jsonl(root / 'evaluation/search_v1.jsonl')
+    case = next(c for c in cases if c['query'] == '윤동주 길' and c['category'] == 'homonym')
+    poems = load_corpus(root / 'data')
+    assert filter_accuracy([poems['9029196']], case['conditions']) == 0
+    broken = copy.deepcopy(cases)
+    broken[116]['conditions'] = {}
+    docs, _ = load_documents(root / 'data', poems)
+    with pytest.raises(ValueError, match='시인 조건'):
+        validate_benchmark(broken, read_jsonl(root / 'evaluation/answers_v1.jsonl'), poems, docs)
+
+
 def test_evaluation_and_generated_reports_do_not_enter_ingest(corpus_dir):
     from sidam.chunking import evidence_rows
     from sidam.repro import fingerprint
