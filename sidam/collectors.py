@@ -33,6 +33,7 @@ class CollectionService:
         with sqlite3.connect(self.path) as db:
             db.execute("CREATE TABLE IF NOT EXISTS queries (key TEXT PRIMARY KEY, status TEXT NOT NULL, docs TEXT NOT NULL)")
             db.execute("CREATE TABLE IF NOT EXISTS audits (key TEXT PRIMARY KEY, payload TEXT NOT NULL)")
+            db.execute('CREATE TABLE IF NOT EXISTS plans (key TEXT PRIMARY KEY, queries TEXT NOT NULL)')
 
     def manifest(self):
         with sqlite3.connect(self.path) as db:
@@ -57,8 +58,24 @@ class CollectionService:
                 self.timings[key] += time.monotonic() - start
         documents = {}
         try:
-            queries = timed('p1_seconds', self.prompts.queries, poem, question)
-        except ModelError:
+            identity = getattr(self.prompts, 'query_cache_identity', None)
+            plan_key = hashlib.sha256(json.dumps([identity, poem.get('poem_id'), poem.get('title'), poem.get('author'), question.strip()], ensure_ascii=False).encode()).hexdigest()
+            with sqlite3.connect(self.path) as db:
+                cached_plan = db.execute('SELECT queries FROM plans WHERE key=?', (plan_key,)).fetchone() if identity else None
+            def valid_plan(value):
+                return isinstance(value, list) and 1 <= len(value) <= 3 and all(isinstance(q, str) and 0 < len(q) <= 160 for q in value)
+            try:
+                queries = json.loads(cached_plan[0]) if cached_plan else None
+            except (ValueError, TypeError):
+                queries = None
+            if not valid_plan(queries):
+                queries = timed('p1_seconds', self.prompts.queries, poem, question)
+                if not valid_plan(queries):
+                    raise ValueError('검색 계획 형식 오류')
+                if identity and getattr(queries, 'cacheable', True):
+                    with sqlite3.connect(self.path) as db:
+                        db.execute('INSERT OR REPLACE INTO plans VALUES (?,?)', (plan_key, json.dumps(queries, ensure_ascii=False)))
+        except (ModelError, ValueError):
             self.warnings.append("외부 검색어 생성에 실패했습니다. 확보한 근거 범위에서 답변합니다.")
             return []
         for query in queries:

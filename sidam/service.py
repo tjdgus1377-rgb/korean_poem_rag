@@ -106,8 +106,7 @@ class Service:
                     warnings.append('현행 이용 정책에서 허용되지 않는 수집 자료는 색인하지 않았습니다.')
                 timings.update(collector.timings)
                 indexing = time.monotonic()
-                for doc in allowed:
-                    self.store.sync_source(doc)
+                self.store.sync_sources(allowed)
                 timings['index_seconds'] = time.monotonic() - indexing
                 write_report(self.config.data_dir / "derived/collection_manifest.jsonl", collector.manifest())
                 warnings.extend(collector.warnings)
