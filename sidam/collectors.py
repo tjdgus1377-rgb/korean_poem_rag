@@ -151,9 +151,13 @@ class WikiAdapter:
             return None
         # 강제 보존 후보가 실제로 다른 저자의 동명 문서라면 색인하지 않는다.
         matches_title = same_title(page.get("title", ""), poem["title"])
-        definition_raw = normalize(re.split(r'[.!?。\n]', text, maxsplit=1)[0])
+        definition_text = re.sub(r'[（(][^）)]*[）)]', '', re.split(r'[.!?。\n]', text, maxsplit=1)[0])
+        definition_raw = normalize(definition_text)
         page_titles = '|'.join(re.escape(t) for t in title_forms(page.get('title', '')))
-        if not matches_title and page_titles and re.search(rf'^(?:{page_titles})(?:은|는).{{0,80}}(?:의|가|이).{{0,30}}(?:시(?!인)|작품)', definition_raw):
+        annotations = {normalize(t) for t in re.findall(r'[（(]([^）)]*)[）)]', poem['title'])}
+        defines_page = page_titles and re.search(rf'^(?:{page_titles})(?:은|는)', definition_raw)
+        work_type = re.search(r'(?:^|\s)(?:시|작품)(?:이다|다|로|이며|이고|였다|이자|으로|입니다)', definition_text)
+        if not matches_title and (normalize(page.get('title','')) in annotations or (defines_page and work_type)):
             return None
         if candidate.get('is_work') or matches_title:
             definition = re.split(r'[.!?。\n]', text, maxsplit=1)[0]
