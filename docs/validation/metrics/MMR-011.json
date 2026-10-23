@@ -1,0 +1,618 @@
+[
+  {
+    "case_id": "A01",
+    "method": "similarity",
+    "poem_id": "9000320",
+    "source_ids": [
+      "WIKI_578348",
+      "WIKI_578348",
+      "WIKI_578348",
+      "WIKI_578348",
+      "WIKI_578348"
+    ],
+    "chunk_ids": [
+      "9000320:WIKI_578348:0003",
+      "9000320:WIKI_578348:0005",
+      "9000320:WIKI_578348:0004",
+      "9000320:WIKI_578348:0006",
+      "9000320:WIKI_578348:0001"
+    ],
+    "unique_sources": 1,
+    "metrics": {
+      "recall": 0.0,
+      "mrr": 0.0,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A01",
+    "method": "mmr",
+    "poem_id": "9000320",
+    "source_ids": [
+      "WIKI_578348",
+      "WIKI_578348",
+      "KAE_AZALEA",
+      "TEXT_9000320",
+      "WIKI_578348"
+    ],
+    "chunk_ids": [
+      "9000320:WIKI_578348:0003",
+      "9000320:WIKI_578348:0006",
+      "9000320:KAE_AZALEA:0001",
+      "9000320:TEXT_9000320:0001",
+      "9000320:WIKI_578348:0005"
+    ],
+    "unique_sources": 3,
+    "metrics": {
+      "recall": 0.5,
+      "mrr": 0.3333333333333333,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A02",
+    "method": "similarity",
+    "poem_id": "9000320",
+    "source_ids": [
+      "TEXT_9000320",
+      "WIKI_350847",
+      "KAE_KIM_SOWOL",
+      "KAE_AZALEA",
+      "WIKI_578348"
+    ],
+    "chunk_ids": [
+      "9000320:TEXT_9000320:0001",
+      "9000320:WIKI_350847:0001",
+      "9000320:KAE_KIM_SOWOL:0001",
+      "9000320:KAE_AZALEA:0001",
+      "9000320:WIKI_578348:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 0.25,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A02",
+    "method": "mmr",
+    "poem_id": "9000320",
+    "source_ids": [
+      "TEXT_9000320",
+      "KAE_AZALEA",
+      "WIKI_350847",
+      "WIKI_578348",
+      "KAE_KIM_SOWOL"
+    ],
+    "chunk_ids": [
+      "9000320:TEXT_9000320:0001",
+      "9000320:KAE_AZALEA:0001",
+      "9000320:WIKI_350847:0001",
+      "9000320:WIKI_578348:0004",
+      "9000320:KAE_KIM_SOWOL:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 0.5,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A03",
+    "method": "similarity",
+    "poem_id": "9000320",
+    "source_ids": [
+      "TEXT_9000320",
+      "KAE_KIM_SOWOL",
+      "WIKI_578348",
+      "WIKI_578348",
+      "WIKI_578348"
+    ],
+    "chunk_ids": [
+      "9000320:TEXT_9000320:0001",
+      "9000320:KAE_KIM_SOWOL:0001",
+      "9000320:WIKI_578348:0006",
+      "9000320:WIKI_578348:0001",
+      "9000320:WIKI_578348:0002"
+    ],
+    "unique_sources": 3,
+    "metrics": {
+      "recall": 0.5,
+      "mrr": 1.0,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A03",
+    "method": "mmr",
+    "poem_id": "9000320",
+    "source_ids": [
+      "TEXT_9000320",
+      "WIKI_578348",
+      "KAE_AZALEA",
+      "WIKI_6647",
+      "WIKI_578348"
+    ],
+    "chunk_ids": [
+      "9000320:TEXT_9000320:0001",
+      "9000320:WIKI_578348:0004",
+      "9000320:KAE_AZALEA:0001",
+      "9000320:WIKI_6647:0001",
+      "9000320:WIKI_578348:0006"
+    ],
+    "unique_sources": 4,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A04",
+    "method": "similarity",
+    "poem_id": "9000779",
+    "source_ids": [
+      "WIKI_2525783",
+      "TEXT_9000779",
+      "KAE_YUN_DONGJU",
+      "KAE_SEOSI",
+      "WIKI_28258"
+    ],
+    "chunk_ids": [
+      "9000779:WIKI_2525783:0001",
+      "9000779:TEXT_9000779:0001",
+      "9000779:KAE_YUN_DONGJU:0001",
+      "9000779:KAE_SEOSI:0001",
+      "9000779:WIKI_28258:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 0.25,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A04",
+    "method": "mmr",
+    "poem_id": "9000779",
+    "source_ids": [
+      "WIKI_2525783",
+      "TEXT_9000779",
+      "KAE_YUN_DONGJU",
+      "KAE_SEOSI",
+      "WIKI_28258"
+    ],
+    "chunk_ids": [
+      "9000779:WIKI_2525783:0001",
+      "9000779:TEXT_9000779:0001",
+      "9000779:KAE_YUN_DONGJU:0001",
+      "9000779:KAE_SEOSI:0001",
+      "9000779:WIKI_28258:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 0.25,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A05",
+    "method": "similarity",
+    "poem_id": "9000294",
+    "source_ids": [
+      "TEXT_9000294",
+      "KAE_MOM_SISTER",
+      "KAE_KIM_SOWOL",
+      "WIKI_6647"
+    ],
+    "chunk_ids": [
+      "9000294:TEXT_9000294:0001",
+      "9000294:KAE_MOM_SISTER:0001",
+      "9000294:KAE_KIM_SOWOL:0001",
+      "9000294:WIKI_6647:0001"
+    ],
+    "unique_sources": 4,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 0.5,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A05",
+    "method": "mmr",
+    "poem_id": "9000294",
+    "source_ids": [
+      "TEXT_9000294",
+      "KAE_KIM_SOWOL",
+      "KAE_MOM_SISTER",
+      "WIKI_6647"
+    ],
+    "chunk_ids": [
+      "9000294:TEXT_9000294:0001",
+      "9000294:KAE_KIM_SOWOL:0001",
+      "9000294:KAE_MOM_SISTER:0001",
+      "9000294:WIKI_6647:0001"
+    ],
+    "unique_sources": 4,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A06",
+    "method": "similarity",
+    "poem_id": "9001830",
+    "source_ids": [
+      "WIKI_77615",
+      "WIKI_429724",
+      "TEXT_9001830",
+      "KAE_HAN_SILENCE_POEM",
+      "KAE_HAN_YONGUN"
+    ],
+    "chunk_ids": [
+      "9001830:WIKI_77615:0001",
+      "9001830:WIKI_429724:0001",
+      "9001830:TEXT_9001830:0001",
+      "9001830:KAE_HAN_SILENCE_POEM:0001",
+      "9001830:KAE_HAN_YONGUN:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 0.25,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A06",
+    "method": "mmr",
+    "poem_id": "9001830",
+    "source_ids": [
+      "WIKI_77615",
+      "KAE_HAN_SILENCE_POEM",
+      "KAE_HAN_YONGUN",
+      "TEXT_9001830",
+      "WIKI_429724"
+    ],
+    "chunk_ids": [
+      "9001830:WIKI_77615:0001",
+      "9001830:KAE_HAN_SILENCE_POEM:0001",
+      "9001830:KAE_HAN_YONGUN:0001",
+      "9001830:TEXT_9001830:0001",
+      "9001830:WIKI_429724:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 0.5,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A07",
+    "method": "similarity",
+    "poem_id": "9000350",
+    "source_ids": [
+      "KAE_YEONGRANG_PEONY",
+      "TEXT_9000350",
+      "WIKI_1654320",
+      "KAE_KIM_YEONGRANG",
+      "WIKI_8181"
+    ],
+    "chunk_ids": [
+      "9000350:KAE_YEONGRANG_PEONY:0001",
+      "9000350:TEXT_9000350:0001",
+      "9000350:WIKI_1654320:0001",
+      "9000350:KAE_KIM_YEONGRANG:0001",
+      "9000350:WIKI_8181:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A07",
+    "method": "mmr",
+    "poem_id": "9000350",
+    "source_ids": [
+      "KAE_YEONGRANG_PEONY",
+      "TEXT_9000350",
+      "WIKI_8181",
+      "KAE_KIM_YEONGRANG",
+      "WIKI_1654320"
+    ],
+    "chunk_ids": [
+      "9000350:KAE_YEONGRANG_PEONY:0001",
+      "9000350:TEXT_9000350:0001",
+      "9000350:WIKI_8181:0001",
+      "9000350:KAE_KIM_YEONGRANG:0001",
+      "9000350:WIKI_1654320:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A08",
+    "method": "similarity",
+    "poem_id": "9001059",
+    "source_ids": [
+      "KAE_YUKSA_WILD",
+      "TEXT_9001059",
+      "KAE_YI_YUKSA",
+      "WIKI_84650"
+    ],
+    "chunk_ids": [
+      "9001059:KAE_YUKSA_WILD:0001",
+      "9001059:TEXT_9001059:0001",
+      "9001059:KAE_YI_YUKSA:0001",
+      "9001059:WIKI_84650:0001"
+    ],
+    "unique_sources": 4,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A08",
+    "method": "mmr",
+    "poem_id": "9001059",
+    "source_ids": [
+      "KAE_YUKSA_WILD",
+      "TEXT_9001059",
+      "WIKI_84650",
+      "KAE_YI_YUKSA"
+    ],
+    "chunk_ids": [
+      "9001059:KAE_YUKSA_WILD:0001",
+      "9001059:TEXT_9001059:0001",
+      "9001059:WIKI_84650:0001",
+      "9001059:KAE_YI_YUKSA:0001"
+    ],
+    "unique_sources": 4,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A09",
+    "method": "similarity",
+    "poem_id": "13313827",
+    "source_ids": [
+      "WIKI_319293",
+      "KAE_SIMHUN_DAY",
+      "TEXT_13313827",
+      "KAE_SIM_HUN",
+      "WIKI_78991"
+    ],
+    "chunk_ids": [
+      "13313827:WIKI_319293:0001",
+      "13313827:KAE_SIMHUN_DAY:0001",
+      "13313827:TEXT_13313827:0001",
+      "13313827:KAE_SIM_HUN:0001",
+      "13313827:WIKI_78991:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 0.5,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A09",
+    "method": "mmr",
+    "poem_id": "13313827",
+    "source_ids": [
+      "WIKI_319293",
+      "KAE_SIMHUN_DAY",
+      "TEXT_13313827",
+      "KAE_SIM_HUN",
+      "WIKI_78991"
+    ],
+    "chunk_ids": [
+      "13313827:WIKI_319293:0001",
+      "13313827:KAE_SIMHUN_DAY:0001",
+      "13313827:TEXT_13313827:0001",
+      "13313827:KAE_SIM_HUN:0001",
+      "13313827:WIKI_78991:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 0.5,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A10",
+    "method": "similarity",
+    "poem_id": "13313827",
+    "source_ids": [
+      "KAE_SIMHUN_DAY",
+      "KAE_SIM_HUN",
+      "WIKI_78991",
+      "TEXT_13313827",
+      "WIKI_319293"
+    ],
+    "chunk_ids": [
+      "13313827:KAE_SIMHUN_DAY:0001",
+      "13313827:KAE_SIM_HUN:0001",
+      "13313827:WIKI_78991:0001",
+      "13313827:TEXT_13313827:0001",
+      "13313827:WIKI_319293:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A10",
+    "method": "mmr",
+    "poem_id": "13313827",
+    "source_ids": [
+      "KAE_SIMHUN_DAY",
+      "WIKI_78991",
+      "TEXT_13313827",
+      "KAE_SIM_HUN",
+      "WIKI_319293"
+    ],
+    "chunk_ids": [
+      "13313827:KAE_SIMHUN_DAY:0001",
+      "13313827:WIKI_78991:0001",
+      "13313827:TEXT_13313827:0001",
+      "13313827:KAE_SIM_HUN:0001",
+      "13313827:WIKI_319293:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "empty_correct": null
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A11",
+    "method": "similarity",
+    "poem_id": "9000320",
+    "source_ids": [
+      "WIKI_578348",
+      "WIKI_578348",
+      "WIKI_578348",
+      "TEXT_9000320",
+      "KAE_AZALEA"
+    ],
+    "chunk_ids": [
+      "9000320:WIKI_578348:0001",
+      "9000320:WIKI_578348:0004",
+      "9000320:WIKI_578348:0006",
+      "9000320:TEXT_9000320:0001",
+      "9000320:KAE_AZALEA:0001"
+    ],
+    "unique_sources": 3,
+    "metrics": {
+      "recall": null,
+      "mrr": null,
+      "empty_correct": false
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A11",
+    "method": "mmr",
+    "poem_id": "9000320",
+    "source_ids": [
+      "WIKI_578348",
+      "KAE_AZALEA",
+      "TEXT_9000320",
+      "WIKI_6647",
+      "WIKI_578348"
+    ],
+    "chunk_ids": [
+      "9000320:WIKI_578348:0001",
+      "9000320:KAE_AZALEA:0001",
+      "9000320:TEXT_9000320:0001",
+      "9000320:WIKI_6647:0001",
+      "9000320:WIKI_578348:0004"
+    ],
+    "unique_sources": 4,
+    "metrics": {
+      "recall": null,
+      "mrr": null,
+      "empty_correct": false
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A12",
+    "method": "similarity",
+    "poem_id": "9000779",
+    "source_ids": [
+      "KAE_SEOSI",
+      "WIKI_28258",
+      "WIKI_2525783",
+      "KAE_YUN_DONGJU",
+      "TEXT_9000779"
+    ],
+    "chunk_ids": [
+      "9000779:KAE_SEOSI:0001",
+      "9000779:WIKI_28258:0001",
+      "9000779:WIKI_2525783:0001",
+      "9000779:KAE_YUN_DONGJU:0001",
+      "9000779:TEXT_9000779:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": null,
+      "mrr": null,
+      "empty_correct": false
+    },
+    "isolated": true
+  },
+  {
+    "case_id": "A12",
+    "method": "mmr",
+    "poem_id": "9000779",
+    "source_ids": [
+      "KAE_SEOSI",
+      "WIKI_28258",
+      "WIKI_2525783",
+      "KAE_YUN_DONGJU",
+      "TEXT_9000779"
+    ],
+    "chunk_ids": [
+      "9000779:KAE_SEOSI:0001",
+      "9000779:WIKI_28258:0001",
+      "9000779:WIKI_2525783:0001",
+      "9000779:KAE_YUN_DONGJU:0001",
+      "9000779:TEXT_9000779:0001"
+    ],
+    "unique_sources": 5,
+    "metrics": {
+      "recall": null,
+      "mrr": null,
+      "empty_correct": false
+    },
+    "isolated": true
+  }
+]
