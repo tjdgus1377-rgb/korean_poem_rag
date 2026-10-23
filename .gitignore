@@ -151,6 +151,7 @@ activemq-data/
 
 # Environments
 .env
+.env.*
 .envrc
 .venv
 env/
@@ -219,12 +220,27 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-.env
-.env.example
-
 # 시담 로컬 실행·검증 결과
 .sidam/
 tmp/
+data/cache/
 data/derived/
 !.env.example
 evaluation/runs/
+
+# 로컬 DB와 인증 파일 (공유용 입력은 CSV/JSONL 및 빈 .env.example)
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+*.db-journal
+*.db-wal
+*.db-shm
+*.pem
+*.key
+*.p12
