@@ -1,6 +1,7 @@
 """명시적 임베딩과 작품 범위 필터를 사용하는 두 컬렉션."""
 import hashlib
 import json
+import math
 from pathlib import Path
 
 import chromadb
@@ -8,6 +9,7 @@ from chromadb.config import Settings
 from .chunking import evidence_rows
 
 from .data import search_text
+from .ranking import mmr_select
 
 
 def scalar_metadata(record):
@@ -16,10 +18,13 @@ def scalar_metadata(record):
 
 
 class VectorStore:
-    def __init__(self, path, embeddings, chunk_size=1000, overlap=200, top_k=5):
+    def __init__(self, path, embeddings, chunk_size=1000, overlap=200, top_k=5, mmr_fetch_k=20, mmr_lambda=.5):
         if not 0 <= overlap < chunk_size or top_k < 1:
             raise ValueError("청크 크기·중복·근거 수 설정이 잘못되었습니다.")
         self.embeddings, self.chunk_size, self.overlap, self.top_k = embeddings, chunk_size, overlap, top_k
+        if type(mmr_fetch_k) is not int or mmr_fetch_k < top_k or isinstance(mmr_lambda, bool) or not isinstance(mmr_lambda, (int,float)) or not math.isfinite(mmr_lambda) or not 0 <= mmr_lambda <= 1:
+            raise ValueError('MMR 후보 수·lambda 설정 오류')
+        self.mmr_fetch_k, self.mmr_lambda = mmr_fetch_k, mmr_lambda
         Path(path).mkdir(parents=True, exist_ok=True)
         self.client = chromadb.PersistentClient(path=str(path), settings=Settings(anonymized_telemetry=False))
         self.poems = self.client.get_or_create_collection("poems", metadata={"embedding_model": embeddings.model}, embedding_function=None)
@@ -85,20 +90,29 @@ class VectorStore:
     def unpack(result):
         return [{**m, "chunk_id": ident, "text": text} for ident, text, m in zip(result["ids"], result["documents"], result["metadatas"])]
 
-    def retrieve(self, poem_id, question, quote=""):
+    def retrieve(self, poem_id, question, quote="", search_type='similarity'):
+        if search_type not in {'similarity', 'mmr'}:
+            raise ValueError('지원하지 않는 근거 검색 방식입니다.')
         meta = self.poems.get(ids=[f"poem:{poem_id}"], include=["documents", "metadatas"])
         if not meta["ids"]:
             return []
         result = self.unpack(meta)
-        all_rows = self.evidence.get(where={"poem_id": poem_id}, include=["documents", "metadatas"])
+        all_rows = self.evidence.get(where={"poem_id": poem_id}, include=["documents", "metadatas"] + (['embeddings'] if search_type == 'mmr' else []))
         if not all_rows["ids"]:
             return result
         reserved = []
         if quote:
             needle = "".join(quote.split())
             reserved = [r for r in self.unpack(all_rows) if r.get("document_type") == "poem_text" and needle in "".join(r["text"].split())][:1]
-        found = self.evidence.query(query_embeddings=[self.embeddings.embed_query(question)], where={"poem_id": poem_id}, n_results=min(len(all_rows["ids"]), self.top_k + 1), include=["documents", "metadatas"])
+        query_vector = self.embeddings.embed_query(question)
+        found = self.evidence.query(query_embeddings=[query_vector], where={"poem_id": poem_id}, n_results=min(len(all_rows["ids"]), self.mmr_fetch_k if search_type == 'mmr' else self.top_k + 1), include=["documents", "metadatas"])
         candidates = self.unpack({k: found[k][0] for k in ("ids", "documents", "metadatas")})
+        if search_type == 'mmr':
+            vectors = dict(zip(all_rows['ids'], all_rows['embeddings']))
+            reserved_ids = {r['chunk_id'] for r in reserved}
+            chosen = mmr_select(query_vector, [(r['chunk_id'], vectors[r['chunk_id']]) for r in candidates if r['chunk_id'] not in reserved_ids], max(0,self.top_k-len(reserved)), self.mmr_lambda, seeds=[vectors[r['chunk_id']] for r in reserved])
+            by_id = {r['chunk_id']:r for r in candidates}
+            candidates = [by_id[i] for i in chosen]
         seen, selected = set(), []
         for row in reserved + candidates:
             identity = (row.get("source_id"), row.get("locator"), row["text"])

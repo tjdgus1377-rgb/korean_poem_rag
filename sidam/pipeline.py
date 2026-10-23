@@ -15,12 +15,14 @@ class State(TypedDict, total=False):
     answer: str
     citation_error: bool
     timings: dict
+    retrieval_mode: str
 
 
 def build_graph(store, generator):
     def retrieve(state):
         started = time.monotonic()
-        evidence = store.retrieve(state["poem"]["poem_id"], state["question"], state.get("quote", ""))
+        options = {'search_type':'mmr'} if state.get('retrieval_mode') == 'mmr' else {}
+        evidence = store.retrieve(state["poem"]["poem_id"], state["question"], state.get("quote", ""), **options)
         return {"evidence": evidence, "timings": {'retrieve_seconds': time.monotonic() - started}}
 
     def generate(state):
