@@ -13,6 +13,7 @@
     "data/wiki_uncollected_works.csv": "983805aed928fb68eedfe29eba41b8c3e4270197ec0ca4f878fd3aa6da8361bf",
     "data/curation/field_overrides.json": "d538645b2f9fabe6759e3ffbd17cae0d872c7737640ce150ca2a7252eba487ab",
     "data/curation/source_policy.json": "c2998a1117f53d9e9580be914c5735b1da80597990b729882401f520bc902888",
+    "data/curation/search_aliases.json": "dcb4b2c8dddc42044fb8750a26d1f6ddf55a9af178530ee2694adbad1e03d097",
     "data/repro/public_documents.jsonl": "78ad8916bbc83f79f28e03d6478ad3101076b3bb4044ad650ed4e5aec76917d8",
     "sidam.toml": "2542be4706b4a9f820305f82c752235409ae9b8f897e741d66b0381456cb412c",
     ".python-version": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",

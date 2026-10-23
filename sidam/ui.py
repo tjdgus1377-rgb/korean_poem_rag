@@ -7,7 +7,8 @@ import streamlit as st
 
 from .citations import cited_sources
 from .config import Config
-from .data import normalize
+from .data import normalize, read_json
+from .identity import lexical_search
 from .models import ModelError
 from .service import Service
 from .session import add_message, history, validate_quote
@@ -75,7 +76,8 @@ def main():
     with st.sidebar:
         st.header("읽을 시 선택")
         quick = st.text_input("제목·시인 빠른 찾기", key="quick_filter", placeholder="진달래꽃 또는 김소월")
-        ids = [pid for pid, p in service.poems.items() if not quick or normalize(quick) in normalize(p["title"] + p["author"])]
+        lexical = lexical_search(quick, service.poems, read_json(service.config.data_dir / 'curation/search_aliases.json', {})) if quick else None
+        ids = lexical[0] if lexical is not None else [pid for pid, p in service.poems.items() if not quick or normalize(quick) in normalize(p["title"] + p["author"])]
         if st.session_state.get("selected_poem") not in ids:
             st.session_state["selected_poem"] = None
         selected = st.selectbox("작품 목록", ids, index=None, key="selected_poem", on_change=selection_changed, placeholder="시를 골라주세요", format_func=lambda pid: f"{service.poems[pid]['title']} · {service.poems[pid]['author']}")
@@ -118,6 +120,8 @@ def main():
             except Exception:
                 st.error("작품 검색을 완료하지 못했습니다. 다시 시도해 주세요.")
         if "search_results" in st.session_state:
+            if st.session_state.get('search_conditions', {}).get('match_kind'):
+                st.caption('오탈자 후보입니다. 제목과 시인을 확인한 뒤 작품을 선택하세요.')
             if not st.session_state["search_results"]:
                 st.info("조건에 맞는 작품을 찾지 못했습니다.")
             for pid in st.session_state["search_results"]:
