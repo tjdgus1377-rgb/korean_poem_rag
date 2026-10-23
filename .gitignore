@@ -227,3 +227,4 @@ __marimo__/
 tmp/
 data/derived/
 !.env.example
+evaluation/runs/

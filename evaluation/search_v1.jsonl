@@ -1,0 +1,137 @@
+{"case_id": "S001", "category": "exact", "query": "김소월 진달래꽃", "gold_poem_ids": ["9000320"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S002", "category": "exact", "query": "김소월 엄마야 누나야", "gold_poem_ids": ["9000294"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S003", "category": "exact", "query": "김소월 먼 후일", "gold_poem_ids": ["9000251"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S004", "category": "exact", "query": "김소월 예전엔 미처 몰랐어요", "gold_poem_ids": ["9000296"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S005", "category": "exact", "query": "김소월 개여울", "gold_poem_ids": ["9000205"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S006", "category": "exact", "query": "김소월 가는 길", "gold_poem_ids": ["9000198"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S007", "category": "exact", "query": "김소월 금 잔디", "gold_poem_ids": ["9000217"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S008", "category": "exact", "query": "김소월 님의 노래", "gold_poem_ids": ["9000237"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S009", "category": "exact", "query": "김소월 왕십리", "gold_poem_ids": ["9000305"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S010", "category": "exact", "query": "김소월 삭주구성", "gold_poem_ids": ["9000275"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S011", "category": "exact", "query": "김소월 풀따기", "gold_poem_ids": ["9000327"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S012", "category": "exact", "query": "김소월 산유화", "gold_poem_ids": ["9029202"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S013", "category": "exact", "query": "김소월 꿈", "gold_poem_ids": ["WS_SOWOL_DREAM_2"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S014", "category": "exact", "query": "김소월 초혼", "gold_poem_ids": ["9029192"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S015", "category": "exact", "query": "윤동주 서시(序詩)", "gold_poem_ids": ["9000779"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S016", "category": "exact", "query": "윤동주 별헤는밤", "gold_poem_ids": ["9000761"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S017", "category": "exact", "query": "윤동주 자화상", "gold_poem_ids": ["9000799"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S018", "category": "exact", "query": "윤동주 쉽게 쓰여진 시", "gold_poem_ids": ["9000782"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S019", "category": "exact", "query": "윤동주 참회록(懺悔錄)", "gold_poem_ids": ["9000803"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S020", "category": "exact", "query": "윤동주 십자가(十字架)", "gold_poem_ids": ["9000785"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S021", "category": "exact", "query": "윤동주 또다른고향(故鄕)", "gold_poem_ids": ["9000752"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S022", "category": "exact", "query": "윤동주 길", "gold_poem_ids": ["9000742"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S023", "category": "exact", "query": "윤동주 새로운 길", "gold_poem_ids": ["9000777"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S024", "category": "exact", "query": "윤동주 무서운 시간(時間)", "gold_poem_ids": ["9000757"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S025", "category": "exact", "query": "윤동주 소년", "gold_poem_ids": ["9000781"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S026", "category": "exact", "query": "윤동주 病院 (병원)", "gold_poem_ids": ["9000762"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S027", "category": "exact", "query": "윤동주 간(肝)", "gold_poem_ids": ["9000735"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S028", "category": "exact", "query": "윤동주 팔복(八福)", "gold_poem_ids": ["9000810"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S029", "category": "exact", "query": "한용운 님의 침묵", "gold_poem_ids": ["9001830"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S030", "category": "exact", "query": "한용운 알수 없어요", "gold_poem_ids": ["9001832"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S031", "category": "exact", "query": "한용운 나룻배와 행인(行人)", "gold_poem_ids": ["9001836"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S032", "category": "exact", "query": "한용운 복종(服從)", "gold_poem_ids": ["9001758"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S033", "category": "exact", "query": "한용운 당신을 보았습니다", "gold_poem_ids": ["9001756"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S034", "category": "exact", "query": "한용운 이별은 미(美)의 창조", "gold_poem_ids": ["9001831"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S035", "category": "exact", "query": "한용운 해당화(海棠花)", "gold_poem_ids": ["9001755"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S036", "category": "exact", "query": "한용운 찬송(讚頌)", "gold_poem_ids": ["9001776"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S037", "category": "exact", "query": "한용운 사랑하는 까닭", "gold_poem_ids": ["9001805"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S038", "category": "exact", "query": "한용운 거짓 이별", "gold_poem_ids": ["9001807"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S039", "category": "exact", "query": "한용운 나의 길", "gold_poem_ids": ["9001834"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S040", "category": "exact", "query": "한용운 사랑의 측량(側量)", "gold_poem_ids": ["9001813"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S041", "category": "exact", "query": "한용운 논개의 애인이 되어서 그의 묘에", "gold_poem_ids": ["WS_HAN_NONGAE_1926"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S042", "category": "exact", "query": "한용운 수(繡)의 비밀", "gold_poem_ids": ["9001794"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S043", "category": "exact", "query": "이상 거울", "gold_poem_ids": ["9000910"], "conditions": {"author": "이상"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S044", "category": "exact", "query": "이상 꽃나무", "gold_poem_ids": ["9000914"], "conditions": {"author": "이상"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S045", "category": "exact", "query": "이상 1933, 6, 1", "gold_poem_ids": ["9000903"], "conditions": {"author": "이상"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S046", "category": "exact", "query": "한용운 나의 꿈", "gold_poem_ids": ["9001792"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S047", "category": "exact", "query": "김소월 못 잊어", "gold_poem_ids": ["9029155"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S048", "category": "exact", "query": "이상 가정(家庭)", "gold_poem_ids": ["LTI_408033"], "conditions": {"author": "이상"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S049", "category": "exact", "query": "이상 절벽", "gold_poem_ids": ["9000939"], "conditions": {"author": "이상"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S050", "category": "exact", "query": "김소월 바라건대는 우리에게 우리의 보습 대일 땅이 있었더면", "gold_poem_ids": ["9029186"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S051", "category": "exact", "query": "이상 시 제1호", "gold_poem_ids": ["9029306"], "conditions": {"author": "이상"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S052", "category": "exact", "query": "이상 시 제2호", "gold_poem_ids": ["9029307"], "conditions": {"author": "이상"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S053", "category": "exact", "query": "이육사 광야(曠野)", "gold_poem_ids": ["9001059"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S054", "category": "exact", "query": "이육사 청포도", "gold_poem_ids": ["9001047"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S055", "category": "exact", "query": "이육사 절정", "gold_poem_ids": ["9001048"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S056", "category": "exact", "query": "이육사 교목", "gold_poem_ids": ["9001052"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S057", "category": "exact", "query": "이육사 꽃", "gold_poem_ids": ["9001060"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S058", "category": "exact", "query": "이육사 황혼", "gold_poem_ids": ["9001035"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S059", "category": "exact", "query": "이육사 노정기", "gold_poem_ids": ["9001039"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S060", "category": "exact", "query": "이육사 소년에게", "gold_poem_ids": ["9001061"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S061", "category": "exact", "query": "이육사 강 건너간 노래", "gold_poem_ids": ["9001041"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S062", "category": "exact", "query": "이육사 초가", "gold_poem_ids": ["9001040"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S063", "category": "exact", "query": "이육사 자야곡", "gold_poem_ids": ["9001055"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S064", "category": "exact", "query": "김소월 길", "gold_poem_ids": ["9029196"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S065", "category": "exact", "query": "정지용 향수", "gold_poem_ids": ["9029774"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S066", "category": "exact", "query": "정지용 유리창(琉璃窓)1", "gold_poem_ids": ["9029761"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S067", "category": "exact", "query": "정지용 호수(湖水)1", "gold_poem_ids": ["9029792"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S068", "category": "exact", "query": "정지용 고향(故鄕)", "gold_poem_ids": ["9029825"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S069", "category": "exact", "query": "정지용 춘설(春雪)", "gold_poem_ids": ["9029859"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S070", "category": "exact", "query": "정지용 비", "gold_poem_ids": ["9029847"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S071", "category": "exact", "query": "정지용 인동차(忍冬茶)", "gold_poem_ids": ["9029848"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S072", "category": "exact", "query": "정지용 조찬(朝餐)", "gold_poem_ids": ["9029846"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S073", "category": "exact", "query": "정지용 백록담", "gold_poem_ids": ["9029843"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S074", "category": "exact", "query": "정지용 장수산(長壽山)1", "gold_poem_ids": ["9029841"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S075", "category": "exact", "query": "정지용 바다2", "gold_poem_ids": ["WS_JEONG_SEA2_1935"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S076", "category": "exact", "query": "정지용 그의 반", "gold_poem_ids": ["9029836"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S077", "category": "exact", "query": "김영랑 모란이 피기까지는", "gold_poem_ids": ["9000350"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S078", "category": "exact", "query": "김영랑 돌담에 속삭이는 햇발", "gold_poem_ids": ["9000347"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S079", "category": "exact", "query": "김영랑 내 마음을 아실 이", "gold_poem_ids": ["9000342"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S080", "category": "exact", "query": "김영랑 오매, 단풍 들겄네", "gold_poem_ids": ["9000362"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S081", "category": "exact", "query": "김영랑 끝없는 강물이 흐르네", "gold_poem_ids": ["9000341"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S082", "category": "exact", "query": "김영랑 독을 차고", "gold_poem_ids": ["9000346"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S083", "category": "exact", "query": "김영랑 청명", "gold_poem_ids": ["13313752"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S084", "category": "exact", "query": "이장희 봄은 고양이로다", "gold_poem_ids": ["9030262"], "conditions": {"author": "이장희"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S085", "category": "exact", "query": "김영랑 거문고", "gold_poem_ids": ["9033519"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S086", "category": "exact", "query": "김영랑 제야(際夜)", "gold_poem_ids": ["9000367"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S087", "category": "exact", "query": "김영랑 꿈밭에 봄마음", "gold_poem_ids": ["9000340"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S088", "category": "exact", "query": "김소월 삼수갑산(三水甲山)-차안서선생삼수갑산운", "gold_poem_ids": ["9000277"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S089", "category": "exact", "query": "이상화 빼앗긴 들에도 봄은 오는가", "gold_poem_ids": ["9001014"], "conditions": {"author": "이상화"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S090", "category": "exact", "query": "이상화 나의 침실로", "gold_poem_ids": ["9000990"], "conditions": {"author": "이상화"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S091", "category": "exact", "query": "정지용 비로봉1", "gold_poem_ids": ["9029755"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S092", "category": "exact", "query": "이상화 가장 비통한 기욕", "gold_poem_ids": ["9030086"], "conditions": {"author": "이상화"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S093", "category": "exact", "query": "이상화 역천", "gold_poem_ids": ["9030099"], "conditions": {"author": "이상화"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S094", "category": "exact", "query": "윤동주 눈 오는 지도", "gold_poem_ids": ["WS_YUN_SNOWMAP_1941"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S095", "category": "exact", "query": "이상화 반딧불", "gold_poem_ids": ["9001026"], "conditions": {"author": "이상화"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S096", "category": "exact", "query": "김소월 접동새", "gold_poem_ids": ["9029200"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S097", "category": "exact", "query": "홍사용 나는 왕이로소이다", "gold_poem_ids": ["9002193"], "conditions": {"author": "홍사용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S098", "category": "exact", "query": "이상화 말세의 희탄", "gold_poem_ids": ["9000986"], "conditions": {"author": "이상화"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S099", "category": "exact", "query": "박용철 떠나가는 배", "gold_poem_ids": ["WS_PARK_SHIP_1930"], "conditions": {"author": "박용철"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S100", "category": "exact", "query": "심훈 그날이 오면", "gold_poem_ids": ["13313827"], "conditions": {"author": "심훈"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S101", "category": "partial", "query": "모란이 피기", "gold_poem_ids": ["9000350"], "conditions": {}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S102", "category": "partial", "query": "빼앗긴 들", "gold_poem_ids": ["9001014"], "conditions": {}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S103", "category": "spacing", "query": "윤동주 별 헤는 밤", "gold_poem_ids": ["9000761"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S104", "category": "spacing", "query": "한용운 알 수 없어요", "gold_poem_ids": ["9001832"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S105", "category": "typo", "query": "김소월 진달레꽃", "gold_poem_ids": ["9000320"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S106", "category": "typo", "query": "윤동주 별해는밤", "gold_poem_ids": ["9000761"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S107", "category": "hanja", "query": "윤동주 序詩", "gold_poem_ids": ["9000779"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S108", "category": "hanja", "query": "윤동주 서시", "gold_poem_ids": ["9000779"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S109", "category": "hanja", "query": "윤동주 병원", "gold_poem_ids": ["9000762"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S110", "category": "hanja", "query": "이육사 曠野", "gold_poem_ids": ["9001059"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S111", "category": "hanja", "query": "정지용 유리창1", "gold_poem_ids": ["9029761"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S112", "category": "author_alias", "query": "김해경 거울", "gold_poem_ids": ["9000910"], "conditions": {"author": "이상"}, "provenance": ["data/author_context_notes.jsonl:KAE_YI_SANG", "data/wiki_evidence_notes.jsonl:WIKI_6647_9000320_3"]}
+{"case_id": "S113", "category": "author_alias", "query": "김정식 진달래꽃", "gold_poem_ids": ["9000320"], "conditions": {"author": "김소월"}, "provenance": ["data/author_context_notes.jsonl:KAE_YI_SANG", "data/wiki_evidence_notes.jsonl:WIKI_6647_9000320_3"]}
+{"case_id": "S114", "category": "shorthand", "query": "윤동주 별헤밤", "gold_poem_ids": ["9000761"], "conditions": {"author": "윤동주"}, "provenance": ["사용 예상 검색 줄임말; 역사적 이칭 아님"]}
+{"case_id": "S115", "category": "shorthand", "query": "이상화 빼들봄", "gold_poem_ids": ["9001014"], "conditions": {"author": "이상화"}, "provenance": ["사용 예상 검색 줄임말; 역사적 이칭 아님"]}
+{"case_id": "S116", "category": "homonym", "query": "길", "gold_poem_ids": ["9000742", "9029196"], "conditions": {}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S117", "category": "homonym", "query": "윤동주 길", "gold_poem_ids": ["9000742"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S118", "category": "homonym", "query": "김소월 길", "gold_poem_ids": ["9029196"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S119", "category": "edition", "query": "이상 시 제1호", "gold_poem_ids": ["9029306"], "conditions": {"author": "이상"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S120", "category": "edition", "query": "이상 시 제2호", "gold_poem_ids": ["9029307"], "conditions": {"author": "이상"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S121", "category": "edition", "query": "정지용 바다2", "gold_poem_ids": ["WS_JEONG_SEA2_1935"], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S122", "category": "unanswerable", "query": "정지용 바다1", "gold_poem_ids": [], "conditions": {"author": "정지용"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S123", "category": "unanswerable", "query": "윤동주 은하수의 고백", "gold_poem_ids": [], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S124", "category": "theme", "query": "한용운 이별에서 재회를 바라는 역설의 시", "gold_poem_ids": ["9001830"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S125", "category": "theme", "query": "김소월 강가에서 가족과 함께 살고 싶은 소망", "gold_poem_ids": ["9000294"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S126", "category": "synonym", "query": "김영랑 꽃이 지고 난 뒤의 설움과 다시 기다리는 마음", "gold_poem_ids": ["9000350"], "conditions": {"author": "김영랑"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S127", "category": "emotion", "query": "심훈 독립을 기다리는 벅찬 기쁨", "gold_poem_ids": ["13313827"], "conditions": {"author": "심훈"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S128", "category": "verse", "query": "김소월 나 보기가 역겨워", "gold_poem_ids": ["9000320"], "conditions": {"author": "김소월"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S129", "category": "verse", "query": "윤동주 죽는 날까지 하늘을 우러러", "gold_poem_ids": ["9000779"], "conditions": {"author": "윤동주"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S130", "category": "verse", "query": "한용운 임은 갔습니다. 아아, 사랑하는 나의 임은 갔습니다.", "gold_poem_ids": ["9001830"], "conditions": {"author": "한용운"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S131", "category": "verse", "query": "이육사 까마득한 날에", "gold_poem_ids": ["9001059"], "conditions": {"author": "이육사"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S132", "category": "verse", "query": "심훈 그날이 오면 그날이 오면은", "gold_poem_ids": ["13313827"], "conditions": {"author": "심훈"}, "provenance": ["data/poems_metadata.csv", "data/poems_text.jsonl"]}
+{"case_id": "S133", "category": "year", "query": "1922년에 처음 발표된 시", "gold_poem_ids": ["9000320", "9000294"], "conditions": {"year_kind": "first_publication", "year_from": 1922, "year_to": 1922}, "provenance": ["data/curation/field_overrides.json"]}
+{"case_id": "S134", "category": "year", "query": "1920년부터 1929년 사이 처음 발표된 시", "gold_poem_ids": ["9000320", "9000294"], "conditions": {"year_kind": "first_publication", "year_from": 1920, "year_to": 1929}, "provenance": ["data/curation/field_overrides.json"]}
+{"case_id": "S135", "category": "year", "query": "1949년에 시집으로 간행된 심훈 시", "gold_poem_ids": ["13313827"], "conditions": {"author": "심훈", "year_kind": "collection_publication", "year_from": 1949, "year_to": 1949}, "provenance": ["data/curation/field_overrides.json"]}
+{"case_id": "S136", "category": "year", "query": "1930년에 창작된 심훈 시", "gold_poem_ids": ["13313827"], "conditions": {"author": "심훈", "year_kind": "written", "year_from": 1930, "year_to": 1930}, "provenance": ["data/curation/field_overrides.json"]}
+{"case_id": "S137", "category": "year", "query": "심훈 1949년 최초 발표 시", "gold_poem_ids": [], "conditions": {"author": "심훈", "year_kind": "first_publication", "year_from": 1949, "year_to": 1949}, "provenance": ["data/curation/field_overrides.json"]}
