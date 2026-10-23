@@ -1,0 +1,115 @@
+/* 로컬 시스템 활자와 CSS만으로 구성한 시담의 문예지 지면. */
+:root {
+  --sidam-paper: #f5f1e8;
+  --sidam-page: #fcfaf4;
+  --sidam-ink: #292d29;
+  --sidam-muted: #62665d;
+  --sidam-red: #843f34;
+  --sidam-rule: #d4cebf;
+  --sidam-serif: "Batang", "바탕", "Noto Serif KR", "Noto Serif CJK KR", Georgia, serif;
+}
+[data-testid="stAppViewContainer"] {
+  background: radial-gradient(ellipse at 70% 0%, #fffdf63b, transparent 70%),
+    repeating-linear-gradient(0deg, #655c4211 0, #655c4211 .5px, transparent .5px, transparent 4px), var(--sidam-paper);
+  color: var(--sidam-ink);
+}
+[data-testid="stHeader"] { background: transparent; }
+[data-testid="stMainBlockContainer"] { max-width: 1320px; padding: 2rem 3.4rem 4rem; }
+[data-testid="stSidebar"] { background: #ebe6da; border-right: 1px solid var(--sidam-rule); }
+[data-testid="stSidebarContent"] { background: linear-gradient(90deg, transparent 96%, #625c4910); }
+[data-testid="stSidebarUserContent"] { padding-top: 2.5rem; }
+[data-testid="stSidebar"] h2 { font-family: var(--sidam-serif); font-size: 1.3rem; font-weight: 600; }
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"] { font-size: .77rem; }
+[data-testid="stCaptionContainer"] { color: var(--sidam-muted); }
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3 { font-family: var(--sidam-serif); color: var(--sidam-ink); }
+.sidam-masthead { margin: .2rem 0 1.7rem; }
+.sidam-edition, .sidam-imprint { display: flex; justify-content: space-between; gap: 1rem; color: var(--sidam-muted); }
+.sidam-edition { font-size: .71rem; letter-spacing: .12em; border-top: 3px double var(--sidam-ink); padding-top: .8rem; }
+.sidam-brand { display: flex; justify-content: space-between; align-items: center; padding: 1.9rem .2rem 1.6rem; }
+.sidam-masthead h1.sidam-wordmark { font-family: var(--sidam-serif); font-size: 4.6rem; font-weight: 700; letter-spacing: .13em; line-height: 1.15; margin: 0; padding: 0; }
+.sidam-hanja { display: inline-block; font-size: 1rem; font-weight: 400; letter-spacing: .3em; margin-left: 1.4rem; vertical-align: middle; color: var(--sidam-muted); }
+.sidam-tagline { font-family: var(--sidam-serif); font-size: 1rem; color: var(--sidam-muted); margin: .8rem 0 0; letter-spacing: .13em; }
+.sidam-seal { border: 1px solid var(--sidam-red); outline: 1px solid var(--sidam-red); outline-offset: -5px; color: var(--sidam-red); padding: .6rem .75rem; font-family: var(--sidam-serif); font-size: 1.35rem; line-height: 1.45; transform: rotate(-4deg); margin-right: .6rem; }
+.sidam-imprint { border-top: 1px solid var(--sidam-ink); border-bottom: 1px solid var(--sidam-rule); padding: .65rem 0; font-size: .72rem; letter-spacing: .06em; }
+[data-testid="stTabs"] [role="tablist"] { gap: 1.8rem; border-bottom-color: var(--sidam-rule); }
+[data-testid="stTabs"] [role="tab"] { padding: .75rem .15rem; height: auto; color: var(--sidam-muted); }
+[data-testid="stTabs"] [role="tab"][aria-selected="true"] { color: var(--sidam-red); font-weight: 600; }
+[data-testid="stTabs"] [role="tabpanel"] { padding-top: 1.9rem; }
+.sidam-eyebrow { display: block; font-size: .7rem; letter-spacing: .2em; color: var(--sidam-red); margin-bottom: .7rem; }
+.sidam-intro { padding: .1rem 0 1.2rem; }
+.sidam-intro h2 { font-family: var(--sidam-serif); font-size: clamp(1.65rem, 2.8vw, 2.45rem); font-weight: 500; line-height: 1.6; letter-spacing: -.05em; word-break: keep-all; overflow-wrap: break-word; padding: 0; margin: 0; }
+.sidam-intro p { color: var(--sidam-muted); font-size: .88rem; line-height: 1.9; margin: .8rem 0 .2rem; }
+.st-key-search_desk { background: #fcfaf4b5; border: 1px solid var(--sidam-rule); border-top: 2px solid #344b40; padding: 1.2rem 1.5rem .6rem; margin-bottom: .7rem; }
+.st-key-search_desk [data-testid="stForm"] { border: none; padding: 0; }
+[data-testid="stTextInput"] input, [data-testid="stTextArea"] textarea { color: var(--sidam-ink); }
+[data-testid="stTextInput"] > div, [data-testid="stTextArea"] > div, [data-baseweb="select"] > div { border-radius: 2px; }
+[data-testid="stTextInput"] input { min-height: 2.9rem; }
+[data-testid="stButton"] button, [data-testid="stFormSubmitButton"] button,
+[data-testid="stLinkButton"] a { border-radius: 2px; min-height: 2.65rem; transition: background .15s, border-color .15s; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--sidam-red) !important; outline-offset: 3px; }
+.sidam-section-line { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--sidam-rule); padding: .7rem 0; margin: .6rem 0 .3rem; gap: 1rem; }
+.sidam-section-line strong { font-family: var(--sidam-serif); font-size: 1.05rem; font-weight: 600; }
+.sidam-section-line span { font-size: .72rem; color: var(--sidam-muted); }
+[class*="st-key-feature_"] { background: var(--sidam-page); border: 1px solid var(--sidam-rule); padding: 1.3rem 1.3rem 1rem; height: 100%; }
+.sidam-card-index { font-size: .65rem; letter-spacing: .2em; color: var(--sidam-red); margin-bottom: 1.2rem; }
+.sidam-preview h3 { font-family: var(--sidam-serif); font-size: 1.55rem; line-height: 1.5; margin: 0 0 .4rem; padding: 0; font-weight: 600; overflow-wrap: anywhere; }
+.sidam-card-author { font-size: .8rem; color: var(--sidam-muted); margin: 0 0 1.3rem; }
+.sidam-excerpt { font-family: var(--sidam-serif); font-size: .85rem; line-height: 2; white-space: pre-wrap; overflow-wrap: anywhere; min-height: 6rem; margin-bottom: 1.3rem; }
+[class*="st-key-feature_"] button { border: 0; border-top: 1px solid var(--sidam-rule); background: transparent; width: 100%; justify-content: space-between; color: var(--sidam-red); }
+[class*="st-key-result_"] { border-bottom: 1px solid var(--sidam-rule); padding: 1.2rem .2rem; }
+[data-testid="stMarkdownContainer"] .sidam-result-title { font-family: var(--sidam-serif); font-size: 1.4rem; margin: 0; }
+.sidam-result-title span { font-family: sans-serif; font-size: .8rem; color: var(--sidam-muted); margin-left: 1rem; }
+.sidam-reading-heading { text-align: center; padding: .8rem 0 .3rem; }
+.sidam-reading-heading h2 { font-family: var(--sidam-serif); font-size: 2.25rem; letter-spacing: .06em; margin: .2rem 0 .65rem; padding: 0; font-weight: 600; }
+.sidam-reading-heading p { font-family: var(--sidam-serif); font-size: 1rem; margin-bottom: 1.2rem; }
+.sidam-reading-heading p span { color: var(--sidam-muted); font-size: .75rem; padding-left: .45rem; }
+.st-key-reading_dates { text-align: center; padding-bottom: 1.3rem; border-bottom: 1px solid var(--sidam-rule); margin-bottom: 1.2rem; }
+.st-key-reading_dates [data-testid="stCaptionContainer"] p { text-align: center; }
+.sidam-masthead-compact { margin-bottom: .7rem; }
+.sidam-masthead-compact .sidam-edition, .sidam-masthead-compact .sidam-imprint, .sidam-masthead-compact .sidam-tagline { display: none; }
+.sidam-masthead-compact .sidam-brand { padding: .5rem 0 1.2rem; border-bottom: 3px double var(--sidam-ink); }
+.sidam-masthead-compact h1.sidam-wordmark { font-size: 2.4rem; }
+.sidam-masthead-compact .sidam-seal { font-size: .8rem; padding: .4rem .6rem; }
+.sidam-poem-page { background: var(--sidam-page); border: 1px solid var(--sidam-rule); border-left: 3px double var(--sidam-rule); padding: 2rem clamp(1.1rem, 3vw, 2.7rem); box-shadow: 3px 4px 0 #e7e1d5; margin: .2rem .3rem 1rem 0; }
+.sidam-page-label { display: flex; justify-content: space-between; font-size: .65rem; letter-spacing: .14em; color: var(--sidam-muted); border-bottom: 1px solid var(--sidam-rule); padding-bottom: .8rem; margin-bottom: 2rem; }
+.sidam-page-label span { letter-spacing: .3em; }
+.sidam-poem-page h3 { font-family: var(--sidam-serif); font-size: 1.55rem; margin: 0 0 .7rem; font-weight: 600; padding: 0; }
+.sidam-poem-author { font-family: var(--sidam-serif); font-size: .85rem; color: var(--sidam-muted); margin-bottom: 2rem; }
+.sidam-poem-lines { font-family: var(--sidam-serif); font-size: 1rem; line-height: 2.15; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 590px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #c5bcaa transparent; }
+.sidam-poem-end { text-align: center; color: var(--sidam-muted); margin-top: 1.8rem; }
+.sidam-panel-heading { font-family: var(--sidam-serif); font-size: 1.35rem; margin: .2rem 0 .7rem; padding: .5rem 0 .9rem; border-bottom: 2px solid #344b40; }
+.st-key-conversation { background: #fcfaf47a; padding: 1.3rem 1.5rem; border: 1px solid var(--sidam-rule); }
+.sidam-chat-empty { padding: 2rem 0 2.5rem; color: var(--sidam-muted); font-family: var(--sidam-serif); line-height: 2; }
+.sidam-chat-empty p { font-size: 1.2rem; }
+.sidam-chat-empty small { font-family: sans-serif; font-size: .8rem; }
+[data-testid="stChatMessage"] { border-radius: 2px; border: 1px solid var(--sidam-rule); padding: 1rem; background: var(--sidam-page); }
+[data-testid="stChatInput"] { border-radius: 3px; border-color: #a9a18f; background: var(--sidam-page); }
+[data-testid="stExpander"] { border-radius: 2px; }
+[data-testid="stAlert"] { border-radius: 2px; }
+.sidam-footer { color: var(--sidam-muted); border-top: 3px double var(--sidam-rule); padding-top: 1rem; margin-top: 2.5rem; font-size: .72rem; display: flex; justify-content: space-between; gap: 1rem; line-height: 1.8; }
+@media (max-width: 900px) {
+  [data-testid="stMainBlockContainer"] { padding: 2.5rem 1.4rem 3rem; }
+  .sidam-edition span:last-child { display: none; }
+  .sidam-masthead h1.sidam-wordmark { font-size: 3.5rem; }
+  .sidam-brand { padding: 1.5rem .2rem; }
+  .sidam-imprint { flex-wrap: wrap; gap: .35rem; }
+  .st-key-conversation { padding: 1rem; }
+}
+@media (max-width: 640px) {
+  [data-testid="stMainBlockContainer"] { padding: 3rem 1rem 2rem; }
+  .sidam-masthead h1.sidam-wordmark { font-size: 3rem; }
+  .sidam-hanja { font-size: .8rem; margin-left: .7rem; }
+  .sidam-tagline { font-size: .85rem; letter-spacing: .05em; }
+  .sidam-seal { font-size: 1rem; }
+  .sidam-imprint { font-size: .65rem; }
+  .st-key-search_desk { padding: 1rem; }
+  [data-testid="stTabs"] [role="tablist"] { gap: 1.1rem; }
+  [data-testid="stHorizontalBlock"] { flex-direction: column; }
+  [data-testid="stColumn"] { width: 100% !important; min-width: 0 !important; flex: 1 1 100% !important; }
+  .sidam-section-line { flex-wrap: wrap; gap: .3rem; }
+  .sidam-reading-heading h2 { font-size: 1.9rem; }
+  .sidam-poem-lines { font-size: .95rem; }
+  .sidam-footer { flex-direction: column; gap: .3rem; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
