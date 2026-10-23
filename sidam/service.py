@@ -29,7 +29,7 @@ class Service:
         self.docs, self.excluded = load_documents(config.data_dir, self.poems)
         self.models = Models(config) if config.api_key else None
         self.prompts = Prompts(self.models) if self.models else None
-        self.store = VectorStore(config.index_path, self.models or UnavailableEmbeddings(config.embedding_model), config.chunk_size, config.chunk_overlap, config.top_k)
+        self.store = VectorStore(config.index_path, self.models or UnavailableEmbeddings(config.embedding_model), config.chunk_size, config.chunk_overlap, config.top_k, config.mmr_fetch_k, config.mmr_lambda)
 
     def require_models(self):
         if self.models is None:
@@ -81,8 +81,10 @@ class Service:
         joined = normalize(" ".join(d["text"] for d in direct))
         return bool(terms) and not any(t in joined for t in terms)
 
-    def ask(self, poem_id, question, mode="chat", quote="", messages=None, status=lambda text: None):
+    def ask(self, poem_id, question, mode="chat", quote="", messages=None, status=lambda text: None, retrieval_mode='similarity'):
         self.require_models()
+        if retrieval_mode not in {'similarity', 'mmr'}:
+            raise ValueError('지원하지 않는 근거 검색 방식입니다.')
         if poem_id not in self.poems:
             raise ValueError("선택한 작품을 확인하세요.")
         if not question.strip() or len(question) > 3000:
@@ -115,8 +117,8 @@ class Service:
                 warnings.append("WIKI_CONTACT가 없어 외부 추가 수집을 생략했습니다. 기존 근거만 사용합니다.")
         status("작품 범위 안에서 근거를 검색하고 답변을 생성합니다.")
         before = time.monotonic()
-        result = build_graph(self.store, self.prompts).invoke({"poem": poem, "question": question, "mode": mode, "quote": quote, "messages": messages or []})
+        result = build_graph(self.store, self.prompts).invoke({"poem": poem, "question": question, "mode": mode, "quote": quote, "messages": messages or [], 'retrieval_mode': retrieval_mode})
         timings["rag_seconds"] = round(time.monotonic() - before, 2)
         timings.update(result['timings'])
         timings["total_seconds"] = round(time.monotonic() - started, 2)
-        return {"answer": result["answer"], "sources": result["evidence"], "citation_error": result["citation_error"], "warnings": warnings, "timings": timings}
+        return {"answer": result["answer"], "sources": result["evidence"], "citation_error": result["citation_error"], "warnings": warnings, "timings": timings, 'retrieval_mode': retrieval_mode}

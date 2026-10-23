@@ -46,7 +46,7 @@ def build_manifest(root, input_files=INPUT_FILES):
     search = options.get('search', {})
     settings = {'base_url': Config.base_url, 'chat_model': Config.chat_model, 'embedding_model': Config.embedding_model,
                 'chunk_size': search.get('chunk_size', 1000), 'chunk_overlap': search.get('chunk_overlap', 200),
-                'top_k': search.get('top_k', 5)}
+                'top_k': search.get('top_k', 5), 'mmr_fetch_k': search.get('mmr_fetch_k',20), 'mmr_lambda': search.get('mmr_lambda',.5)}
     poems = load_corpus(root / 'data')
     docs, excluded = load_documents(root / 'data', poems)
     rows = evidence_rows(docs, settings['chunk_size'], settings['chunk_overlap'])

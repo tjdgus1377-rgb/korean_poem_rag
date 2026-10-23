@@ -49,7 +49,7 @@ def run_question(service, pid, question, mode="chat", quote=""):
     try:
         with st.status("자료를 확인하고 있습니다…", expanded=True) as progress:
             previous = list(history(st.session_state, pid))
-            result = service.ask(pid, question, mode, quote, previous, status=lambda text: progress.update(label=text))
+            result = service.ask(pid, question, mode, quote, previous, status=lambda text: progress.update(label=text), retrieval_mode=st.session_state.get('retrieval_mode','similarity'))
             progress.update(label="답변 준비 완료", state="complete", expanded=False)
         add_message(st.session_state, pid, {"role": "user", "content": question})
         add_message(st.session_state, pid, {"role": "assistant", "content": result["answer"], **result})
@@ -98,6 +98,7 @@ def main():
             except Exception:
                 st.error("색인 준비에 실패했습니다. 연결·설정·자료를 확인하세요.")
         st.caption(f"청크 {service.config.chunk_size}자 / 중복 {service.config.chunk_overlap}자 / 외부 근거 {service.config.top_k}건")
+        st.selectbox('근거 검색 방식', ['similarity','mmr'], key='retrieval_mode', format_func=lambda v: '기본 유사도' if v=='similarity' else 'MMR · 관련성·다양성')
         st.caption(f"이용 범위 미확인 등으로 제외한 자료 {len(service.excluded)}건. 미확인 자료는 근거 색인에 넣지 않습니다.")
         if selected and st.button("이 작품 대화 지우기"):
             st.session_state.setdefault("messages_by_poem_id", {})[selected] = []
@@ -168,6 +169,7 @@ def main():
                         for warning in message.get("warnings", []):
                             st.caption(warning)
                         st.caption(f"처리 시간 {message.get('timings', {}).get('total_seconds', '?')}초")
+                        st.caption('근거 검색: ' + message.get('retrieval_mode','similarity'))
             question = st.chat_input("이 시의 구절·상징·배경을 물어보세요", disabled=not service.models or not counts["poems"])
             if question:
                 run_question(service, selected, question)
