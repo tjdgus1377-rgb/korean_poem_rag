@@ -44,3 +44,16 @@ def test_hanja_work_definition_accepts_correct_author_only():
         http = HTTP([Response(200, {'query': {'pages': [{'pageid': 1, 'title': '서시', 'extract': body}]}})])
         adapter = WikiAdapter('test@example.org', session=http, sleep=lambda _: None)
         assert bool(adapter.fetch({'candidate_id': '1', 'is_work': True}, poem)) == accepted
+
+
+def test_partial_hanja_annotation_never_becomes_whole_work_alias():
+    from sidam.identity import same_title
+    from sidam.collectors import WikiAdapter
+    from test_http import HTTP, Response
+    assert not same_title('故鄕', '또다른고향(故鄕)')
+    assert not same_title('行人', '나룻배와 행인(行人)')
+    assert same_title('또다른故鄕', '또다른고향(故鄕)')
+    for forced in [True, False]:
+        http = HTTP([Response(200, {'query': {'pages': [{'pageid': 1, 'title': '故鄕', 'extract': '故鄕은 윤동주가 지은 시이다.'}]}})])
+        adapter = WikiAdapter('test@example.org', session=http, sleep=lambda _: None)
+        assert adapter.fetch({'candidate_id': '1', 'is_work': forced}, {'poem_id': 'a', 'title': '또다른고향(故鄕)', 'author': '윤동주'}) is None

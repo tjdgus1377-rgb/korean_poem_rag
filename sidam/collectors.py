@@ -168,6 +168,10 @@ class WikiAdapter:
             return None
         # 강제 보존 후보가 실제로 다른 저자의 동명 문서라면 색인하지 않는다.
         matches_title = same_title(page.get("title", ""), poem["title"])
+        definition_raw = normalize(re.split(r'[.!?。\n]', text, maxsplit=1)[0])
+        page_titles = '|'.join(re.escape(t) for t in title_forms(page.get('title', '')))
+        if not matches_title and page_titles and re.search(rf'^(?:{page_titles})(?:은|는).{{0,80}}(?:의|가|이).{{0,30}}(?:시이다|시다|작품이다)', definition_raw):
+            return None
         if candidate.get('is_work') or matches_title:
             definition = re.split(r'[.!?。\n]', text, maxsplit=1)[0]
             definition = normalize(re.sub(r'[（(][^）)]*[）)]', '', definition))
