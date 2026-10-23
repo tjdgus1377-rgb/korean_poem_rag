@@ -8,10 +8,14 @@ def title_forms(title):
     title = title.replace('（', '(').replace('）', ')')
     outside = re.sub(r'\([^)]*\)', '', title)
     forms = {normalize(title), normalize(outside)}
-    suffix = re.search(r'\)\s*(\d+)\s*$', title)
-    for inner in re.findall(r'\(([^)]*)\)', title):
-        if re.fullmatch(r'[가-힣一-鿿豈-﫿]+', inner.strip()) and inner.strip() not in {'시', '작품'}:
-            forms.add(normalize(inner) + (suffix[1] if suffix else ''))
+    for match in re.finditer(r'\(([^)]*)\)', title):
+        inner = normalize(match[1])
+        before, after = normalize(title[:match.start()]), normalize(title[match.end():])
+        if not inner or len(inner) > len(before):
+            continue
+        paired = before[-len(inner):]
+        if (re.fullmatch(r'[一-鿿]+', inner) and re.fullmatch(r'[가-힣]+', paired)) or (re.fullmatch(r'[가-힣]+', inner) and re.fullmatch(r'[一-鿿]+', paired)):
+            forms.add(before[:-len(inner)] + inner + after)
     return {f for f in forms if f}
 
 
