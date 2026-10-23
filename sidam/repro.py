@@ -13,7 +13,7 @@ INPUT_FILES = (
     'data/poem_commentary_map.csv', 'data/evidence_notes.jsonl', 'data/author_context_notes.jsonl',
     'data/wiki_evidence_notes.jsonl', 'data/wiki_commentary_sources.csv',
     'data/wiki_collection_status.csv', 'data/wiki_uncollected_works.csv',
-    'data/curation/field_overrides.json', 'data/curation/source_policy.json',
+    'data/curation/field_overrides.json', 'data/curation/source_policy.json', 'data/curation/search_aliases.json',
     'data/repro/public_documents.jsonl', 'sidam.toml', '.python-version',
     '.env.example', 'requirements-app.txt', 'requirements-dev.txt', 'requirements.lock',
 )

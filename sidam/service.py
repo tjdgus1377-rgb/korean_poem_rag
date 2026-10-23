@@ -10,6 +10,7 @@ from .prompts import Prompts
 from .search import matches_conditions
 from .session import validate_quote
 from .store import VectorStore
+from .identity import lexical_search
 
 
 class UnavailableEmbeddings:
@@ -60,6 +61,10 @@ class Service:
         self.require_models()
         if not self.store.counts()["poems"]:
             raise ValueError("색인이 없습니다. 먼저 검색 색인을 준비하세요.")
+        lexical = lexical_search(question, self.poems, read_json(self.config.data_dir / 'curation/search_aliases.json', {}))
+        if lexical is not None:
+            ids, conditions = lexical
+            return [self.poems[pid] for pid in ids], conditions
         conditions = self.prompts.conditions(question, self.poems)
         ranked = self.store.search_poems(question, limit=len(self.poems))
         candidates = [self.poems[r["poem_id"]] for r in ranked if r["poem_id"] in self.poems and matches_conditions(self.poems[r["poem_id"]], conditions)][:20]

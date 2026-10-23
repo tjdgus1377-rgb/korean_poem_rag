@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "authors": [
+    {"alias": "김해경", "author": "이상", "kind": "본명", "provenance": "author_context_notes.jsonl:KAE_YI_SANG", "source_url": "https://encykorea.aks.ac.kr/Article/E0044568"},
+    {"alias": "김정식", "author": "김소월", "kind": "본명", "provenance": "wiki_evidence_notes.jsonl:WIKI_6647_9000320_3", "source_url": "https://ko.wikipedia.org/wiki/김소월"}
+  ],
+  "input_hints": [
+    {"alias": "별헤밤", "poem_id": "9000761", "kind": "사용자 입력 줄임말", "provenance": "BENCH-008 예상 질의; 역사적 이칭 아님"},
+    {"alias": "빼들봄", "poem_id": "9001014", "kind": "사용자 입력 줄임말", "provenance": "BENCH-008 예상 질의; 역사적 이칭 아님"}
+  ]
+}

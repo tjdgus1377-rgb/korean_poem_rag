@@ -12,6 +12,7 @@ import requests
 
 from .data import normalize
 from .models import ModelError
+from .identity import same_title, title_forms
 
 
 def core_title(title):
@@ -20,7 +21,7 @@ def core_title(title):
 
 
 def own_work(candidate, poem):
-    return bool(poem.get("title") and core_title(candidate.get("title", "")) == core_title(poem["title"]) and normalize(poem.get("author", "")) in normalize(candidate.get("snippet", "")))
+    return bool(poem.get("title") and same_title(candidate.get("title", ""), poem["title"]) and normalize(poem.get("author", "")) in normalize(candidate.get("snippet", "")))
 
 
 class CollectionService:
@@ -149,12 +150,21 @@ class WikiAdapter:
         if page.get("missing") or not text:
             return None
         # 강제 보존 후보가 실제로 다른 저자의 동명 문서라면 색인하지 않는다.
-        same_title = core_title(page.get("title", "")) == core_title(poem["title"])
-        if candidate.get('is_work') or same_title:
+        matches_title = same_title(page.get("title", ""), poem["title"])
+        definition_text = re.sub(r'[（(][^）)]*[）)]', '', re.split(r'[.!?。\n]', text, maxsplit=1)[0])
+        definition_raw = normalize(definition_text)
+        page_titles = '|'.join(re.escape(t) for t in title_forms(page.get('title', '')))
+        annotations = {normalize(t) for t in re.findall(r'[（(]([^）)]*)[）)]', poem['title'])}
+        defines_page = page_titles and re.search(rf'^(?:{page_titles})(?:은|는)', definition_raw)
+        work_type = re.search(r'(?:^|\s)(?:시|작품)(?:이다|다|로|이며|이고|였다|이자|으로|입니다)', definition_text)
+        if not matches_title and (normalize(page.get('title','')) in annotations or (defines_page and work_type)):
+            return None
+        if candidate.get('is_work') or matches_title:
             definition = re.split(r'[.!?。\n]', text, maxsplit=1)[0]
             definition = normalize(re.sub(r'[（(][^）)]*[）)]', '', definition))
-            relation = rf"^{re.escape(normalize(poem['title']))}(?:은|는)(?:대한민국의|한국의)?(?:시인)?{re.escape(normalize(poem['author']))}(?:의|이|가)"
-            if not same_title or not re.search(relation, definition):
+            titles = '|'.join(re.escape(t) for t in title_forms(poem['title']))
+            relation = rf"^(?:{titles})(?:은|는)(?:\d{{4}}년(?:\d{{1,2}}월)?(?:에)?)?(?:대한민국의|한국의)?(?:시인)?{re.escape(normalize(poem['author']))}(?:의|이|가)"
+            if not matches_title or not re.search(relation, definition):
                 return None
         now = datetime.now(timezone.utc).isoformat()
         return {"poem_id": poem["poem_id"], "poem_title": poem["title"], "author": poem["author"],
