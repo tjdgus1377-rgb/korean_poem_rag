@@ -54,7 +54,15 @@ def test_partial_hanja_annotation_never_becomes_whole_work_alias():
     assert not same_title('行人', '나룻배와 행인(行人)')
     assert same_title('또다른故鄕', '또다른고향(故鄕)')
     for forced in [True, False]:
-        for ending in ['윤동주가 지은 시이다.', '윤동주의 시로, 1936년에 발표되었다.', '윤동주의 시이며 사랑을 다룬다.', '윤동주의 시로서 널리 알려졌다.']:
+        for ending in ['윤동주가 지은 시이다.', '윤동주의 시로, 1936년에 발표되었다.', '윤동주의 시이며 사랑을 다룬다.', '윤동주의 시로서 널리 알려졌다.', '1936년에 발표된 시로, 그리움을 다룬다.']:
             http = HTTP([Response(200, {'query': {'pages': [{'pageid': 1, 'title': '故鄕', 'extract': '故鄕은 '+ending}]}})])
             adapter = WikiAdapter('test@example.org', session=http, sleep=lambda _: None)
             assert adapter.fetch({'candidate_id': '1', 'is_work': forced}, {'poem_id': 'a', 'title': '또다른고향(故鄕)', 'author': '윤동주'}) is None
+
+
+def test_other_poem_definition_needs_no_author_but_author_bio_is_context():
+    from sidam.collectors import WikiAdapter
+    from test_http import HTTP, Response
+    for title, text, accepted in [('다른시', '다른시는 1936년에 발표된 시로, 그리움을 다룬다.', False), ('윤동주','윤동주는 한국의 시인이다.', True)]:
+        adapter=WikiAdapter('test@example.org',session=HTTP([Response(200,{'query':{'pages':[{'pageid':1,'title':title,'extract':text}]}})]),sleep=lambda _:None)
+        assert bool(adapter.fetch({'candidate_id':'1','is_work':False},{'poem_id':'a','title':'서시(序詩)','author':'윤동주'})) == accepted
