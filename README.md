@@ -36,3 +36,18 @@
 주제 설명은 31편, 최초 발표 연도는 2편이 검토된 상태입니다. 미확인 값은 추정하지 않으며, 생성 해설의 문학적 정확성은 별도 검증이 필요합니다. [후속 품질·자료 검증 이슈](https://github.com/tjdgus1377-rgb/korean_poem_rag/issues/4)에서 관리합니다.
 
 이전 메타데이터 수집 README는 [보존 기록](docs/archive/DATA_COLLECTION_README.md)입니다. 현재 앱은 `data/poems_metadata.csv`와 `data/poems_text.jsonl`을 사용하며 이전 8필드 파일과 자동 혼합하지 않습니다.
+
+## 후속 검색·평가
+
+정확 제목·시인/확인된 본명·부분 제목·원문 구절·한자 병기와 일부 입력 줄임말을 검색합니다. 지정 시인의 4자 이상 제목에서 1글자 오탈자는 후보 안내를 표시합니다. 동명 작품과 번호가 다른 판본은 구분합니다. UI의 근거 검색은 **기본 유사도**를 유지하며 **MMR**을 선택할 수 있습니다(fetch_k20/lambda.5).
+
+- 고정 평가 자료 확인(API 불필요): `python scripts/verify_benchmark.py`
+- 실제 검색137건/질문12쌍 비교(GMS·기준 색인 필요): `python scripts/evaluate_sidam.py`
+- 검색만 실행: `python scripts/evaluate_sidam.py --search-only`
+- 답변 비교만 실행: `python scripts/evaluate_sidam.py --answers-only`
+- 동일 질문의 similarity/MMR 근거 비교: `python scripts/compare_retrieval.py`
+- 질문 단계별 시간: `python scripts/profile_sidam.py --poem-id 9000320 --question "이별의 정한은 어떻게 표현되나요?" --repeat 3`
+
+실행 원본은 로컬 `evaluation/runs/`에 저장합니다. 평가 답변과 정답은 근거 색인에 넣지 않습니다. RAG 비교는 **양쪽에 시 전문을 제공하고 외부 해설 유무만 다르게** 합니다. 같은 생성 조건도 출력 문구의 동일성을 보장하지 않습니다.
+
+[실제 브라우저 E2E](docs/validation/E2E-007.md), [벤치마크 기준](docs/specs/BENCH-008.md), [식별 검증](docs/validation/IDENTITY-009.md), [시간 측정](docs/validation/PERF-010.md), [MMR 비교](docs/validation/MMR-011.md), [외부 해설 유무 비교·한계](docs/validation/COMPARE-012.md)를 확인하세요. 보고서의 에이전트 근거 대조는 인간/문학 전문가 평가가 아닙니다.

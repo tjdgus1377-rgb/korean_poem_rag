@@ -66,3 +66,5 @@
 ## 현재 단계
 
 2026-10-22 기준 MVP 구현과 실제 색인을 진행했다. 구현 계약은 `docs/specs/MVP-002.md`, 실행 안내는 `docs/RUNBOOK.md`, 실제 검증 범위와 남은 한계는 `docs/validation/MVP-002.md`를 따른다. 자동 테스트 통과를 전체 문학 해석 품질·자료 검토 완료로 확대하지 않는다.
+
+2026-10-23 후속 계약은 `docs/specs/E2E-007.md`, `BENCH-008.md`, `IDENTITY-009.md`, `PERF-010.md`, `MMR-011.md`, `COMPARE-012.md`를 따른다. 각 실제 결과는 `docs/validation/`에서 확인한다. MMR 기본값을 자동 변경하지 않는다. F2015 양쪽에 같은 전문을 제공하고 외부 해설 유무만 비교한다. `evaluation/*_v1.jsonl`의 정답은 생성에 전달하지 않으며 실행 원본은 Git 제외된 `evaluation/runs/`에 둔다. 작성 에이전트의 근거 대조 점수를 인간/문학 전문가의 검토로 표시하지 않는다.
