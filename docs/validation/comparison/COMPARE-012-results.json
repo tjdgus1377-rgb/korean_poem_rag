@@ -1,0 +1,5204 @@
+{
+  "schema_version": 1,
+  "model": "gpt-5.4-nano",
+  "embedding_model": "text-embedding-3-small",
+  "generation_options": {
+    "temperature": "공급자 기본값(미지정)",
+    "seed": "공급자 기본값(미지정)"
+  },
+  "prompt_sha256": "207ebaab520b2ba8b3047aef42bb432016a04ce6bf1b57fc0f741c827a49ff83",
+  "dataset_sha256": {
+    "search": "10fc6f86ca1a7984a183a10bf98422a3d34577c627038f876d90a5b28fa59703",
+    "answers": "25f9d9c41f6a4e4b0b213f29e79bb229c9a7d2a35357227721912c43bcc0f879"
+  },
+  "retrieval_method": "similarity",
+  "search": [
+    {
+      "case_id": "S001",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000320"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.015000000013969839
+    },
+    {
+      "case_id": "S002",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000294"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S003",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000251"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S004",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000296"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S005",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000205"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S006",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000198"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S007",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000217"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.01600000006146729
+    },
+    {
+      "case_id": "S008",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000237"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S009",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000305"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S010",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000275"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S011",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000327"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S012",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029202"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S013",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "WS_SOWOL_DREAM_2"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S014",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029192"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S015",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000779"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.015000000013969839
+    },
+    {
+      "case_id": "S016",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000761"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S017",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000799"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S018",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000782"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S019",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000803"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S020",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000785"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S021",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000752"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S022",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000742"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S023",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000777"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S024",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000757"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.015999999945051968
+    },
+    {
+      "case_id": "S025",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000781"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.015000000013969839
+    },
+    {
+      "case_id": "S026",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000762"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S027",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000735"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S028",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000810"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S029",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001830"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S030",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001832"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S031",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001836"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S032",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001758"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S033",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001756"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.01600000006146729
+    },
+    {
+      "case_id": "S034",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001831"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S035",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001755"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.015999999945051968
+    },
+    {
+      "case_id": "S036",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001776"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S037",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001805"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S038",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001807"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S039",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001834"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S040",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001813"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.015000000013969839
+    },
+    {
+      "case_id": "S041",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "WS_HAN_NONGAE_1926"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S042",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001794"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S043",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000910"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S044",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000914"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S045",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000903"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S046",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001792"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S047",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029155"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S048",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "LTI_408033"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S049",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000939"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S050",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029186"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S051",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029306"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S052",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029307"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S053",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001059"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S054",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001047"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.015000000013969839
+    },
+    {
+      "case_id": "S055",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001048"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S056",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001052"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S057",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001060"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S058",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001035"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S059",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001039"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.015999999945051968
+    },
+    {
+      "case_id": "S060",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001061"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S061",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001041"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S062",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001040"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S063",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001055"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S064",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029196"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S065",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029774"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S066",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029761"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S067",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029792"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S068",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029825"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S069",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029859"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S070",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029847"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S071",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029848"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.015999999945051968
+    },
+    {
+      "case_id": "S072",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029846"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S073",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029843"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S074",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029841"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S075",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "WS_JEONG_SEA2_1935"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S076",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029836"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S077",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000350"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김영랑"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S078",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000347"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김영랑"
+      },
+      "total_seconds": 0.01600000006146729
+    },
+    {
+      "case_id": "S079",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000342"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김영랑"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S080",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000362"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김영랑"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S081",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000341"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김영랑"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S082",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000346"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김영랑"
+      },
+      "total_seconds": 0.015999999945051968
+    },
+    {
+      "case_id": "S083",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "13313752"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김영랑"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S084",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9030262"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이장희"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S085",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9033519"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김영랑"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S086",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000367"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김영랑"
+      },
+      "total_seconds": 0.015000000013969839
+    },
+    {
+      "case_id": "S087",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000340"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김영랑"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S088",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000277"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S089",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001014"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상화"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S090",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000990"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상화"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S091",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029755"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S092",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9030086"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상화"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S093",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9030099"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상화"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S094",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "WS_YUN_SNOWMAP_1941"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S095",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9001026"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상화"
+      },
+      "total_seconds": 0.015000000013969839
+    },
+    {
+      "case_id": "S096",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9029200"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S097",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9002193"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "홍사용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S098",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "9000986"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상화"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S099",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "WS_PARK_SHIP_1930"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "박용철"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S100",
+      "category": "exact",
+      "predicted_poem_ids": [
+        "13313827"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "심훈"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S101",
+      "category": "partial",
+      "predicted_poem_ids": [
+        "9000350"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {},
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S102",
+      "category": "partial",
+      "predicted_poem_ids": [
+        "9001014"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {},
+      "total_seconds": 0.030999999959021807
+    },
+    {
+      "case_id": "S103",
+      "category": "spacing",
+      "predicted_poem_ids": [
+        "9000761"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S104",
+      "category": "spacing",
+      "predicted_poem_ids": [
+        "9001832"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S105",
+      "category": "typo",
+      "predicted_poem_ids": [
+        "9000320"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월",
+        "match_kind": "오탈자 후보"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S106",
+      "category": "typo",
+      "predicted_poem_ids": [
+        "9000761"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주",
+        "match_kind": "오탈자 후보"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S107",
+      "category": "hanja",
+      "predicted_poem_ids": [
+        "9000779"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S108",
+      "category": "hanja",
+      "predicted_poem_ids": [
+        "9000779"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S109",
+      "category": "hanja",
+      "predicted_poem_ids": [
+        "9000762"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.015999999945051968
+    },
+    {
+      "case_id": "S110",
+      "category": "hanja",
+      "predicted_poem_ids": [
+        "9001059"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S111",
+      "category": "hanja",
+      "predicted_poem_ids": [
+        "9029761"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S112",
+      "category": "author_alias",
+      "predicted_poem_ids": [
+        "9000910"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S113",
+      "category": "author_alias",
+      "predicted_poem_ids": [
+        "9000320"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S114",
+      "category": "shorthand",
+      "predicted_poem_ids": [
+        "9000761"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S115",
+      "category": "shorthand",
+      "predicted_poem_ids": [
+        "9001014"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상화"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S116",
+      "category": "homonym",
+      "predicted_poem_ids": [
+        "9000742",
+        "9029196"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {},
+      "total_seconds": 0.015999999945051968
+    },
+    {
+      "case_id": "S117",
+      "category": "homonym",
+      "predicted_poem_ids": [
+        "9000742"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S118",
+      "category": "homonym",
+      "predicted_poem_ids": [
+        "9029196"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S119",
+      "category": "edition",
+      "predicted_poem_ids": [
+        "9029306"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S120",
+      "category": "edition",
+      "predicted_poem_ids": [
+        "9029307"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이상"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S121",
+      "category": "edition",
+      "predicted_poem_ids": [
+        "WS_JEONG_SEA2_1935"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "정지용"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S122",
+      "category": "unanswerable",
+      "predicted_poem_ids": [],
+      "metrics": {
+        "1": {
+          "recall": null,
+          "mrr": null,
+          "empty_correct": true
+        },
+        "5": {
+          "recall": null,
+          "mrr": null,
+          "empty_correct": true
+        },
+        "10": {
+          "recall": null,
+          "mrr": null,
+          "empty_correct": true
+        }
+      },
+      "filter_accuracy": null,
+      "conditions": {
+        "title_query": "바다1",
+        "author": "정지용",
+        "year_kind": "first_publication",
+        "year_from": null,
+        "year_to": null,
+        "theme_query": null
+      },
+      "total_seconds": 2.594000000040978
+    },
+    {
+      "case_id": "S123",
+      "category": "unanswerable",
+      "predicted_poem_ids": [],
+      "metrics": {
+        "1": {
+          "recall": null,
+          "mrr": null,
+          "empty_correct": true
+        },
+        "5": {
+          "recall": null,
+          "mrr": null,
+          "empty_correct": true
+        },
+        "10": {
+          "recall": null,
+          "mrr": null,
+          "empty_correct": true
+        }
+      },
+      "filter_accuracy": null,
+      "conditions": {
+        "title_query": "은하수의 고백",
+        "author": "윤동주",
+        "year_kind": "first_publication",
+        "year_from": null,
+        "year_to": null,
+        "theme_query": null
+      },
+      "total_seconds": 1.734000000054948
+    },
+    {
+      "case_id": "S124",
+      "category": "theme",
+      "predicted_poem_ids": [
+        "9001830"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "title_query": null,
+        "author": "한용운",
+        "year_kind": "first_publication",
+        "year_from": null,
+        "year_to": null,
+        "theme_query": "이별과 재회를 바라는 역설"
+      },
+      "total_seconds": 2.280999999959022
+    },
+    {
+      "case_id": "S125",
+      "category": "theme",
+      "predicted_poem_ids": [
+        "9000294"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "title_query": null,
+        "author": "김소월",
+        "year_kind": "first_publication",
+        "year_from": null,
+        "year_to": null,
+        "theme_query": "강가에서 가족과 함께 살고 싶은 소망"
+      },
+      "total_seconds": 3.0
+    },
+    {
+      "case_id": "S126",
+      "category": "synonym",
+      "predicted_poem_ids": [
+        "9000350"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "title_query": null,
+        "author": "김영랑",
+        "year_kind": "written",
+        "year_from": null,
+        "year_to": null,
+        "theme_query": "꽃이 지고 난 뒤의 설움과 다시 기다리는 마음"
+      },
+      "total_seconds": 21.75
+    },
+    {
+      "case_id": "S127",
+      "category": "emotion",
+      "predicted_poem_ids": [
+        "13313827"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "title_query": null,
+        "author": "심훈",
+        "year_kind": "first_publication",
+        "year_from": null,
+        "year_to": null,
+        "theme_query": "독립을 기다리는 벅찬 기쁨"
+      },
+      "total_seconds": 2.827999999979511
+    },
+    {
+      "case_id": "S128",
+      "category": "verse",
+      "predicted_poem_ids": [
+        "9000320"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "김소월"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S129",
+      "category": "verse",
+      "predicted_poem_ids": [
+        "9000779"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "윤동주"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S130",
+      "category": "verse",
+      "predicted_poem_ids": [
+        "9001830"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "한용운"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S131",
+      "category": "verse",
+      "predicted_poem_ids": [
+        "9001059"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "이육사"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S132",
+      "category": "verse",
+      "predicted_poem_ids": [
+        "13313827"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "author": "심훈"
+      },
+      "total_seconds": 0.0
+    },
+    {
+      "case_id": "S133",
+      "category": "year",
+      "predicted_poem_ids": [
+        "9000320",
+        "9000294"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "title_query": null,
+        "author": null,
+        "year_kind": "first_publication",
+        "year_from": 1922,
+        "year_to": 1922,
+        "theme_query": null
+      },
+      "total_seconds": 1.5309999999590218
+    },
+    {
+      "case_id": "S134",
+      "category": "year",
+      "predicted_poem_ids": [
+        "9000320",
+        "9000294"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "title_query": null,
+        "author": null,
+        "year_kind": "first_publication",
+        "year_from": 1920,
+        "year_to": 1929,
+        "theme_query": null
+      },
+      "total_seconds": 1.5160000000614673
+    },
+    {
+      "case_id": "S135",
+      "category": "year",
+      "predicted_poem_ids": [
+        "13313827"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "title_query": null,
+        "author": "심훈",
+        "year_kind": "collection_publication",
+        "year_from": 1949,
+        "year_to": 1949,
+        "theme_query": null
+      },
+      "total_seconds": 1.6719999999040738
+    },
+    {
+      "case_id": "S136",
+      "category": "year",
+      "predicted_poem_ids": [
+        "13313827"
+      ],
+      "metrics": {
+        "1": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "5": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        },
+        "10": {
+          "recall": 1.0,
+          "mrr": 1.0,
+          "empty_correct": null
+        }
+      },
+      "filter_accuracy": 1.0,
+      "conditions": {
+        "title_query": null,
+        "author": "심훈",
+        "year_kind": "written",
+        "year_from": 1930,
+        "year_to": 1930,
+        "theme_query": null
+      },
+      "total_seconds": 1.7660000000614673
+    },
+    {
+      "case_id": "S137",
+      "category": "year",
+      "predicted_poem_ids": [],
+      "metrics": {
+        "1": {
+          "recall": null,
+          "mrr": null,
+          "empty_correct": true
+        },
+        "5": {
+          "recall": null,
+          "mrr": null,
+          "empty_correct": true
+        },
+        "10": {
+          "recall": null,
+          "mrr": null,
+          "empty_correct": true
+        }
+      },
+      "filter_accuracy": null,
+      "conditions": {
+        "title_query": null,
+        "author": "심훈",
+        "year_kind": "first_publication",
+        "year_from": 1949,
+        "year_to": 1949,
+        "theme_query": null
+      },
+      "total_seconds": 1.547000000020489
+    }
+  ],
+  "baseline_counts": {
+    "poems": 100,
+    "documents": 343,
+    "poem_evidence": 474,
+    "excluded_sources": 228
+  },
+  "baseline_evidence_fingerprint": "96343af3aa28cc833be9edf05b706d0fe2cef4193762f99cadd45f38274f29a1",
+  "review_method": "작성 에이전트의 비맹검 근거 대조 검토; 인간·문학 전문가·교육생 상호 평가 아님",
+  "score_order": [
+    "근거 충실성",
+    "인용 정확성",
+    "설명 충분성",
+    "근거 부족 처리"
+  ],
+  "comparisons": [
+    {
+      "case_id": "A01",
+      "poem_id": "9000320",
+      "order": [
+        "without_external",
+        "with_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "b37954e17f95c9fc16d15d3c72028d59747cff4653979a2ff683a272a888b3ae",
+      "external_count": 5,
+      "arms": {
+        "without_external": {
+          "answer": "제공된 자료에서는 **「진달래꽃」의 발표 연도**와 **시집 간행 연도**가 확인되지 않습니다. [근거 1]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 1.1099999999860302,
+            "total_seconds": 1.1099999999860302
+          },
+          "cited_source_ids": [
+            "TEXT_9000320"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000320",
+              "source_id": "TEXT_9000320",
+              "chunk_id": null,
+              "source_title": "김소월 「진달래꽃」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000320",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "1b3d2dc357a1c16d235ae86b3e4c04134746e67425250dbf5979171111654d9c"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              0,
+              2
+            ],
+            "reason": "양쪽 실제 입력에서 연도를 확인할 수 없어 안전하게 답변 보류. B는 TV쇼 맥락 청크만 검색해 작품 연도 근거를 놓침. 충분성0은 검색 결손이며 환각으로 점수를 메우지 않음."
+          }
+        },
+        "with_external": {
+          "answer": "제공된 자료에서는 **「진달래꽃」의 발표 연도**와 **시집(수록/간행된 시집)의 간행 연도**가 확인되지 않습니다. [근거 1]  \n\n따라서 두 연도가 **같은지**에 대해서는 판단할 근거가 없습니다. “제공된 자료에서는 확인되지 않습니다.”",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.42099999997299165,
+            "generate_seconds": 1.202999999979511,
+            "total_seconds": 1.6239999999525025
+          },
+          "cited_source_ids": [
+            "TEXT_9000320"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000320",
+              "source_id": "TEXT_9000320",
+              "chunk_id": null,
+              "source_title": "김소월 「진달래꽃」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000320",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "1b3d2dc357a1c16d235ae86b3e4c04134746e67425250dbf5979171111654d9c"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              0,
+              2
+            ],
+            "reason": "양쪽 실제 입력에서 연도를 확인할 수 없어 안전하게 답변 보류. B는 TV쇼 맥락 청크만 검색해 작품 연도 근거를 놓침. 충분성0은 검색 결손이며 환각으로 점수를 메우지 않음."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A02",
+      "poem_id": "9000320",
+      "order": [
+        "with_external",
+        "without_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "b37954e17f95c9fc16d15d3c72028d59747cff4653979a2ff683a272a888b3ae",
+      "external_count": 4,
+      "arms": {
+        "without_external": {
+          "answer": "결론부터 말하면, **진달래꽃을 “한 가지 역사적 상징”으로만 고정해 단정하는 해석은 제공된 자료만으로는 확인하기 어렵습니다.** [근거 1]\n\n자료(시 원문)에는 진달래꽃을 특정 역사 사건/시대의 표상으로 지칭하는 **직접적인 단서**(예: 특정 인물·사건·시기 명시)가 보이지 않습니다. 시에서 진달래꽃은 주로 **‘가시는 길’에 두고 떠나는 이를 따뜻하게 기원하거나 보내는 정서**(말없이 보내드림, 꽃을 뿌림, 즈려밟고 가시옵소서, 눈물 흘리지 않음)와 결합되어 반복적으로 제시됩니다. [근거 1]\n\n다만, 다른 해석 가능성까지 배제할 수는 없습니다. **다른 역사적 맥락을 끌어와 상징을 특정하는 해석**이 가능하다는 “가능성” 정도의 말은 할 수 있어도, **“반드시 한 가지 역사적 상징으로만 해석해야 한다”**는 주장까지는 이 자료만으로는 뒷받침되지 않습니다. [근거 1]\n\n원하시면, “어떤 역사적 상징(예: 특정 사건/시대의 상징)”을 염두에 두고 계신지 말씀해 주세요. 그 상징이 **제공된 시 구절에서 직접적으로 연결될 근거가 있는지**를 원문 근거로만 확인해 드릴게요.",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 4.26500000001397,
+            "total_seconds": 4.26500000001397
+          },
+          "cited_source_ids": [
+            "TEXT_9000320"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000320",
+              "source_id": "TEXT_9000320",
+              "chunk_id": null,
+              "source_title": "김소월 「진달래꽃」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000320",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "1b3d2dc357a1c16d235ae86b3e4c04134746e67425250dbf5979171111654d9c"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              1,
+              2
+            ],
+            "reason": "A는 원문만으로 역사적 단일 상징을 확정하지 않음. B는 KAE_AZALEA의 복수 독법을 설명하나 첫 문장의 네는 한 관점으로 가능하다는 뒤의 조건과 함께 읽어야 함."
+          }
+        },
+        "with_external": {
+          "answer": "네, **“진달래꽃을 한 가지 역사적 상징으로만”** 해석하는 방식도 *가능은* 합니다. 다만 제공된 자료를 기준으로 보면, **그럴 경우 작품의 다른 층위(이별의 정서, 민요적 율조, 다양한 독법 등)를 충분히 포착하기 어렵습니다.** [근거 4]\n\n자료에서 《진달래꽃》은 최소한 다음처럼 **여러 독법이 함께 제시**됩니다.\n\n- **전통적 사랑·이별의 정한이라는 독법** [근거 4]  \n- **식민지 상황의 절망을 넘어서는 민족적 독법**, 그리고 **근대적 주체의 형성** 같은 최근 해석 [근거 4]  \n\n또한 백과사전 정리로는, 작품이 **민요시의 대표작**으로 설명되며, **1922년 발표 후 시집에 실릴 때 시어와 율격이 수정**되었다고 되어 있습니다. 이런 정보는 “진달래꽃=단일 역사 상징”으로만 좁히기보다 **형식(율격)과 정서 표현**도 함께 보라는 방향을 시사합니다. [근거 4]\n\n정리하면, **단일 역사적 상징으로만 해석해도 ‘하나의 관점’으로는 성립할 수는 있으나**, 제공된 자료에서는 **한 가지로 고정하기보다는 여러 층위의 독법이 함께 제시**되므로, 그렇게 해석하면 작품의 다른 의미 가능성은 줄어든다고 말할 수 있습니다. [근거 4]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.515999999945052,
+            "generate_seconds": 18.469000000040978,
+            "total_seconds": 18.98499999998603
+          },
+          "cited_source_ids": [
+            "KAE_AZALEA"
+          ],
+          "used_sources": [
+            {
+              "number": 4,
+              "poem_id": "9000320",
+              "source_id": "KAE_AZALEA",
+              "chunk_id": "9000320:KAE_AZALEA:0001",
+              "source_title": "진달래꽃 - 한국민족문화대백과사전",
+              "source_url": "https://encykorea.aks.ac.kr/Article/E0054623",
+              "access_scope": "공개 초록/항목 확인; 원문 전문 복제 없음",
+              "content_origin": "curated_summary",
+              "locator": "내용 요약·특징·의의 및 평가",
+              "evidence_role": "interpretation",
+              "text_sha256": "746a60d05ee31dd527bdf72465aeb00d91082e3a405660b35efb307fe5ee096f"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "A는 원문만으로 역사적 단일 상징을 확정하지 않음. B는 KAE_AZALEA의 복수 독법을 설명하나 첫 문장의 네는 한 관점으로 가능하다는 뒤의 조건과 함께 읽어야 함."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A03",
+      "poem_id": "9000320",
+      "order": [
+        "without_external",
+        "with_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "b37954e17f95c9fc16d15d3c72028d59747cff4653979a2ff683a272a888b3ae",
+      "external_count": 4,
+      "arms": {
+        "without_external": {
+          "answer": "김소월의 「진달래꽃」에서 “죽어도 아니 눈물 흘리우리다”는, 화자가 떠나는 이를 배웅하는 상황에서 **자신의 슬픔을 눈물로 드러내지 않겠다는 다짐(또는 결연한 태도)**를 강조하는 말로 읽을 수 있습니다. [근거 1]\n\n- **“죽어도”**: 단순히 “울지 않겠다”가 아니라, 극단적인 상황(죽음)까지도 포함할 만큼 **끝까지 감정을 억누르겠다는 강한 의지**를 나타내는 표현으로 볼 수 있습니다. [근거 1]  \n- **“아니 눈물 흘리우리다”**: “아니”가 들어가면서 **눈물을 흘리지 않겠다**는 방향성이 분명해집니다. 즉 화자는 떠남에 대한 슬픔이 있음에도 불구하고, 그 슬픔을 **눈물로 표현하지 않겠다는 태도**를 취하려 합니다. [근거 1]\n\n또한 이 구절은 시 전체의 배경(화자가 떠나가는 이를 “말없이 고이 보내드리우리다”, “사뿐히 즈려밟고 가시옵소서” 등으로 보내는 방식)과도 맞닿아, **감정을 드러내지 않는 조용한 배웅**의 분위기 속에서 이해될 수 있습니다. [근거 1]\n\n※ 다만, 제공된 자료(시 원문)만으로는 “죽어도”가 어떤 특정한 현실 조건(예: 관습, 죽음의 방식 등)을 가리키는지까지 확정할 근거는 없습니다. 그 점은 단정하기 어렵고, 위 의미는 가능한 해석입니다. [근거 1]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 3.0929999999934807,
+            "total_seconds": 3.0929999999934807
+          },
+          "cited_source_ids": [
+            "TEXT_9000320"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000320",
+              "source_id": "TEXT_9000320",
+              "chunk_id": null,
+              "source_title": "김소월 「진달래꽃」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000320",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "1b3d2dc357a1c16d235ae86b3e4c04134746e67425250dbf5979171111654d9c"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "원문 마지막 구절과 이별 문맥으로 가능한 감정 억제 독법을 설명. 유일한 의도·실제 행동을 단정하지 않음. 외부 해설을 주어도 양쪽 모두 주로 원문 인용."
+          }
+        },
+        "with_external": {
+          "answer": "질문하신 **“죽어도 아니 눈물 흘리우리다”**는, 화자가 떠나는 님을 보내며 *슬픔을 드러내지 않겠다는(눈물조차 흘리지 않겠다는) 의지*를 **‘죽음’의 극단까지 밀어붙여** 강조하는 표현으로 읽을 수 있습니다. 즉 “눈물은 흘리지 않겠다”를 단순 다짐이 아니라, **죽어서도(=어떤 극한 상황에서도) 예외 없이** 지키겠다는 태도로 강화한 문장입니다. [근거 1]\n\n또한 작품 전체에서 화자는 “나 보기가 역겨워 / 가실 때에는 / 말없이 고이 보내드리우리다”라고 하여, 이별 순간을 **말없이, 고이(조용하고 정중하게) 보낼 것**을 반복해서 말합니다. 이런 흐름 속에서 “죽어도 아니 눈물…”은 **울지 않음(감정의 절제/자기 절제)**이 이별의 방식임을 더 선명하게 합니다. [근거 1]\n\n정리하면, 가능한 의미는 두 가지 결로 모일 수 있습니다.  \n1) **슬픔을 억누리고 눈물을 흘리지 않겠다**는 다짐(감정 절제의 선언) [근거 1]  \n2) 그 다짐을 **‘죽어도’라는 표현으로 더 강하게** 만들어, 어떤 상황에서도 태도가 흔들리지 않음을 강조 [근거 1]\n\n(참고로, 제공된 자료에서는 이 구절의 의미를 특정한 단정적 해석으로 확정하기 위한 추가 설명은 확인되지 않습니다.)",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.4220000000204891,
+            "generate_seconds": 3.25,
+            "total_seconds": 3.672000000020489
+          },
+          "cited_source_ids": [
+            "TEXT_9000320"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000320",
+              "source_id": "TEXT_9000320",
+              "chunk_id": null,
+              "source_title": "김소월 「진달래꽃」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000320",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "1b3d2dc357a1c16d235ae86b3e4c04134746e67425250dbf5979171111654d9c"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "원문 마지막 구절과 이별 문맥으로 가능한 감정 억제 독법을 설명. 유일한 의도·실제 행동을 단정하지 않음. 외부 해설을 주어도 양쪽 모두 주로 원문 인용."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A04",
+      "poem_id": "9000779",
+      "order": [
+        "with_external",
+        "without_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "ff45711de9712db7cf34e6f4179102b3dc47f622e24511273c610e246d2aa681",
+      "external_count": 4,
+      "arms": {
+        "without_external": {
+          "answer": "「서시(序詩)」에서 **부끄럼**은 “죽는 날까지 하늘을 우러러 / 한 점 부끄럼이 없”기를 바라는 태도에서 제시됩니다. 즉, 시적 화자는 끝까지도 자신에게서 부끄러움을 제거하려는 마음(자기 성찰/자기 단속)을 지니고 있습니다. [근거 1]\n\n그리고 그 **“부끄럼”과 “주어진 길”**은, 그 부끄러움 없는 자세를 지키기 위해 나아가는 방향이자 실행의 과제로 연결됩니다. 화자는 먼저 “별을 노래하는 마음”으로 태도를 다짐한 뒤, 이어서 **“모든 죽어가는 것을 사랑해야지”**라고 말하고, 그 다음에 **“그리고 나한테 주어진 길을 / 걸어가야겠다”**라고 결의합니다. 따라서 “주어진 길”은 부끄러움을 없애려는 자기 다짐을 구체적인 삶의 행로(걸어가야 할 실천)로 옮긴 결과로 읽을 수 있습니다. [근거 1]\n\n정리하면, **부끄러움을 없애려는 내적 결심 → 사랑의 태도 → ‘나에게 주어진 길’을 걷겠다는 실천**의 흐름으로 연결됩니다. [근거 1]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 3.0,
+            "total_seconds": 3.0
+          },
+          "cited_source_ids": [
+            "TEXT_9000779"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000779",
+              "source_id": "TEXT_9000779",
+              "chunk_id": null,
+              "source_title": "윤동주 「서시(序詩)」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000779",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "fab790468c02f342e3bfd1f10263c9a9281f1b42016a71076bc33b32c8d28621"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "원문 부끄럼→사랑→길의 흐름은 양쪽 충족. B는 KAE_SEOSI의 절망에 맞서는 자기 구원·사랑이라는 해설을 추가하되 가능한 연결 해석으로 명시."
+          }
+        },
+        "with_external": {
+          "answer": "서시에서 **‘부끄럼’과 ‘주어진 길’은 “끝까지 자기 자신을 바로 세우는 태도(자기 성찰·절제)”로 이어집니다.**\n\n1) **부끄럼 → 자기 성찰과 괴로움**\n- 화자는 “죽는 날까지 하늘을 우러러 / 한 점 부끄럼이 없기를” 바라며, 그 부끄러움을 피하려는 마음(양심의 기준)을 끝까지 붙듭니다. [근거 1]\n- 또한 “잎새에 이는 바람에도 / 나는 괴로워했다”라고 하여, 그런 기준을 지키지 못할까 봐 느끼는 내적 고통(자기 성찰의 정서)을 말합니다. [근거 1]\n\n2) **(자기 성찰을 바탕으로) 별을 노래하는 마음 → 모든 죽어가는 것을 사랑 → 주어진 길 걷기**\n- 그 다음 화자는 “별을 노래하는 마음으로 / 모든 죽어가는 것을 사랑해야지”라고 하여, 부끄러움을 견디며 지키려는 태도가 다른 존재에 대한 사랑/다짐으로 확장됩니다. [근거 1]\n- 그리고 마침내 “나한테 주어진 길을 / 걸어가야겠다”라고 결론을 내립니다. [근거 1]\n\n3) **‘주어진 길’의 성격(왜 연결되는가)**\n- 해설에서는 이 “주어진 길”을 **식민지의 질곡 속에서도 현실을 회피하지 않고 절망에 맞서며 자기 구원과 사랑으로 나아가는 결심**으로 읽습니다. [근거 2], [근거 4]\n- 즉, 부끄럼을 없애려는 자기 성찰(그리고 그로 인한 괴로움)이 먼저 자리하고, 그 위에서 사랑의 태도와 함께 “걷겠다”는 실천(주어진 길)이 연결된다고 볼 수 있습니다. (제공된 해설을 바탕으로 한 가능한 연결 해석) [근거 1], [근거 4]\n\n정리하면, 서시에서 **‘부끄럼’은 자기 자신을 끝까지 성찰하게 만드는 출발점**이고, 그 성찰이 **‘사랑’의 다짐을 거쳐 ‘주어진 길’을 실제로 걷겠다는 결의로 전환**됩니다. [근거 1, 4]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.6089999999385327,
+            "generate_seconds": 20.48499999998603,
+            "total_seconds": 21.093999999924563
+          },
+          "cited_source_ids": [
+            "TEXT_9000779",
+            "WIKI_2525783",
+            "KAE_SEOSI"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000779",
+              "source_id": "TEXT_9000779",
+              "chunk_id": null,
+              "source_title": "윤동주 「서시(序詩)」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000779",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "fab790468c02f342e3bfd1f10263c9a9281f1b42016a71076bc33b32c8d28621"
+            },
+            {
+              "number": 2,
+              "poem_id": "9000779",
+              "source_id": "WIKI_2525783",
+              "chunk_id": "9000779:WIKI_2525783:0001",
+              "source_title": "서시 (시)",
+              "source_url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%8B%9C_(%EC%8B%9C)",
+              "access_scope": "문서 본문 확인; 원문 URL·제목 기록",
+              "content_origin": "curated_summary",
+              "locator": "API 본문 문단",
+              "evidence_role": "context_only",
+              "text_sha256": "ca3329dd9d1bd4b0b329c8573b7aebb81b564308fd5b35f059d7d68c0064dc81"
+            },
+            {
+              "number": 4,
+              "poem_id": "9000779",
+              "source_id": "KAE_SEOSI",
+              "chunk_id": "9000779:KAE_SEOSI:0001",
+              "source_title": "서시 - 한국민족문화대백과사전",
+              "source_url": "https://encykorea.aks.ac.kr/Article/E0027887",
+              "access_scope": "공개 초록/항목 확인; 원문 전문 복제 없음",
+              "content_origin": "curated_summary",
+              "locator": "내용",
+              "evidence_role": "interpretation",
+              "text_sha256": "53c4e815a6d6896b7cde97bb01e4eb42996a998b25cfe1bb299069a3a9520c5c"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "원문 부끄럼→사랑→길의 흐름은 양쪽 충족. B는 KAE_SEOSI의 절망에 맞서는 자기 구원·사랑이라는 해설을 추가하되 가능한 연결 해석으로 명시."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A05",
+      "poem_id": "9000294",
+      "order": [
+        "without_external",
+        "with_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "f8b8bf424eba6bfd00db51b220b8085ae282422ba90e9ecc25a1624cb35a0b88",
+      "external_count": 3,
+      "arms": {
+        "without_external": {
+          "answer": "「엄마야 누나야」에서 **반복**과 **강변 풍경**은 서로 맞물리며, 화자의 바람(또는 호명)과 공간의 정서를 함께 붙잡아 주는 역할을 합니다.\n\n1) **반복의 역할: 대상에 대한 지속적 호명(확인)**\n- 시는 “**엄마야 누나야 강변(江邊) 살자**”를 **맨 첫 부분과 마지막 부분**에 되풀이합니다. 이 반복은 ‘엄마/누나’라는 호명 대상에게 말을 걸며, 강변에서 살자는 생각(제안·바람)을 끝까지 **다시 확인**하게 만듭니다. [근거 1]\n\n2) **강변 풍경의 역할: 반복을 받쳐 주는 정서적 배경**\n- 반복되는 문장과 함께 강변이 제시되며, 강변의 주변이 구체적인 감각 이미지로 그려집니다. 예를 들어\n  - “뜰에는 **반짝이는 금빛 모래빛**”\n  - “뒷문 밖에는 **갈잎의 노래**”\n  같은 묘사는, ‘강변에서 살자’는 반복 문장이 단순한 말이 아니라 **살아 있는 공간(빛·소리)**으로 느껴지게 합니다. 즉 반복이 강조하는 ‘강변 삶’이 풍경 이미지로 **감각화**됩니다. [근거 1]\n\n정리하면, **반복(엄마야 누나야… 살자)**은 바람을 끝까지 붙드는 장치이고, **강변 풍경(금빛 모래·갈잎의 노래)**은 그 바람이 현실감 있는 감각 세계로 구현되도록 해 주는 배경 역할을 합니다. [근거 1]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 20.45299999997951,
+            "total_seconds": 20.45299999997951
+          },
+          "cited_source_ids": [
+            "TEXT_9000294"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000294",
+              "source_id": "TEXT_9000294",
+              "chunk_id": null,
+              "source_title": "김소월 「엄마야 누나야」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000294",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "fe98c050415ce2000b91474b791e55a98089b5e80219a9c5d3488b1a1bdde674"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              1,
+              1,
+              2,
+              2
+            ],
+            "reason": "A의 인용 반짝이는 금빛 모래빛은 실제 원문 반짝이는 금(金)모래빛과 다름. B는 원문과 KAE_MOM_SISTER의 반복·민요조 음악성을 연결. 주장 충분성과 정확 인용을 분리."
+          }
+        },
+        "with_external": {
+          "answer": "《엄마야 누나야》에서 **반복**과 **강변 풍경**은 함께 어우러져, 화자의 소망을 **민요처럼 노래하고(반복의 역할)** 그 소망의 정서를 **구체적 자연 이미지로 고정(강변 풍경의 역할)**하는 기능을 합니다.  \n\n## 1) 반복의 역할: 소망을 ‘노래’처럼 고정하고 리듬을 만듦\n이 시는 1행과 마지막 행에서 **“엄마야 누나야 강변(江邊) 살자”**를 반복합니다. 이 반복은 화자의 바람(강변에서 함께 살고 싶음)을 끝까지 붙잡아 주며, 백과 해설에서처럼 **첫 행과 끝 행의 반복이 만드는 민요조의 음악성**을 형성합니다. [근거 1, 2]  \n\n## 2) 강변 풍경의 역할: 소박한 동경을 감각적으로 구체화\n첫 반복이 시작되면, 그 소망이 이루어질 공간이 구체적으로 제시됩니다. **뜰에는 “반짝이는 금모래빛”**, **뒷문 밖에는 “갈잎의 노래”**가 등장하여, 강변의 생활이 단순히 추상적 이상이 아니라 **감각적으로 체감되는 풍경**으로 그려집니다. 이 자연 이미지는 백과 해설에서 말하듯 **소박한 자연 동경**을 설명하는 장치로 기능합니다. [근거 1, 2]  \n\n## 종합\n- **반복**은 “강변에서 함께 살자”는 소망을 리듬 속에서 강조해 **민요조 음악성**을 만들고, [근거 1, 2]  \n- **강변 풍경(금모래빛, 갈잎의 노래)**은 그 소망이 머무는 세계를 **빛과 소리의 이미지로 구체화**해 **자연 동경의 정서**를 강화합니다. [근거 1, 2]  \n\n(추가로 “반복이 화자의 감정 변화를 암시한다” 같은 해석을 확정할 근거는 제공된 자료에서는 확인되지 않습니다.)",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.5940000000409782,
+            "generate_seconds": 3.89000000001397,
+            "total_seconds": 4.484000000054948
+          },
+          "cited_source_ids": [
+            "TEXT_9000294",
+            "KAE_MOM_SISTER"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000294",
+              "source_id": "TEXT_9000294",
+              "chunk_id": null,
+              "source_title": "김소월 「엄마야 누나야」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000294",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "fe98c050415ce2000b91474b791e55a98089b5e80219a9c5d3488b1a1bdde674"
+            },
+            {
+              "number": 2,
+              "poem_id": "9000294",
+              "source_id": "KAE_MOM_SISTER",
+              "chunk_id": "9000294:KAE_MOM_SISTER:0001",
+              "source_title": "엄마야 누나야 - 한국민족문화대백과사전",
+              "source_url": "https://encykorea.aks.ac.kr/Article/E0036210",
+              "access_scope": "공개 본문 확인",
+              "content_origin": "curated_summary",
+              "locator": "내용",
+              "evidence_role": "interpretation",
+              "text_sha256": "28ecf814791554df52ecf3f5a136bae76e5f42e57223891f33bb4a760cebc5ff"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "A의 인용 반짝이는 금빛 모래빛은 실제 원문 반짝이는 금(金)모래빛과 다름. B는 원문과 KAE_MOM_SISTER의 반복·민요조 음악성을 연결. 주장 충분성과 정확 인용을 분리."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A06",
+      "poem_id": "9001830",
+      "order": [
+        "with_external",
+        "without_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "2f2f0ffa90ccc6fbc97830a265c7e4176345e3695dcddacfb0a89b48b5bcc4aa",
+      "external_count": 4,
+      "arms": {
+        "without_external": {
+          "answer": "시에서 “아아, 임은 갔지만은 나는 임을 보내지 아니하였습니다”는 **임이 떠났다는 사실(임은 갔습니다)**과 **화자가 그 이별을 ‘끝’으로 처리하지 않겠다는 태도(임을 보내지 않음)** 사이의 긴장을 통해 역설을 만듭니다. [근거 1]\n\n- **겉말(사실의 진술)**: 임은 실제로 떠났습니다. “임은 갔습니다”로 확인됩니다. [근거 1]  \n- **안쪽말(화자의 태도)**: 그럼에도 화자는 임을 ‘보냈다’고 말하지 않습니다. “나는 임을 보내지 아니하였습니다”라고 하여, 이별을 받아들이는 방식이 단순한 체념이 아님을 드러냅니다. [근거 1]  \n- **역설의 핵심**: “임은 갔지만”이라는 조건을 붙였기 때문에, 독자는 임이 떠났다면 화자도 보냈다고 자연스럽게 생각할 수 있습니다. 그런데 화자는 그 자연스러운 결론을 부정합니다. 즉, **떠났음에도 떠난 대로 끝내지 않고**, 임의 부재를 ‘완전한 송별’로 만들지 않겠다는 뜻이 “보내지 않았다”라는 말에 압축됩니다. [근거 1]\n\n또한 마지막의 “임의 침묵”을 둘러싼 노래가 이어지기 때문에, 화자가 임의 ‘부재’를 침묵으로만 방치하지 않고 **노래/사랑의 지속**으로 감싸고 있음을 알 수 있습니다. 이 점이 “보내지 않았다”의 태도를 뒷받침해, 역설이 감정의 지속(사랑의 끝내기 거부)으로 이어지게 합니다. [근거 1]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 3.875,
+            "total_seconds": 3.875
+          },
+          "cited_source_ids": [
+            "TEXT_9001830"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9001830",
+              "source_id": "TEXT_9001830",
+              "chunk_id": null,
+              "source_title": "한용운 「님의 침묵」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9001830",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "18814773ec08f0bdb9b7a1c89491987d8ace25d84ed5efc49f0a77599ecbcc88"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "양쪽 이별/관계 지속의 역설 설명은 원문으로 지지됨. B의 정수박이(정수)는 괄호 풀이를 인용처럼 덧붙여 원문 그대로인지 불명확하므로 인용1. 실제 의도를 단정하지 않음."
+          }
+        },
+        "with_external": {
+          "answer": "시의 핵심 구절은 **“아아, 임은 갔지만은 나는 임을 보내지 아니하였습니다.”** 입니다. 여기서 ‘임을 보내지 않았다’는 말은, 현실에서는 임이 떠났으니(“임은 갔습니다”) *이미 보낸 것처럼 보이는 상황*과 어긋납니다. 따라서 **“보내지 않았다”는 말은 ‘사실의 부정’이 아니라 ‘관계의 지속(마음의 거부/유지)’을 뜻하는 역설**로 작동합니다. [근거 1]\n\n또한 시는 이 이별의 슬픔을 단순히 끝내지 않고, 다음처럼 **슬픔을 “새 희망”으로 옮겨 가는 구조**를 분명히 보여 줍니다. 즉, 이별의 상처가 “새 희망의 정수박이(정수)“로 옮겨지며, 결국 “임은 갔지만은…(재회의 믿음)”의 방향으로 나아갑니다. 그래서 ‘보내지 않았다’는 말은 **임의 부재를 인정하되, 그 사랑을 끝내지 않고 재회(다시 만날 것)를 믿는 태도**가 됩니다. [근거 1, 4]\n\n정리하면, 역설은 다음과 같습니다.\n- **표면(사실)**: “임은 갔습니다.” → 떠난 것은 분명함 [근거 1]  \n- **이면(태도/사유)**: “나는 임을 보내지 아니하였습니다.” → 떠나게 했다고 생각하지 않으며, 사랑을 끊지 않고 재회의 가능성을 품음 [근거 1, 4]  \n\n따라서 ‘임을 보내지 않았다’는 말은 **이별 이후에도 관계를 포기하지 않는 마음의 선언**으로 이해할 수 있습니다. [근거 1, 4]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.515999999945052,
+            "generate_seconds": 22.969000000040978,
+            "total_seconds": 23.48499999998603
+          },
+          "cited_source_ids": [
+            "TEXT_9001830",
+            "KAE_HAN_SILENCE_POEM"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9001830",
+              "source_id": "TEXT_9001830",
+              "chunk_id": null,
+              "source_title": "한용운 「님의 침묵」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9001830",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "18814773ec08f0bdb9b7a1c89491987d8ace25d84ed5efc49f0a77599ecbcc88"
+            },
+            {
+              "number": 4,
+              "poem_id": "9001830",
+              "source_id": "KAE_HAN_SILENCE_POEM",
+              "chunk_id": "9001830:KAE_HAN_SILENCE_POEM:0001",
+              "source_title": "님의 침묵 - 한국민족문화대백과사전",
+              "source_url": "https://encykorea.aks.ac.kr/Article/E0013399",
+              "access_scope": "공개 본문 확인",
+              "content_origin": "curated_summary",
+              "locator": "작품 해설 또는 내용",
+              "evidence_role": "interpretation",
+              "text_sha256": "ee10d97309c90cbb0ede7a56c6f67f08f6713e5910c2c03211fffa09290fd537"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              1,
+              2,
+              2
+            ],
+            "reason": "양쪽 이별/관계 지속의 역설 설명은 원문으로 지지됨. B의 정수박이(정수)는 괄호 풀이를 인용처럼 덧붙여 원문 그대로인지 불명확하므로 인용1. 실제 의도를 단정하지 않음."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A07",
+      "poem_id": "9000350",
+      "order": [
+        "without_external",
+        "with_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "05b790ed769fbccfcbf3ca253d4e92f1356604644873cdc25dd674a08c4e9215",
+      "external_count": 4,
+      "arms": {
+        "without_external": {
+          "answer": "「모란이 피기까지는」에서 말하는 **‘찬란한 슬픔’은 ‘봄의 결핍(기다림)’이 ‘모란의 개화’로 이어지는 시간 구조 안에서 읽을 수** 있습니다. 즉, 화자는 먼저 **봄을 기다리지만(“나는 아직 나의 봄을 기다리고 있을테요”)**, 모란이 지는 순간에는 **설움에 잠기며(“봄을 여읜 설움”)** 보람이 무너지는 상실을 겪습니다. 그럼에도 끝에는 **모란이 피기까지 다시 기다림으로 돌아가며**, 그 기다림의 상태를 **‘찬란한 슬픔의 봄’**이라고 규정합니다. [근거 1]\n\n따라서 ‘찬란한’은 슬픔이 단순히 어둡거나 소멸하는 정서가 아니라, **봄(기다림)과 연결되어 시간의 무게 속에서 더욱 빛나는 정서**로 읽히는 표현으로 볼 수 있습니다. 특히 화자는 **모란이 피기까지는 계속 기다린다**고 말하며(“모란이 피기까지는 / 나는 아직 기다리고 있을테요”), 그 기다림이 곧 **슬픔을 감싸는 봄의 정조**로 제시됩니다. [근거 1]\n\n(참고로, 자료에는 ‘찬란한 슬픔’의 다른 해석 가능성에 대한 별도 견해가 제시되어 있지 않으므로, 여기서는 작품의 진행(기다림 → 상실/설움 → 다시 기다림)에서 드러나는 의미를 바탕으로 한 읽기만 제안합니다.) [근거 1]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 3.2179999999934807,
+            "total_seconds": 3.2179999999934807
+          },
+          "cited_source_ids": [
+            "TEXT_9000350"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000350",
+              "source_id": "TEXT_9000350",
+              "chunk_id": null,
+              "source_title": "김영랑 「모란이 피기까지는」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000350",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "76a7d654087f099ccb58dde74d80d47bf31201fa18b35cde428069610dd4b623"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "양쪽 기다림→낙화→다시 기다림 독법은 허용. B는 KAE_YEONGRANG_PEONY로 다시 기다리는 의지를 연결하며 우옵네다는 현재 저장 판본과 일치한다. 독립 리뷰가 초기 판본 대조 오류를 발견해 B 인용1→2로 정정했다. 실제 응답·원문은 변경하지 않았다."
+          }
+        },
+        "with_external": {
+          "answer": "찬란한 슬픔은, 절망의 감정으로만 끝나는 슬픔이 아니라 **낙화(모란의 떨어짐) 이후에도 다시 “기다림”으로 이어지는 역설적인 정서**로 읽을 수 있습니다. 즉 모란이 피기 전의 기다림에서는 보람이 있으나, 모란이 지고 난 뒤에는 설움에 잠기게 됩니다. 그런데도 마지막에 화자는 **“모란이 피기까지는” 다시 기다리며 “찬란한 슬픔의 봄을”** 맞겠다고 말해, 슬픔이 의지로 전환되는 흐름을 보여줍니다. [근거 1, 2]\n\n- 원문 흐름에서 보면, 모란이 떨어진 날 이후 화자는 “봄을 여읜 설움에 잠길테요”, “내 보람 서운케 무너졌느니”라고 말하며 **절망·설움의 강도**를 제시합니다. [근거 1]  \n- 하지만 곧 “모란이 지고 말면 그뿐, 내 한 해는 다 가고 말아… 하냥 섭섭해 우옵네다”로 낙화의 끝을 확인한 뒤, 결말에서 다시 “모란이 피기까지는 나는 아직 기다리고 있을테요, 찬란한 슬픔의 봄을.”이라고 마무리합니다. [근거 1]  \n- 이런 점 때문에 ‘찬란한 슬픔’은 **슬픔이 절망에 머무르지 않고 다시 기다리겠다는 의지를 드러낸다**는 설명이 가능합니다. [근거 2]  \n\n정리하면, 찬란한 슬픔은 “밝음(찬란함)”과 “아픔(슬픔)”이 충돌하는 표현이지만, 실제로는 **슬픔을 통해 봄(기다림의 시간)을 다시 시작하려는 태도**로 읽히는 표현입니다. [근거 1, 2]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.43700000003445894,
+            "generate_seconds": 19.813000000081956,
+            "total_seconds": 20.250000000116415
+          },
+          "cited_source_ids": [
+            "TEXT_9000350",
+            "KAE_YEONGRANG_PEONY"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000350",
+              "source_id": "TEXT_9000350",
+              "chunk_id": null,
+              "source_title": "김영랑 「모란이 피기까지는」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000350",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "76a7d654087f099ccb58dde74d80d47bf31201fa18b35cde428069610dd4b623"
+            },
+            {
+              "number": 2,
+              "poem_id": "9000350",
+              "source_id": "KAE_YEONGRANG_PEONY",
+              "chunk_id": "9000350:KAE_YEONGRANG_PEONY:0001",
+              "source_title": "모란이 피기까지는 - 한국민족문화대백과사전",
+              "source_url": "https://encykorea.aks.ac.kr/Article/E0018473",
+              "access_scope": "공개 본문 확인",
+              "content_origin": "curated_summary",
+              "locator": "작품 해설 또는 내용",
+              "evidence_role": "interpretation",
+              "text_sha256": "f1e3b185cb10c1f3ca75bd3cf39fcbc2300e0c33ac250fa1894ed71b7aaca9ef"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "양쪽 기다림→낙화→다시 기다림 독법은 허용. B는 KAE_YEONGRANG_PEONY로 다시 기다리는 의지를 연결하며 우옵네다는 현재 저장 판본과 일치한다. 독립 리뷰가 초기 판본 대조 오류를 발견해 B 인용1→2로 정정했다. 실제 응답·원문은 변경하지 않았다."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A08",
+      "poem_id": "9001059",
+      "order": [
+        "with_external",
+        "without_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "d31fff3d5a6e5c18ffca1417b6f2ce8818d558c43e5a492b0f4dae3a42a5cb70",
+      "external_count": 3,
+      "arms": {
+        "without_external": {
+          "answer": "이육사 「광야(曠野)」에서 **시간의 흐름**은 ‘아득한 옛날 → 계절과 강물이 길을 여는 현재/전환 → 눈 내리는 시점(고립 속의 기다림) → 천고 뒤의 도래’처럼 점층적으로 전개됩니다. [근거 1]\n\n그리고 그 **마지막 희망**은, 이 광야에서 ‘목놓아 부르도록’ 해 줄 **초인(超人)**—‘백마(白馬)를 타고 오는’ 존재가 **천고의 뒤에 다시 온다**는 약속에서 드러납니다. [근거 1]\n\n## 1) 광야의 시간 흐름\n1. **아득한 시작(태초의 시간)**\n   - “까마득한 날에 / 하늘이 처음 열리고”처럼, 매우 먼 과거에서 시간의 문이 열리는 장면으로 출발합니다. [근거 1]  \n   - 이어 “어데 닭 우는 소리 들렸으랴”는 그 이전의 시간까지 상상하게 만드는 형태로, 시간의 비가역성(이미 너무 오래됨)을 강조합니다. [근거 1]\n\n2. **큰 흐름의 시간(산맥·계절·강물의 변화)**\n   - “모든 산맥(山脈)들이 / 바다를 연모(戀慕)해 휘달릴 때도 … 차마 이곳을 … 못하였으리라”는, 자연의 거대한 운동에도 불구하고 ‘이곳’은 쉽게 변하지 않았음을 말합니다. [근거 1]\n   - “끊임없는 광음(光陰)을 / 부지런한 계절(季節)이 피여선 지고”에서 시간은 계절이 반복되며 흘러갑니다. [근거 1]\n   - “큰 강(江)물이 비로소 길을 열었다”는 표현은, 오랜 시간의 흐름 끝에 어떤 길(전환/돌파)이 ‘마침내’ 열렸음을 보여 줍니다. [근거 1]\n\n3. **현 시점의 정황(눈과 홀로 아득함)**\n   - “지금 눈 나리고”로 현재의 장면이 선명해지고, “매화향기(梅花香氣) 홀로 아득하니”에서 화자(시적 화자)의 고독한 감각이 강조됩니다. [근거 1]\n   - 이때 화자는 “내 여기 가난한 노래의 씨를 뿌려라”라고 말하며, 눈 내리는 시간 속에서도 미래를 위한 ‘씨’를 심는 태도를 취합니다. [근거 1]\n\n4. **시간의 끝자락(천고 뒤의 도래)**\n   - 마지막으로 “다시 천고(千古)의 뒤에”라고 하여, 시간의 가장 먼 뒤(아득한 후일)까지 설정합니다. [근거 1]\n   - 그 후에 “백마(白馬) 타고 오는 초인(超人)”이 등장한다고 하며 시간은 희망의 방향으로 마무리됩니다. [근거 1]\n\n## 2) 마지막 희망의 정체와 표현 방식\n- 마지막 희망은 **‘백마를 타고 오는 초인’**이며, 그는 **“이 광야에서 목놓아 부르게 하리라”**고 되어 있습니다. [근거 1]\n- 즉, 광야는 절망의 공간이기만 한 것이 아니라, 오랜 시간이 지나 “천고의 뒤”에 도래할 어떤 구원/변혁의 사건을 기다리는 무대가 됩니다. [근거 1]\n\n원하시면, ‘초인’이 등장하기 직전의 “가난한 노래의 씨”가 왜 희망의 씨앗으로 연결되는지(시간 흐름과의 대응)를 구절 단위로 더 짚어 드릴게요.",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 22.25,
+            "total_seconds": 22.25
+          },
+          "cited_source_ids": [
+            "TEXT_9001059"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9001059",
+              "source_id": "TEXT_9001059",
+              "chunk_id": null,
+              "source_title": "이육사 「광야(曠野)」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9001059",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "496c3c2d97e5b85154cb335c8d8be2d65da2e9912f9a2c0224885de13cf65507"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              1,
+              1,
+              1,
+              2
+            ],
+            "reason": "A는 도입에서 강물의 길을 현재/전환으로, B는 현재 절에 3연을 배치함. KAE_YUKSA_WILD는 1~3연 과거·4연 현재·5연 미래. B가 그 구분을 인용하면서도 설명 내부에 불일치가 남아 시간 구분 설명은 부분 충족."
+          }
+        },
+        "with_external": {
+          "answer": "광야의 시간 흐름은 시가 **과거 → 현재(고난 속) → 미래(초인 대기)**로 전개된다고 설명할 수 있습니다. [근거 2]\n\n## 1) 시간의 흐름(과거~현재~미래)\n- **과거: 광야의 생성**\n  - “까마득한 날에 / 하늘이 처음 열리고 / 어데 닭 우는 소리 들렸으랴”로 매우 먼 처음의 시간(시작)을 제시합니다. [근거 1]\n  - 이어 “모든 산맥… 휘달릴 때도 / 차마 이곳을 범하던 못하였으리라”에서, 다른 곳은 움직일 수 있어도 이 광야는 쉽게 범하지 못할 정도로 멀고 낯선 공간(시간의 배경)을 드러냅니다. [근거 1]\n\n- **현재: 고난 속의 시간**\n  - “끊임없는 광음… 계절… 지고 / 큰 강물이 비로소 길을 열었다”는 시간이 ‘흘러가며’ 계절이 교차하는 과정 속에서, 길이 열리기까지의 기다림(고난의 국면)을 보여 줍니다. [근거 1]\n  - 또한 “지금 눈 나리고 / 매화향기… 홀로 아득하니”는 눈 내리는 현실(현재)의 차가움 속에 매화 향기의 정서를 대비시킵니다. [근거 1]\n  - 백과 해설은 이를 **4연의 ‘고난 속 현재’**로 구분합니다. [근거 2]\n\n- **미래: 초인을 기다리는 시간**\n  - 마지막으로 “다시 천고의 뒤에 / 백마 타고 오는 초인… / 이 광야에서 목놓아 부르게 하리라”에서, 아주 먼 뒤에 올 존재(초인)를 기다리는 미래가 제시됩니다. [근거 1]\n  - 백과 해설은 5연을 **‘초인을 기다리는 미래’**로 구분합니다. [근거 2]\n\n## 2) 마지막 희망(무엇을 기다리며 무엇이 실현되는가)\n마지막 희망은 **‘초인’이 와서 광야에서 ‘가난한 노래’를 부르게 될 것**이라는 믿음입니다. [근거 1, 2]\n\n- 현재의 화자는 눈 내리는 상황 속에서도 “내 여기 가난한 노래의 씨를 뿌려라”라고 말하며, 자신의 노래를 씨처럼 남기는 행위를 희망으로 연결합니다. [근거 1]\n- 그 희망이 결실 맺는 장면이 마지막에 제시되는데, “백마 타고 오는 초인”이 와서 “목놓아 부르게” 한다고 되어 있습니다. [근거 1]\n- 백과 해설도 이 대목을 **뒤에 올 존재가 그 노래를 부를 때 진정한 삶이 실현된다는 희망**으로 읽습니다. [근거 2]\n\n원하시면, 위 흐름을 **각 연(1~5연)별로 문장 단위로 더 촘촘히** 정리해 드릴까요?",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.4529999999795109,
+            "generate_seconds": 21.765999999945052,
+            "total_seconds": 22.218999999924563
+          },
+          "cited_source_ids": [
+            "TEXT_9001059",
+            "KAE_YUKSA_WILD"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9001059",
+              "source_id": "TEXT_9001059",
+              "chunk_id": null,
+              "source_title": "이육사 「광야(曠野)」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9001059",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "496c3c2d97e5b85154cb335c8d8be2d65da2e9912f9a2c0224885de13cf65507"
+            },
+            {
+              "number": 2,
+              "poem_id": "9001059",
+              "source_id": "KAE_YUKSA_WILD",
+              "chunk_id": "9001059:KAE_YUKSA_WILD:0001",
+              "source_title": "광야 - 한국민족문화대백과사전",
+              "source_url": "https://encykorea.aks.ac.kr/Article/E0005168",
+              "access_scope": "공개 본문 확인",
+              "content_origin": "curated_summary",
+              "locator": "개설·내용·의의와 평가",
+              "evidence_role": "interpretation",
+              "text_sha256": "c08ee65c8298317ec7ccbad6907bfef5e3720c39a4725c15a7d05bfaa003f38e"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              1,
+              1,
+              1,
+              2
+            ],
+            "reason": "A는 도입에서 강물의 길을 현재/전환으로, B는 현재 절에 3연을 배치함. KAE_YUKSA_WILD는 1~3연 과거·4연 현재·5연 미래. B가 그 구분을 인용하면서도 설명 내부에 불일치가 남아 시간 구분 설명은 부분 충족."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A09",
+      "poem_id": "13313827",
+      "order": [
+        "without_external",
+        "with_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "29ba1c2f7c1280ddbcd20d2a01bfee68cc6ebfee6f71b691ae7c0e932caf2573",
+      "external_count": 4,
+      "arms": {
+        "without_external": {
+          "answer": "제공된 자료에서는 확인되지 않습니다.",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 1.327999999979511,
+            "total_seconds": 1.327999999979511
+          },
+          "cited_source_ids": [],
+          "used_sources": [],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              0,
+              2
+            ],
+            "reason": "A는 원문에 없는 창작/유고집 연도를 확인 불가 처리. B는 KAE_SIMHUN_DAY·WIKI_319293으로 1930창작/1949유고집을 구분하나 초출 미확인이라는 최소 설명은 명시하지 않음."
+          }
+        },
+        "with_external": {
+          "answer": "질문하신 **1930년과 1949년**은, 「그날이 오면」에서 말하는 “연도”가 서로 다른 성격의 것을 가리킨다고 정리할 수 있습니다.\n\n## 1930년: 3·1절을 맞아 쓴 창작 시기\n- 1930년은 **1930년 3·1절을 맞아 쓴 작품**이라는 설명과 연결됩니다. [근거 3]\n\n## 1949년: 유고집(출간/정리)으로 묶인 시기\n- 1949년은 위키백과 해설에서 **심훈의 유고 작품집 『그날이 오면』(1949년)**에 대한 정보로 제시됩니다. 즉, 1949년은 “(해당 제목의) 유고집으로 정리되어 나온 시기”로 이해할 수 있습니다. [근거 2]\n- 또한 백과 해설에서도 **“1949년 유고 시집과 시 창작 연도를 구분”**하라고 되어 있어, 1930(창작)과 1949(유고집 정리/출간)를 구별해서 봐야 한다는 취지입니다. [근거 3]\n\n즉, **1930년 = 시가 쓰인 때(3·1절 즈음)**, **1949년 = 그 시가 유고집 형태로 묶여 출간된 때**로 정리됩니다. [근거 3, 2]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.4220000000204891,
+            "generate_seconds": 21.56299999996554,
+            "total_seconds": 21.98499999998603
+          },
+          "cited_source_ids": [
+            "WIKI_319293",
+            "KAE_SIMHUN_DAY"
+          ],
+          "used_sources": [
+            {
+              "number": 2,
+              "poem_id": "13313827",
+              "source_id": "WIKI_319293",
+              "chunk_id": "13313827:WIKI_319293:0001",
+              "source_title": "그날이 오면",
+              "source_url": "https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%82%A0%EC%9D%B4_%EC%98%A4%EB%A9%B4",
+              "access_scope": "문서 본문 확인; 원문 URL·제목 기록",
+              "content_origin": "curated_summary",
+              "locator": "API 본문 문단",
+              "evidence_role": "context_only",
+              "text_sha256": "8eda93dd037b411d63f047af22e4cefabb0456cc262a5f3a3543bfee5feeb75e"
+            },
+            {
+              "number": 3,
+              "poem_id": "13313827",
+              "source_id": "KAE_SIMHUN_DAY",
+              "chunk_id": "13313827:KAE_SIMHUN_DAY:0001",
+              "source_title": "그날이 오면 - 한국민족문화대백과사전",
+              "source_url": "https://encykorea.aks.ac.kr/Article/E0007317",
+              "access_scope": "공개 본문 확인",
+              "content_origin": "curated_summary",
+              "locator": "내용·의의와 평가",
+              "evidence_role": "interpretation",
+              "text_sha256": "f25c7899aab39837e1b6b130cc8220ea2da4cec5ed036fee88a0a37c9579abf9"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              1,
+              2
+            ],
+            "reason": "A는 원문에 없는 창작/유고집 연도를 확인 불가 처리. B는 KAE_SIMHUN_DAY·WIKI_319293으로 1930창작/1949유고집을 구분하나 초출 미확인이라는 최소 설명은 명시하지 않음."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A10",
+      "poem_id": "13313827",
+      "order": [
+        "with_external",
+        "without_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "29ba1c2f7c1280ddbcd20d2a01bfee68cc6ebfee6f71b691ae7c0e932caf2573",
+      "external_count": 4,
+      "arms": {
+        "without_external": {
+          "answer": "종과 북의 “과장된 희생”은 화자의 죽음을 기꺼이 감당하겠다는 **극단적인 헌신과 승리(기쁨)의 정서**를 보여줍니다. 종로의 인경을 머리로 드려 울리겠다는 대목에서는, 목숨이 끊어진 뒤에도 “한(恨)”이 남지 않을 만큼 죽음을 긍정하는 태도가 드러납니다. [근거 1]\n\n또한 커다란 북을 만들어 “여러분의 행렬” 앞장서서 우렁찬 소리를 내겠다고 하며, 그 소리를 듣기만 하면 자신이 쓰러져도 눈을 감겠다고 말합니다. 이는 종·북의 역할을 통해 죽음이 두려움이 아니라 **‘넘치는 기쁨’과 연결된 가치**로 표현된 정서를 강화합니다. [근거 1]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 1.8130000000819564,
+            "total_seconds": 1.8130000000819564
+          },
+          "cited_source_ids": [
+            "TEXT_13313827"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "13313827",
+              "source_id": "TEXT_13313827",
+              "chunk_id": null,
+              "source_title": "심훈 「그날이 오면」 전문",
+              "source_url": "https://ko.wikisource.org/wiki/그날이_오면/그날이_오면",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "cf6270e62a5de0b97b16958f0bb552160d10e128a05fbb3b1e199491b2fa4c75"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              1,
+              2
+            ],
+            "reason": "A는 원문의 극단적 헌신·기쁨을 설명하지만 독립이라는 배경을 단정하지 않아 최소 설명 부분 충족. B는 KAE_SIMHUN_DAY로 민족적 환희·독립 의지를 연결. 실제 행동으로 오인하지 않음."
+          }
+        },
+        "with_external": {
+          "answer": "종과 북에 담긴 **“과장된 희생”**은, 스스로 목숨을 바쳐 독립을 맞이하겠다는 **민족적 환희와 독립 의지**의 정서(그리고 그 의지를 어떤 고통 속에서도 “恨”으로 남기지 않으려는 태도)를 보여줍니다. [근거 2]\n\n- 시 속에서 화자는 “종로(鍾路)의 인경(人磬)”을 **머리로 드리받아 울리오리다**, “두개골이 … 깨어져”도 **“기뻐서”**라고 말하며 죽음의 고통을 오히려 기쁨으로 전환합니다. 이는 희생이 단순한 비극이 아니라, 독립의 순간을 향한 열망을 드러내는 정서임을 보여줍니다. [근거 1]  \n- 또 “커다란 북(鼓)”을 만들어 행렬 앞에 서겠다는 상상, “우렁찬 그 소리를 한 번이라도 듣기만 하면… 눈을 감겠소이다”라는 표현은 그날(광복/독립의 날)을 향한 **강한 기쁨과 결연한 의지**를 강조합니다. [근거 1, 2]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.875,
+            "generate_seconds": 2.75,
+            "total_seconds": 3.625
+          },
+          "cited_source_ids": [
+            "TEXT_13313827",
+            "KAE_SIMHUN_DAY"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "13313827",
+              "source_id": "TEXT_13313827",
+              "chunk_id": null,
+              "source_title": "심훈 「그날이 오면」 전문",
+              "source_url": "https://ko.wikisource.org/wiki/그날이_오면/그날이_오면",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "cf6270e62a5de0b97b16958f0bb552160d10e128a05fbb3b1e199491b2fa4c75"
+            },
+            {
+              "number": 2,
+              "poem_id": "13313827",
+              "source_id": "KAE_SIMHUN_DAY",
+              "chunk_id": "13313827:KAE_SIMHUN_DAY:0001",
+              "source_title": "그날이 오면 - 한국민족문화대백과사전",
+              "source_url": "https://encykorea.aks.ac.kr/Article/E0007317",
+              "access_scope": "공개 본문 확인",
+              "content_origin": "curated_summary",
+              "locator": "내용·의의와 평가",
+              "evidence_role": "interpretation",
+              "text_sha256": "f25c7899aab39837e1b6b130cc8220ea2da4cec5ed036fee88a0a37c9579abf9"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "A는 원문의 극단적 헌신·기쁨을 설명하지만 독립이라는 배경을 단정하지 않아 최소 설명 부분 충족. B는 KAE_SIMHUN_DAY로 민족적 환희·독립 의지를 연결. 실제 행동으로 오인하지 않음."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A11",
+      "poem_id": "9000320",
+      "order": [
+        "without_external",
+        "with_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "b37954e17f95c9fc16d15d3c72028d59747cff4653979a2ff683a272a888b3ae",
+      "external_count": 4,
+      "arms": {
+        "without_external": {
+          "answer": "제공된 자료에서는 확인되지 않습니다.",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 1.297000000020489,
+            "total_seconds": 1.297000000020489
+          },
+          "cited_source_ids": [],
+          "used_sources": [],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "제공 자료에 집필 당일 점심 근거 없음. 양쪽 모두 확인 불가, 허구 식단 없음. 단순 보류의 무인용은 허용."
+          }
+        },
+        "with_external": {
+          "answer": "제공된 자료에서는 확인되지 않습니다.",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 11.827999999979511,
+            "generate_seconds": 1.0309999999590218,
+            "total_seconds": 12.858999999938533
+          },
+          "cited_source_ids": [],
+          "used_sources": [],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "제공 자료에 집필 당일 점심 근거 없음. 양쪽 모두 확인 불가, 허구 식단 없음. 단순 보류의 무인용은 허용."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "A12",
+      "poem_id": "9000779",
+      "order": [
+        "with_external",
+        "without_external"
+      ],
+      "retrieval_method": "similarity",
+      "common_input_sha256": "ff45711de9712db7cf34e6f4179102b3dc47f622e24511273c610e246d2aa681",
+      "external_count": 4,
+      "arms": {
+        "without_external": {
+          "answer": "제공된 자료(시 원문)만으로는, 시인이 이 작품의 “단 하나의 정답 해석”을 **직접 승인했는지**를 확인할 수 없습니다. [근거 1]",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.0,
+            "generate_seconds": 19.375,
+            "total_seconds": 19.375
+          },
+          "cited_source_ids": [
+            "TEXT_9000779"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000779",
+              "source_id": "TEXT_9000779",
+              "chunk_id": null,
+              "source_title": "윤동주 「서시(序詩)」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000779",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "fab790468c02f342e3bfd1f10263c9a9281f1b42016a71076bc33b32c8d28621"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "양쪽 직접 승인 확인 불가. B는 KAE_SEOSI 해설자의 독해와 시인의 승인/실제 의도를 구분함."
+          }
+        },
+        "with_external": {
+          "answer": "질문에 대해 **“시인이 이 작품의 단 하나의 정답 해석을 직접 승인했는가?”**라는 점은, **제공된 자료에서는 확인되지 않습니다.**  \n\n- 제시된 근거들(원문 시 텍스트, 백과사전의 내용 요약, 위키백과의 작품·시인 서술)에는 **윤동주가 특정 ‘단 하나의 해석’을 명시적으로 승인했다는 진술**이나 **그 해석을 정답으로 확정한 직접 발언**이 포함되어 있지 않습니다. [근거 1, 2, 4, 5]  \n- 백과사전의 내용 구분과 “자기 구원과 사랑으로 읽는다” 같은 설명은 **해설자의 독해**로 보이며, 시인이 이를 “정답”으로 승인했다는 근거는 제공되지 않습니다. [근거 2]  \n\n따라서, **시인이 단 하나의 정답 해석을 직접 승인했는지**는 **제공된 자료만으로는 알 수 없습니다.**",
+          "citation_error": false,
+          "timings": {
+            "external_retrieve_seconds": 0.5940000000409782,
+            "generate_seconds": 2.1089999999385327,
+            "total_seconds": 2.702999999979511
+          },
+          "cited_source_ids": [
+            "TEXT_9000779",
+            "KAE_SEOSI",
+            "WIKI_2525783",
+            "KAE_YUN_DONGJU"
+          ],
+          "used_sources": [
+            {
+              "number": 1,
+              "poem_id": "9000779",
+              "source_id": "TEXT_9000779",
+              "chunk_id": null,
+              "source_title": "윤동주 「서시(序詩)」 전문",
+              "source_url": "https://www.sihanjan.com/classics/9000779",
+              "access_scope": "프로젝트에 저장된 대조 원문",
+              "content_origin": "original_text",
+              "locator": "표시 판본 전문",
+              "evidence_role": "context_only",
+              "text_sha256": "fab790468c02f342e3bfd1f10263c9a9281f1b42016a71076bc33b32c8d28621"
+            },
+            {
+              "number": 2,
+              "poem_id": "9000779",
+              "source_id": "KAE_SEOSI",
+              "chunk_id": "9000779:KAE_SEOSI:0001",
+              "source_title": "서시 - 한국민족문화대백과사전",
+              "source_url": "https://encykorea.aks.ac.kr/Article/E0027887",
+              "access_scope": "공개 초록/항목 확인; 원문 전문 복제 없음",
+              "content_origin": "curated_summary",
+              "locator": "내용",
+              "evidence_role": "interpretation",
+              "text_sha256": "53c4e815a6d6896b7cde97bb01e4eb42996a998b25cfe1bb299069a3a9520c5c"
+            },
+            {
+              "number": 4,
+              "poem_id": "9000779",
+              "source_id": "WIKI_2525783",
+              "chunk_id": "9000779:WIKI_2525783:0001",
+              "source_title": "서시 (시)",
+              "source_url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%8B%9C_(%EC%8B%9C)",
+              "access_scope": "문서 본문 확인; 원문 URL·제목 기록",
+              "content_origin": "curated_summary",
+              "locator": "API 본문 문단",
+              "evidence_role": "context_only",
+              "text_sha256": "ca3329dd9d1bd4b0b329c8573b7aebb81b564308fd5b35f059d7d68c0064dc81"
+            },
+            {
+              "number": 5,
+              "poem_id": "9000779",
+              "source_id": "KAE_YUN_DONGJU",
+              "chunk_id": "9000779:KAE_YUN_DONGJU:0001",
+              "source_title": "윤동주 - 한국민족문화대백과사전",
+              "source_url": "https://encykorea.aks.ac.kr/Article/E0042294",
+              "access_scope": "공개 본문 확인",
+              "content_origin": "curated_summary",
+              "locator": "생애 및 활동사항·시세계 설명",
+              "evidence_role": "context_only",
+              "text_sha256": "f55c85f4f1e803c585b1e6aef58a6ee4150ab1dcae8cd9331473d0fc9b66e449"
+            }
+          ],
+          "review": {
+            "reviewer": "작성 에이전트(비맹검·인간 아님)",
+            "scores": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "reason": "양쪽 직접 승인 확인 불가. B는 KAE_SEOSI 해설자의 독해와 시인의 승인/실제 의도를 구분함."
+          }
+        }
+      }
+    }
+  ]
+}
