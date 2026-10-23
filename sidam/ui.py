@@ -66,7 +66,7 @@ def run_question(service, pid, question, mode="chat", quote=""):
 
 def main():
     st.set_page_config(page_title="시담 · 시를 읽고, 시대를 묻다", page_icon="📖", layout="wide")
-    st.markdown(f"<style>{Path(__file__).with_name('literary.css').read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
+    st.html(Path(__file__).with_name("literary.css"))
     root = Path(__file__).resolve().parents[1]
     try:
         service = get_service(str(root), (root / "sidam.toml").stat().st_mtime_ns)
@@ -75,9 +75,9 @@ def main():
         return
     counts = service.store.counts()
     reading = bool(st.session_state.get("selected_poem")) and st.session_state.get("main_tab") == "작품 읽기 · 질문"
-    st.markdown(masthead(len(service.poems), compact=reading), unsafe_allow_html=True)
+    st.html(masthead(len(service.poems), compact=reading))
     with st.sidebar:
-        st.markdown('<span class="sidam-eyebrow">나의 작은 서재</span>', unsafe_allow_html=True)
+        st.html('<span class="sidam-eyebrow">나의 작은 서재</span>')
         st.header("오늘, 읽을 시")
         st.caption("한 편의 시에서 시작하는 이야기")
         quick = st.text_input("제목·시인 빠른 찾기", key="quick_filter", placeholder="진달래꽃 또는 김소월")
@@ -110,11 +110,11 @@ def main():
         if selected and st.button("이 작품 대화 지우기"):
             st.session_state.setdefault("messages_by_poem_id", {})[selected] = []
             st.rerun()
-        st.markdown('<div class="sidam-footer">시를 읽는 일,<br>그 시대의 마음을 헤아리는 일.</div>', unsafe_allow_html=True)
+        st.html('<div class="sidam-footer">시를 읽는 일,<br>그 시대의 마음을 헤아리는 일.</div>')
     find_tab, read_tab = st.tabs(["조건으로 작품 찾기", "작품 읽기 · 질문"], key="main_tab", on_change="rerun")
     with find_tab:
-        st.markdown('''<div class="sidam-intro"><span class="sidam-eyebrow">시를 만나는 서가</span>
-<h2>어떤 마음의 시를 찾고 있나요?</h2><p>기억 속 제목으로, 한 시인의 이름으로, 혹은 마음에 남은 주제로.<br>오래된 문장 속에서 오늘의 이야기를 만나보세요.</p></div>''', unsafe_allow_html=True)
+        st.html('''<div class="sidam-intro"><span class="sidam-eyebrow">시를 만나는 서가</span>
+<h2>어떤 마음의 시를 찾고 있나요?</h2><p>기억 속 제목으로, 한 시인의 이름으로, 혹은 마음에 남은 주제로.<br>오래된 문장 속에서 오늘의 이야기를 만나보세요.</p></div>''')
         with st.container(key="search_desk"):
             with st.form("poem_search"):
                 query = st.text_input("검색 조건", placeholder="예: 김소월의 이별을 다룬 시, 1920년대에 처음 발표된 시")
@@ -131,7 +131,7 @@ def main():
             except Exception:
                 st.error("작품 검색을 완료하지 못했습니다. 다시 시도해 주세요.")
         if "search_results" in st.session_state:
-            st.markdown(f'<div class="sidam-section-line"><strong>찾아낸 작품</strong><span>{len(st.session_state["search_results"])}편의 시</span></div>', unsafe_allow_html=True)
+            st.html(f'<div class="sidam-section-line"><strong>찾아낸 작품</strong><span>{len(st.session_state["search_results"])}편의 시</span></div>')
             if st.session_state.get('search_conditions', {}).get('match_kind'):
                 st.caption('오탈자 후보입니다. 제목과 시인을 확인한 뒤 작품을 선택하세요.')
             if not st.session_state["search_results"]:
@@ -139,31 +139,31 @@ def main():
             for pid in st.session_state["search_results"]:
                 p = service.poems[pid]
                 with st.container(key=f"result_{pid}"):
-                    st.markdown(f'<p class="sidam-result-title">{escape(p["title"])}<span>{escape(p["author"])}</span></p>', unsafe_allow_html=True)
+                    st.html(f'<p class="sidam-result-title">{escape(p["title"])}<span>{escape(p["author"])}</span></p>')
                     st.caption(f"최초 발표: {p.get('first_publication_year', '미확인')} · 시집 간행: {p.get('collection_publication_year', '미확인')}")
                     st.write(p["theme_summary"][:350] or "주제 설명 미확인")
                     st.button("이 작품 읽기", key=f"choose_{pid}", on_click=choose_poem, args=(pid,))
         else:
-            st.markdown('<div class="sidam-section-line"><strong>서가에서 펼쳐보기</strong><span>작품 속 첫 문장을 만나보세요</span></div>', unsafe_allow_html=True)
+            st.html('<div class="sidam-section-line"><strong>서가에서 펼쳐보기</strong><span>작품 속 첫 문장을 만나보세요</span></div>')
             featured = [pid for pid in ("9000320", "9000761", "13313827") if pid in service.poems]
             if featured:
                 for number, (column, pid) in enumerate(zip(st.columns(len(featured)), featured), 1):
                     with column, st.container(key=f"feature_{pid}"):
-                        st.markdown(preview(service.poems[pid], number), unsafe_allow_html=True)
+                        st.html(preview(service.poems[pid], number))
                         st.button("이 작품 읽기 →", key=f"featured_choose_{pid}", on_click=choose_poem, args=(pid,))
     with read_tab:
         if not selected:
-            st.markdown('<div class="sidam-chat-empty"><span class="sidam-eyebrow">아직 펼치지 않은 페이지</span><p>오늘은 어떤 시와 이야기를 나눌까요?</p><small>왼쪽 작품 목록이나 서가의 작품 카드에서 읽고 싶은 시를 골라주세요.</small></div>', unsafe_allow_html=True)
+            st.html('<div class="sidam-chat-empty"><span class="sidam-eyebrow">아직 펼치지 않은 페이지</span><p>오늘은 어떤 시와 이야기를 나눌까요?</p><small>왼쪽 작품 목록이나 서가의 작품 카드에서 읽고 싶은 시를 골라주세요.</small></div>')
             return
         poem = service.poems[selected]
-        st.markdown(reading_heading(poem), unsafe_allow_html=True)
+        st.html(reading_heading(poem))
         with st.container(key="reading_dates"):
             st.caption(f"최초 발표 {poem.get('first_publication_year', '미확인')} · 시집 간행 {poem.get('collection_publication_year', '미확인')} · 창작 {poem.get('written_year', '미확인')}")
         if poem.get("reported_year") and poem.get("reported_year_kind") == "unknown":
             st.caption(f"원시 자료의 연도 {poem['reported_year']}년은 종류 확인 전이라 최초 발표 검색에 사용하지 않습니다.")
         left, right = st.columns([1, 1.15], gap="large")
         with left:
-            st.markdown(poem_page(poem), unsafe_allow_html=True)
+            st.html(poem_page(poem))
             st.link_button("전문 출처", poem["text_source_url"])
             with st.expander("해설 기반 주제 설명"):
                 st.write(poem["theme_summary"] or "주제 설명 미확인")
@@ -177,10 +177,10 @@ def main():
                 else:
                     run_question(service, selected, f"선택한 구절의 표현과 가능한 의미, 배경을 근거와 한계와 함께 설명해주세요: {quote}", "card", quote)
         with right, st.container(key="conversation"):
-            st.markdown('<div class="sidam-panel-heading">시와 나누는 이야기</div>', unsafe_allow_html=True)
+            st.html('<div class="sidam-panel-heading">시와 나누는 이야기</div>')
             st.caption("확인된 사실과 가능한 해석을 구분합니다. 자료가 부족한 부분은 단정하지 않습니다.")
             if not history(st.session_state, selected):
-                st.markdown('<div class="sidam-chat-empty"><p>한 구절의 의미가 궁금해졌다면.</p><small>시의 표현과 상징, 그 문장이 쓰인 시대를 물어보세요.<br>원문과 확인한 자료를 함께 살펴봅니다.</small></div>', unsafe_allow_html=True)
+                st.html('<div class="sidam-chat-empty"><p>한 구절의 의미가 궁금해졌다면.</p><small>시의 표현과 상징, 그 문장이 쓰인 시대를 물어보세요.<br>원문과 확인한 자료를 함께 살펴봅니다.</small></div>')
             for message in history(st.session_state, selected):
                 with st.chat_message(message["role"]):
                     st.markdown(message["content"])
@@ -193,4 +193,4 @@ def main():
             question = st.chat_input("이 시의 구절·상징·배경을 물어보세요", disabled=not service.models or not counts["poems"])
             if question:
                 run_question(service, selected, question)
-    st.markdown('<footer class="sidam-footer"><span>시담 · 한국 근대시를 읽고 이야기하는 공간</span><span>원문에서 시작하여, 근거를 따라 읽습니다.</span></footer>', unsafe_allow_html=True)
+    st.html('<footer class="sidam-footer"><span>시담 · 한국 근대시를 읽고 이야기하는 공간</span><span>원문에서 시작하여, 근거를 따라 읽습니다.</span></footer>')

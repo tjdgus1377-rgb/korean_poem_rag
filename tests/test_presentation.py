@@ -2,6 +2,7 @@
 from html.parser import HTMLParser
 
 import pytest
+from pathlib import Path
 
 
 class PageParser(HTMLParser):
@@ -32,3 +33,30 @@ def test_poem_page_preserves_text_without_interpreting_external_html(field):
     rendered_text = "".join(parser.text)
     assert poem[field] in rendered_text
     assert poem["text"] in rendered_text
+
+
+def test_reading_ui_does_not_turn_poem_markdown_into_external_assets(monkeypatch, tmp_path):
+    from markdown_it import MarkdownIt
+    from streamlit.testing.v1 import AppTest
+    from sidam.config import Config
+    from sidam.service import Service
+    from sidam import ui
+
+    monkeypatch.setenv("GMS_KEY", "")
+    monkeypatch.setattr(Config, "index_path", property(lambda self: tmp_path / "index"))
+    root = Path(__file__).resolve().parents[1]
+    service = Service(Config.load(root))
+    payload = '첫 행\n\n![tracker](https://example.invalid/tracker.png)\n\n# 원문 속 기호\n\n[링크 모양](https://example.invalid/link)'
+    service.poems["9000320"]["text"] = payload
+    monkeypatch.setattr(ui, "get_service", lambda *_: service)
+    app = AppTest.from_file(str(root / "step7_skeleton.py"), default_timeout=60).run()
+    app.selectbox(key="selected_poem").select("9000320").run()
+    assert not app.exception
+    pages = [(e.value, True) for e in app.markdown if '<article class="sidam-poem-page"' in e.value]
+    pages += [(e.proto.body, False) for e in app.get("html") if '<article class="sidam-poem-page"' in e.proto.body]
+    assert len(pages) == 1
+    body, uses_markdown = pages[0]
+    parser = PageParser()
+    parser.feed(MarkdownIt().render(body) if uses_markdown else body)
+    assert not {"img", "a", "h1"} & {tag for tag, _ in parser.tags}
+    assert payload in "".join(parser.text)

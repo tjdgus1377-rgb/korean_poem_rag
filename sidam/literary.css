@@ -58,7 +58,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .sidam-excerpt { font-family: var(--sidam-serif); font-size: .85rem; line-height: 2; white-space: pre-wrap; overflow-wrap: anywhere; min-height: 6rem; margin-bottom: 1.3rem; }
 [class*="st-key-feature_"] button { border: 0; border-top: 1px solid var(--sidam-rule); background: transparent; width: 100%; justify-content: space-between; color: var(--sidam-red); }
 [class*="st-key-result_"] { border-bottom: 1px solid var(--sidam-rule); padding: 1.2rem .2rem; }
-[data-testid="stMarkdownContainer"] .sidam-result-title { font-family: var(--sidam-serif); font-size: 1.4rem; margin: 0; }
+p.sidam-result-title { font-family: var(--sidam-serif); font-size: 1.4rem; margin: 0; }
 .sidam-result-title span { font-family: sans-serif; font-size: .8rem; color: var(--sidam-muted); margin-left: 1rem; }
 .sidam-reading-heading { text-align: center; padding: .8rem 0 .3rem; }
 .sidam-reading-heading h2 { font-family: var(--sidam-serif); font-size: 2.25rem; letter-spacing: .06em; margin: .2rem 0 .65rem; padding: 0; font-weight: 600; }
@@ -84,6 +84,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .sidam-chat-empty p { font-size: 1.2rem; }
 .sidam-chat-empty small { font-family: sans-serif; font-size: .8rem; }
 [data-testid="stChatMessage"] { border-radius: 2px; border: 1px solid var(--sidam-rule); padding: 1rem; background: var(--sidam-page); }
+[data-testid="stChatMessageAvatarUser"] { background-color: #e8e1d3; color: var(--sidam-ink); border-radius: 2px; }
+[data-testid="stChatMessageAvatarAssistant"] { background-color: #344b40; color: var(--sidam-page); border-radius: 2px; }
 [data-testid="stChatInput"] { border-radius: 3px; border-color: #a9a18f; background: var(--sidam-page); }
 [data-testid="stExpander"] { border-radius: 2px; }
 [data-testid="stAlert"] { border-radius: 2px; }
