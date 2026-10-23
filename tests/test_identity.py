@@ -54,6 +54,7 @@ def test_partial_hanja_annotation_never_becomes_whole_work_alias():
     assert not same_title('行人', '나룻배와 행인(行人)')
     assert same_title('또다른故鄕', '또다른고향(故鄕)')
     for forced in [True, False]:
-        http = HTTP([Response(200, {'query': {'pages': [{'pageid': 1, 'title': '故鄕', 'extract': '故鄕은 윤동주가 지은 시이다.'}]}})])
-        adapter = WikiAdapter('test@example.org', session=http, sleep=lambda _: None)
-        assert adapter.fetch({'candidate_id': '1', 'is_work': forced}, {'poem_id': 'a', 'title': '또다른고향(故鄕)', 'author': '윤동주'}) is None
+        for ending in ['윤동주가 지은 시이다.', '윤동주의 시로, 1936년에 발표되었다.', '윤동주의 시이며 사랑을 다룬다.', '윤동주의 시로서 널리 알려졌다.']:
+            http = HTTP([Response(200, {'query': {'pages': [{'pageid': 1, 'title': '故鄕', 'extract': '故鄕은 '+ending}]}})])
+            adapter = WikiAdapter('test@example.org', session=http, sleep=lambda _: None)
+            assert adapter.fetch({'candidate_id': '1', 'is_work': forced}, {'poem_id': 'a', 'title': '또다른고향(故鄕)', 'author': '윤동주'}) is None
